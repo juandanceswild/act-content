@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Share your Story</title>
+	<link rel="stylesheet" href="foundation.min.css">
+	<link rel="stylesheet" href="combined.min.css">
+</head>
+
+<body>
+
+<div id="share-your-story" >
+	<div class="background">
+		<header class="header cf clearfix" role="banner">
+		<div class="row">
+			<a href="http://actfor.compassion.com"><img src="actfor_logo-white.png" height="30" width="263" alt="" class="left" id="logo"></a>
+			<a href="http://www.compassion.com"><img src="compassion_logo-white.png" height="49" width="130" class="right" id="compassion-logo" alt=""></a>
+		</div>
+		</header>
+
+		<h2 class="gray-title">Share your story</h2>
+		<hr>
+		<h5 class="centered">To inspire others</h5>
+		<div class="row">
+			<div class="medium-2 centered columns">
+				<img id="share" src="share-your-story.png">
+			</div>
+			<div class="medium-8 pull-2 columns formdiv">
+				<div class="field-container">
+					<label>Name:</label>
+					<input type="text" placeholder="Enter your name">
+				</div>
+				<div class="field-container">
+						<label>Email</label>
+						<div class="columns small-7">
+							<input type="text" placeholder="you@youremail.com">
+						</div>
+						<div class="columns small-5 contact-radio">
+							<label class="contact">Contact me here</label><input type="checkbox">
+						</div>
+				</div>
+				<div class="field-container">
+						<label>Phone</label>
+						<div class="columns small-7">
+							<input type="text" placeholder="1-222-222-2222">
+						</div>
+						<div class="columns small-5 contact-radio">
+							<label class="contact">Contact me here</label><input type="checkbox">
+						</div>
+				</div>
+				<div class="field-container">
+					<label>Tell us about your campaign</label>
+					<textarea placeholder="What inspired you to act? Any surprises along the way? What did you do to make it a success?" autofocus="true" onfocus="textCounter(this, 'campaign-counter', 700)" onkeydown="textCounter(this, 700)" onkeyup="textCounter(this, 'campaign-counter', 700)"></textarea>
+					<span id="campaign-counter">700</span>
+				</div>
+				<div class="field-container">
+					<label>Tell us about your campaign's impact</label>
+					<textarea placeholder="How did your campaign impact you? How did it impact those around you?" autofocus="true" onfocus="textCounter(this, 'campaign-impact-counter', 700)" onkeydown="textCounter(this, 700)" onkeyup="textCounter(this, 'campaign-impact-counter', 700)"></textarea>
+					<span id="campaign-impact-counter">700</span>
+				</div>
+				
+				<div class="row additional-media">
+					<div class="small-12 columns"><p class="options">Do you have media (photos/videos) of your campaign available to share?</p></div>
+					<form>
+						<div class="small-6 columns">
+							<input type="radio" name="media"><label>Yes</label>
+						</div>
+						<div class="small-6 columns">
+							<input type="radio" name="media"><label>No</label>
+						</div>
+					</form>
+				</div>
+	<!-- 			<div class="row">
+					<div class="small-12 columns"><p class="options">Prefered method of contact:</p></div>
+					<div class="small-6 columns">
+						<input type="radio"><label>Email</label>
+					</div>
+					<div class="small-6 columns">
+						<input type="radio"><label>Phone</label>
+					</div>
+				</div> -->
+				<ul class="buttons">
+					<li><a class="button-solid-green">Share your story</a></li>
+				</ul>
+				<div class="row terms">
+					<p class="centered">By sharing your story, you agree to our <a href="">terms of use.</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<script>
+	function textCounter(field, counter, maxlimit) {          
+		var counterField = document.getElementById(counter);	
+	    if (field.value.length > maxlimit) {
+	     	field.value = field.value.substring(0, maxlimit);
+	    } else {
+			counterField.innerHTML = maxlimit - field.value.length;
+		}
+	}
+</script>
+
+</body>
+</html>
+
