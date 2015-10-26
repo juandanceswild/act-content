@@ -1,0 +1,38 @@
+.share-my-fundraiser {
+  margin: 0 auto; }
+
+.share-fundraiser {
+  list-style: none;
+  margin: 10px auto;
+  display: inline-block;
+  text-align: center; }
+
+.share-fundraiser li {
+  display: inline;
+  margin-right: 1em;
+  background: none !important; }
+
+.share-fundraiser .button-social {
+  display: inline-block;
+  background: #999;
+  border-radius: 5px;
+  width: 35px;
+  height: 35px; }
+
+.share-fundraiser .button-social img {
+  opacity: 0.8; }
+
+.share-fundraiser .button-social:hover img {
+  opacity: 1.0; }
+
+.share-fundraiser .disabled img {
+  opacity: 0.4 !important; }
+
+.share-fundraiser .disabled:hover img {
+  opacity: 0.5 !important; }
+
+.share-fundraiser li a {
+  opacity: 0.1; }
+
+.share-fundraiser li a.active {
+  opacity: 1.0; }
