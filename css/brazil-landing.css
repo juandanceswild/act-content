@@ -1,0 +1,578 @@
+#brazil-landing {
+  text-align: center; }
+  #brazil-landing h1, #brazil-landing h2, #brazil-landing h4, #brazil-landing p, #brazil-landing a {
+    color: white; }
+  @media only screen and (max-width: 40em) {
+    #brazil-landing h1 {
+      font-size: 1.5rem; } }
+  #brazil-landing h2 {
+    font-size: 1.1rem; }
+    @media only screen and (min-width:40.063em) {
+      #brazil-landing h2 {
+        font-size: 1.5rem; } }
+    @media only screen and (min-width:64.063em) {
+      #brazil-landing h2 {
+        font-size: 1.8rem; } }
+  #brazil-landing p, #brazil-landing a {
+    font-size: .9rem; }
+    @media only screen and (min-width:40.063em) {
+      #brazil-landing p, #brazil-landing a {
+        font-size: 1.1rem; } }
+    @media only screen and (min-width:64.063em) {
+      #brazil-landing p, #brazil-landing a {
+        font-size: 1.4rem; } }
+  #brazil-landing section {
+    position: relative; }
+  #brazil-landing .main-buttons [class^="button-"], #brazil-landing .main-buttons [class*="button-"] {
+    font-size: .9rem; }
+    @media only screen and (min-width:64.063em) {
+      #brazil-landing .main-buttons [class^="button-"], #brazil-landing .main-buttons [class*="button-"] {
+        font-size: 1.1rem;
+        height: 4rem; } }
+  #brazil-landing .hero {
+    height: 28rem;
+    background: url(/multimedia/act-for_brazil-landing-hero.jpg);
+    width: 100%;
+    background-size: cover; }
+    @media only screen and (min-width:64.063em) {
+      #brazil-landing .hero {
+        height: 40rem; } }
+    #brazil-landing .hero .mask {
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+    #brazil-landing .hero h1 {
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      font-family: 'big_johnregular';
+      text-transform: uppercase; }
+      #brazil-landing .hero h1 span {
+        font-weight: 500;
+        display: block; }
+        #brazil-landing .hero h1 span:first-of-type {
+          font-size: 2rem;
+          line-height: 30px; }
+        #brazil-landing .hero h1 span:nth-of-type(2) {
+          font-size: 1.9rem; }
+        #brazil-landing .hero h1 span:last-of-type {
+          line-height: 80px;
+          font-size: 5rem;
+          font-weight: 700; }
+        @media only screen and (min-width:64.063em) {
+          #brazil-landing .hero h1 span:first-of-type {
+            font-size: 3.2rem;
+            line-height: 30px; }
+          #brazil-landing .hero h1 span:nth-of-type(2) {
+            font-size: 3.1rem; }
+          #brazil-landing .hero h1 span:last-of-type {
+            line-height: 95px;
+            font-size: 8rem;
+            font-weight: 700; } }
+    #brazil-landing .hero a {
+      position: absolute;
+      bottom: 4rem;
+      left: 0;
+      right: 0;
+      z-index: 3; }
+      #brazil-landing .hero a img {
+        width: 4rem; }
+        @media only screen and (min-width:64.063em) {
+          #brazil-landing .hero a img {
+            width: 98px; } }
+  #brazil-landing .intro {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    background: #0055a6; }
+    @media only screen and (min-width:40.063em) {
+      #brazil-landing .intro {
+        padding-bottom: 11rem; } }
+    @media only screen and (min-width:64.063em) {
+      #brazil-landing .intro {
+        padding-top: 5rem;
+        padding-bottom: 13rem; } }
+    #brazil-landing .intro .arrow {
+      position: absolute;
+      width: 3rem;
+      height: 3rem;
+      top: -1.25rem;
+      background: #0055a6;
+      border-radius: 50%;
+      z-index: 2;
+      left: 50%;
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+      -webkit-transform: translateX(-50%); }
+      @media only screen and (min-width:64.063em) {
+        #brazil-landing .intro .arrow {
+          width: 4.5rem;
+          height: 4.5rem;
+          top: -2.25rem; } }
+      #brazil-landing .intro .arrow img {
+        width: 22px;
+        margin-top: 17px; }
+        @media only screen and (min-width:64.063em) {
+          #brazil-landing .intro .arrow img {
+            margin-top: 26px;
+            width: 33px; } }
+    #brazil-landing .intro h2, #brazil-landing .intro p {
+      line-height: normal; }
+    #brazil-landing .intro h2 {
+      font-weight: 500;
+      margin-bottom: 1.5rem; }
+    #brazil-landing .intro p {
+      font-weight: 300;
+      margin-bottom: 1.5rem; }
+    #brazil-landing .intro ul {
+      max-width: 20rem;
+      margin: 1rem auto; }
+      @media only screen and (min-width:40.063em) {
+        #brazil-landing .intro ul {
+          max-width: 40rem; } }
+      @media only screen and (min-width:64.063em) {
+        #brazil-landing .intro ul {
+          max-width: none;
+          padding: 3rem 5rem; } }
+    #brazil-landing .intro p.centered {
+      margin-top: 1rem; }
+      @media only screen and (min-width:64.063em) {
+        #brazil-landing .intro p.centered {
+          margin-top: 0; } }
+  #brazil-landing .info {
+    background: #00366e;
+    padding-bottom: 7rem; }
+    #brazil-landing .info .stats {
+      position: absolute;
+      top: -7rem;
+      left: 0;
+      right: 0; }
+      @media only screen and (min-width:40.063em) {
+        #brazil-landing .info .stats {
+          top: -9.5rem; } }
+      @media only screen and (min-width:64.063em) {
+        #brazil-landing .info .stats {
+          top: -10.5rem; } }
+      #brazil-landing .info .stats ul {
+        margin: 0;
+        width: 19rem;
+        display: block;
+        position: relative;
+        left: 50%;
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        -webkit-transform: translateX(-50%); }
+        @media only screen and (min-width:40.063em) {
+          #brazil-landing .info .stats ul {
+            width: 30rem; } }
+        @media only screen and (min-width:64.063em) {
+          #brazil-landing .info .stats ul {
+            width: 38rem; } }
+        #brazil-landing .info .stats ul li {
+          display: table;
+          list-style: none;
+          width: 9rem;
+          height: 9rem;
+          border-radius: 50%;
+          background: #5bc7ff;
+          color: white;
+          float: left; }
+          @media only screen and (min-width:40.063em) {
+            #brazil-landing .info .stats ul li {
+              width: 14rem;
+              height: 14rem; } }
+          @media only screen and (min-width:64.063em) {
+            #brazil-landing .info .stats ul li {
+              width: 17rem;
+              height: 17rem; } }
+          #brazil-landing .info .stats ul li > div {
+            display: table-cell;
+            vertical-align: middle; }
+          #brazil-landing .info .stats ul li span {
+            font-family: 'Oswald';
+            display: block;
+            font-size: .9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            line-height: 20px; }
+            @media only screen and (min-width:40.063em) {
+              #brazil-landing .info .stats ul li span {
+                font-size: 1.2rem;
+                line-height: 26px; } }
+            @media only screen and (min-width:64.063em) {
+              #brazil-landing .info .stats ul li span {
+                font-size: 1.4rem;
+                line-height: 30px; } }
+            #brazil-landing .info .stats ul li span.big-number {
+              font-size: 2rem;
+              line-height: 40px; }
+              @media only screen and (min-width:40.063em) {
+                #brazil-landing .info .stats ul li span.big-number {
+                  font-size: 3rem;
+                  line-height: 70px; } }
+              @media only screen and (min-width:64.063em) {
+                #brazil-landing .info .stats ul li span.big-number {
+                  font-size: 3.8rem;
+                  line-height: 85px;
+                  letter-spacing: 5px; } }
+          #brazil-landing .info .stats ul li:first-of-type {
+            margin-right: 1rem; }
+            @media only screen and (min-width:40.063em) {
+              #brazil-landing .info .stats ul li:first-of-type {
+                margin-right: 2rem; } }
+            @media only screen and (min-width:64.063em) {
+              #brazil-landing .info .stats ul li:first-of-type {
+                margin-right: 4rem; } }
+    #brazil-landing .info h2 {
+      margin-top: 7rem;
+      margin-bottom: 3rem; }
+      @media only screen and (min-width:40.063em) {
+        #brazil-landing .info h2 {
+          margin-top: 11rem;
+          margin-bottom: 5rem; } }
+      @media only screen and (min-width:64.063em) {
+        #brazil-landing .info h2 {
+          margin-top: 15rem;
+          margin-bottom: 8rem; } }
+    @media only screen and (max-width: 40em) {
+      #brazil-landing .info .infographic {
+        padding-left: 0;
+        padding-right: 0; } }
+  #brazil-landing .three-stories {
+    background: #037ac9;
+    padding-top: 4rem; }
+    #brazil-landing .three-stories h2 {
+      margin-bottom: 4rem; }
+    #brazil-landing .three-stories ul {
+      margin: 0; }
+      #brazil-landing .three-stories ul li {
+        position: relative;
+        padding: 0; }
+        @media only screen and (max-width: 40em) {
+          #brazil-landing .three-stories ul li {
+            width: 100%; } }
+        #brazil-landing .three-stories ul li:last-of-type p a {
+          position: relative;
+          top: 1rem; }
+        #brazil-landing .three-stories ul li img {
+          width: 100%; }
+        #brazil-landing .three-stories ul li > p, #brazil-landing .three-stories ul li .mask {
+          position: absolute; }
+        #brazil-landing .three-stories ul li > p {
+          font-family: 'big_johnregular';
+          z-index: 3;
+          text-align: center;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          text-transform: uppercase; }
+          #brazil-landing .three-stories ul li > p span {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            display: block;
+            line-height: 50px; }
+            @media only screen and (min-width:40.063em) and (max-width:64em) {
+              #brazil-landing .three-stories ul li > p span {
+                font-size: 2rem;
+                line-height: 33px; } }
+            #brazil-landing .three-stories ul li > p span:first-of-type {
+              font-size: 1.9rem;
+              line-height: 40px; }
+              @media only screen and (min-width:40.063em) and (max-width:64em) {
+                #brazil-landing .three-stories ul li > p span:first-of-type {
+                  font-size: 1.3rem;
+                  line-height: 25px; } }
+          #brazil-landing .three-stories ul li > p a {
+            font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin-top: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 15rem; }
+            @media only screen and (min-width:40.063em) and (max-width:64em) {
+              #brazil-landing .three-stories ul li > p a {
+                width: 12rem;
+                height: 3rem;
+                font-size: .9rem;
+                padding-top: .8rem; } }
+            @media only screen and (min-width:64.063em) {
+              #brazil-landing .three-stories ul li > p a {
+                font-size: .9rem; } }
+        #brazil-landing .three-stories ul li .mask {
+          display: none;
+          background: rgba(229, 179, 18, 0.75);
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0; }
+          #brazil-landing .three-stories ul li .mask > p {
+            left: 0;
+            right: 0;
+            text-align: center;
+            position: absolute;
+            bottom: 2rem;
+            font-size: 1.2rem;
+            font-style: italic;
+            font-weight: 300; }
+            @media only screen and (min-width:40.063em) and (max-width:64em) {
+              #brazil-landing .three-stories ul li .mask > p {
+                bottom: 0;
+                font-size: 1rem; } }
+          #brazil-landing .three-stories ul li .mask.hover {
+            display: block; }
+  #brazil-landing .mind-body {
+    background: white;
+    padding: 2.5rem 0; }
+    @media only screen and (min-width:40.063em) {
+      #brazil-landing .mind-body {
+        padding: 5rem 0; } }
+    #brazil-landing .mind-body h2 span {
+      display: block; }
+      #brazil-landing .mind-body h2 span:first-of-type {
+        color: #0055a6; }
+      #brazil-landing .mind-body h2 span:last-of-type {
+        color: #0698e4;
+        font-weight: 700; }
+    #brazil-landing .mind-body p {
+      margin: 2rem 0 3rem 0;
+      color: #464646; }
+  #brazil-landing .fundraising-in-action {
+    padding: 2.5rem 0;
+    background: #058fdc; }
+    @media only screen and (min-width:64.063em) {
+      #brazil-landing .fundraising-in-action {
+        padding: 5rem 0; } }
+    #brazil-landing .fundraising-in-action h1 {
+      font-weight: 500;
+      margin-bottom: 2rem; }
+    #brazil-landing .fundraising-in-action .row .columns {
+      padding: 0;
+      overflow: hidden;
+      height: 15rem; }
+      @media only screen and (min-width:40.063em) {
+        #brazil-landing .fundraising-in-action .row .columns {
+          height: 18rem; } }
+      @media only screen and (min-width:64.063em) {
+        #brazil-landing .fundraising-in-action .row .columns {
+          height: 21rem; } }
+      #brazil-landing .fundraising-in-action .row .columns.icon {
+        display: table; }
+        #brazil-landing .fundraising-in-action .row .columns.icon .table-cell {
+          display: table-cell;
+          vertical-align: middle; }
+        #brazil-landing .fundraising-in-action .row .columns.icon img {
+          width: 4rem;
+          padding: 1rem 0; }
+          @media only screen and (min-width:40.063em) {
+            #brazil-landing .fundraising-in-action .row .columns.icon img {
+              width: 5.5rem;
+              padding: 2.5rem 0; } }
+          @media only screen and (min-width:64.063em) {
+            #brazil-landing .fundraising-in-action .row .columns.icon img {
+              width: 130px; } }
+        #brazil-landing .fundraising-in-action .row .columns.icon p {
+          color: #363636;
+          font-weight: 700;
+          line-height: normal;
+          padding: 0 .5rem; }
+          @media only screen and (min-width:40.063em) {
+            #brazil-landing .fundraising-in-action .row .columns.icon p {
+              font-size: 1.2rem; } }
+          @media only screen and (min-width:64.063em) {
+            #brazil-landing .fundraising-in-action .row .columns.icon p {
+              font-size: 1.5rem; } }
+        #brazil-landing .fundraising-in-action .row .columns.icon.marathon {
+          background: #e6b413; }
+        #brazil-landing .fundraising-in-action .row .columns.icon.party {
+          background: #0055a6; }
+          #brazil-landing .fundraising-in-action .row .columns.icon.party p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-bottom: 0;
+            line-height: normal; }
+            #brazil-landing .fundraising-in-action .row .columns.icon.party p:first-of-type {
+              color: #51b3e5;
+              font-weight: 500;
+              margin-bottom: .7rem; }
+              @media only screen and (min-width:64.063em) {
+                #brazil-landing .fundraising-in-action .row .columns.icon.party p:first-of-type {
+                  font-size: 1.5rem; } }
+            #brazil-landing .fundraising-in-action .row .columns.icon.party p:last-of-type {
+              font-weight: 300;
+              color: white; }
+              @media only screen and (min-width:64.063em) {
+                #brazil-landing .fundraising-in-action .row .columns.icon.party p:last-of-type {
+                  font-size: 1.3rem;
+                  line-height: 25px; } }
+        #brazil-landing .fundraising-in-action .row .columns.icon.birthday {
+          background: #ceccbc; }
+        #brazil-landing .fundraising-in-action .row .columns.icon.angel {
+          background: #e6b413; }
+      #brazil-landing .fundraising-in-action .row .columns.picture .mask {
+        width: 100%;
+        background: rgba(10, 86, 164, 0.3);
+        display: table;
+        height: 100%; }
+        @media only screen and (min-width:40.063em) {
+          #brazil-landing .fundraising-in-action .row .columns.picture .mask {
+            background: rgba(10, 86, 164, 0.7);
+            display: none; } }
+        #brazil-landing .fundraising-in-action .row .columns.picture .mask .mask-content {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 0 .5rem; }
+          #brazil-landing .fundraising-in-action .row .columns.picture .mask .mask-content p {
+            font-style: italic;
+            font-size: .8rem;
+            line-height: normal; }
+            @media only screen and (min-width:40.063em) {
+              #brazil-landing .fundraising-in-action .row .columns.picture .mask .mask-content p {
+                line-height: inherit;
+                font-size: .9rem; } }
+            @media only screen and (min-width:64.063em) {
+              #brazil-landing .fundraising-in-action .row .columns.picture .mask .mask-content p {
+                font-size: 1rem; } }
+          @media only screen and (min-width:40.063em) {
+            #brazil-landing .fundraising-in-action .row .columns.picture .mask .mask-content .quote-mark {
+              font-size: 2.5rem;
+              margin-bottom: 0;
+              line-height: 20px;
+              margin-top: 2.5rem; } }
+          @media only screen and (min-width:64.063em) {
+            #brazil-landing .fundraising-in-action .row .columns.picture .mask .mask-content .quote-mark {
+              font-size: 3.5rem; } }
+          #brazil-landing .fundraising-in-action .row .columns.picture .mask .mask-content .quote-source {
+            font-weight: 400;
+            font-style: normal; }
+            @media only screen and (min-width:40.063em) {
+              #brazil-landing .fundraising-in-action .row .columns.picture .mask .mask-content .quote-source {
+                font-size: .8rem;
+                line-height: 5px;
+                margin-top: 1rem; } }
+            @media only screen and (min-width:64.063em) {
+              #brazil-landing .fundraising-in-action .row .columns.picture .mask .mask-content .quote-source {
+                font-size: 1rem;
+                line-height: inherit; } }
+        #brazil-landing .fundraising-in-action .row .columns.picture .mask.hover {
+          display: table; }
+      #brazil-landing .fundraising-in-action .row .columns.picture.girl {
+        background: url(/multimedia/act-for_brazil-action-1-1.jpg) no-repeat center; }
+        @media only screen and (min-width:40.063em) {
+          #brazil-landing .fundraising-in-action .row .columns.picture.girl .mask-content {
+            padding: 1rem; } }
+      #brazil-landing .fundraising-in-action .row .columns.picture.boy {
+        background: url(/multimedia/act-for_brazil-action-1-2.png) no-repeat; }
+        #brazil-landing .fundraising-in-action .row .columns.picture.boy .mask-content {
+          padding: 2rem; }
+          #brazil-landing .fundraising-in-action .row .columns.picture.boy .mask-content p {
+            font-style: normal; }
+      #brazil-landing .fundraising-in-action .row .columns.picture.jesus {
+        background: url(/multimedia/act-for_brazil-action-2.jpg) no-repeat center; }
+        @media only screen and (min-width:40.063em) {
+          #brazil-landing .fundraising-in-action .row .columns.picture.jesus .mask-content {
+            padding: 0 4.5rem; } }
+      #brazil-landing .fundraising-in-action .row .columns.picture.bike {
+        background: url(/multimedia/act-for_brazil-action-3.jpg) no-repeat center; }
+        @media only screen and (min-width:40.063em) {
+          #brazil-landing .fundraising-in-action .row .columns.picture.bike .mask-content {
+            padding: 0 7rem; } }
+        @media only screen and (min-width:64.063em) {
+          #brazil-landing .fundraising-in-action .row .columns.picture.bike .mask-content p {
+            font-size: 1.2rem; } }
+      #brazil-landing .fundraising-in-action .row .columns.picture.morgana {
+        background: url(/multimedia/act-for_brazil-action-morgana-mobile.jpg) no-repeat center; }
+        @media only screen and (min-width:40.063em) {
+          #brazil-landing .fundraising-in-action .row .columns.picture.morgana {
+            background: url(/multimedia/act-for_brazil-action-4.jpg) no-repeat center; }
+            #brazil-landing .fundraising-in-action .row .columns.picture.morgana .mask-content {
+              padding: 0 5rem; } }
+      @media only screen and (min-width:40.063em) {
+        #brazil-landing .fundraising-in-action .row .columns.picture.morgana .mask-content p, #brazil-landing .fundraising-in-action .row .columns.picture.jesus .mask-content p {
+          font-size: 1.2rem; } }
+      @media only screen and (min-width:64.063em) {
+        #brazil-landing .fundraising-in-action .row .columns.picture.morgana .mask-content p, #brazil-landing .fundraising-in-action .row .columns.picture.jesus .mask-content p {
+          font-size: 1.5rem; } }
+    @media only screen and (min-width:40.063em) {
+      #brazil-landing .fundraising-in-action .row .columns.picture:first-of-type, #brazil-landing .fundraising-in-action .row .columns.picture:last-of-type {
+        background-size: cover; } }
+  #brazil-landing .how-it-works {
+    padding: 2rem 0;
+    background: #058fdc; }
+    #brazil-landing .how-it-works .columns {
+      padding: 0 2rem; }
+      @media only screen and (min-width:64.063em) {
+        #brazil-landing .how-it-works .columns {
+          padding: 2rem 2rem; } }
+      #brazil-landing .how-it-works .columns:last-of-type img {
+        margin-top: 1.9rem; }
+    #brazil-landing .how-it-works h1 {
+      font-weight: 500;
+      margin-bottom: 3rem; }
+    #brazil-landing .how-it-works h4 {
+      line-height: normal;
+      margin-top: 2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem; }
+      @media only screen and (min-width:40.063em) {
+        #brazil-landing .how-it-works h4 {
+          font-size: 1.3rem; } }
+    #brazil-landing .how-it-works p {
+      line-height: normal;
+      font-weight: 300; }
+  #brazil-landing .ending img {
+    width: 100%; }
+  #brazil-landing .ending .layer {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    height: 100px;
+    /*Safari 5.1-6*/
+    /*Opera 11.1-12*/
+    /*Fx 3.6-15*/
+    background: linear-gradient(#058fdc, rgba(5, 143, 220, 0));
+    /*Standard*/ }
+    @media only screen and (min-width:40.063em) {
+      #brazil-landing .ending .layer {
+        height: 200px; } }
+    @media only screen and (min-width:64.063em) {
+      #brazil-landing .ending .layer {
+        height: 300px; } }
+  #brazil-landing .fixed-buttons {
+    position: fixed;
+    bottom: -2rem;
+    z-index: 99;
+    left: 0;
+    right: 0; }
+    @media only screen and (max-width: 40em) {
+      #brazil-landing .fixed-buttons .columns {
+        padding: 0; } }
+    @media only screen and (min-width:64.063em) {
+      #brazil-landing .fixed-buttons {
+        width: 90%;
+        margin-left: 5%; } }
+    #brazil-landing .fixed-buttons li a {
+      box-shadow: 0 0 5px 5px #154679; }
+      @media only screen and (max-width: 40em) {
+        #brazil-landing .fixed-buttons li a {
+          padding: .9rem 0;
+          height: 3rem;
+          border-radius: 4px 4px 0 0; } }
+    @media only screen and (max-width: 40em) {
+      #brazil-landing .fixed-buttons li:first-of-type {
+        width: 67%;
+        margin-right: 3%; }
+      #brazil-landing .fixed-buttons li:last-of-type {
+        width: 30%; } }
