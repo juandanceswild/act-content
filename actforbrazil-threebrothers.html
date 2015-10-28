@@ -46,20 +46,25 @@
 
 <div class="brazil-stories">
 <div id="three-brothers">
-<section class="hero">
+<section class="hero" style="background: url(images/act-for_brazil-stories-hero-brothers.jpg) no-repeat;background-size:cover;">
 	<div class="nav">
-		<div class="prev"></div>
-		<div class="next"></div>
+		<div class="prev" style="background: url(images/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
+		<div class="next" style="background: url(images/act-for_brazil-stories-next.png) no-repeat;background-size:cover;"></div>
 	</div>
 	<div class="row table">
 		<div class="table-cell centered">
 			<h1><span>Lucas, Andre</span><span>and Eudemar</span></h1>
 			<p>7, 10 and 11 years old</p>
 			<p>Santa Rita, Pariba, Brazil</p>
-			<div class="centered play"><a href=""><img src="images/act_play.png"></a></div>
+			<div class="centered play"><a href=""><img src="images/act-for_play.png"></a></div>
 		</div>
 	</div>
 </section>
+
+<ul class="buttons-2 fixed-buttons">
+	<li><a href="" class='button-solid-sky-blue'>Act for the Assis brothers</a></li>
+	<li><a href="" class="button-solid-yellow">Donate</a></li>
+</ul>
 
 <section class="intro">
 	<div class="row">
@@ -68,12 +73,12 @@
 		</div>
 	</div>
 	<div class="map centered">
-		<img src="images/actbr_brothers-map.png">
+		<img src="images/act-for_brazil-brothers-map.png">
 
 	</div>
 	<div class="row max-45">
 		<div class="medium-6 columns">
-			<img class="left" src="images/actbr_brothers-1.jpg">
+			<img class="left" src="images/act-for_brazil-brothers-1.png">
 		</div>
 		<div class="medium-6 columns">
 			<h2 class="quote">“The boys were haunted, fearful of me, and I beat my wife many times.”</h2>
@@ -89,13 +94,13 @@
 </section>
 
 <section class="second">
-	<img class="full-width" src="images/actbr_brothers-2.png">
+	<img class="full-width" src="images/act-for_brazil-brothers-2.png">
 	<div class="row max-45">
 		<div class="columns medium-6">
 			<p>Where the brothers were once reserved, they’ve each found their respective voice through prayer and the supportive church community, which serves as a second family. Surrounded by loving “aunties” (female volunteers) who tend to them and caring “godfathers” (sponsors) who send them letters, the boys have blossomed into confident young men. Plus, they’re fed regularly, receive quality medical care and are getting an education. In economically destitute Northeast Brazil, where half the kids between the ages of 15 and 17 aren’t able to attend school and 20% of the adult population is illiterate, the brothers have a wonderful opportunity to rise above their situation. Lucas, the eldest child, wants to be a firefighter one day, and Compassion is giving him the tools and faith to make his dream a reality.</p>
 		</div>  
 		<div class="columns medium-6">
-			<img class="lower" src="images/actbr_brothers-3.png">	
+			<img class="lower" src="images/act-for_brazil-brothers-3.png">	
 		</div>
 	</div>
 	<h2 class="centered">"Every night we thank God for having saved our father"</h2>
@@ -106,16 +111,12 @@
 		</p>
 		</div>
 	</div>
-	<div class="centered"><img src="images/actbr_brothers-4.png"></div>
+	<div class="centered"><img src="images/act-for_brazil-brothers-4.png"></div>
 	<div class="row max-45">
 		<div class="columns">
 			<p>
 				Through sponsorship and the support of Compassion, and by accepting God into their lives, one family’s cycle of addiction, poverty and hopelessness has come to an end – and that’s a miracle to us.
 			</p>
-			<ul class="buttons-2">
-				<li><a href="" class='button-solid-sky-blue'>Act for 3 Brothers</a></li>
-				<li><a href="" class="button-solid-yellow">Donate</a></li>
-			</ul>
 		</div>
 	</div>
 </section>
@@ -123,7 +124,7 @@
 <section class="other-stories">
 	<div class="row">
 		<div class="columns">
-			<img src="images/actbr_link-jesus.png">
+			<img src="images/act-for_brazil-link-jesus.png">
 			<div class="mask"></div>
 			<div class="table-cell">
 				<h1>
@@ -136,7 +137,7 @@
 	</div>
 	<div class="row">
 		<div class="columns">
-			<img src="images/actbr_link-morgana.png">
+			<img src="images/act-for_brazil-link-morgana.png">
 			<div class="mask"></div>
 			<div class="table-cell">
 				<h1>
@@ -160,6 +161,71 @@
 			$(this).find('.mask').toggleClass('hover');
 		})
 	})
+})(jQuery);
+</script>
+
+<footer class="footer" role="contentinfo">
+	<div class="row">
+		<div class="small-12  large-3 columns">
+			<div id="footer-logo"><img src="../../images/compassion_logo_footer.png"></div>
+		</div>
+
+		<div class="footer-nav large-3 medium-3 columns">
+			<div class="nav-title clearfix">
+				<h6 class="left">Explore</h6><span class="show-for-small-only right">+</span>
+			</div>
+			<ul class="">
+				<li><a href="">Dashboard</a></li>
+				<li><a href="">Fundraising</a></li>
+				<li><a href="">Volunteer</a></li>
+			</ul>
+		</div>
+		<div class="footer-nav large-3 medium-4 columns">
+			<div class="nav-title clearfix">
+				<h6 class="left">More ways to ACT</h6><span class="show-for-small-only right">+</span>
+			</div>
+			<ul class="">
+				<li><a href="">Volunteer</a></li>
+				<li><a href="">Training</a></li>
+				<li><a href="">Sponsorship</a></li>
+			</ul>	
+		</div>
+		<div class="medium-5 large-3 columns">
+			<ul class="social clearfix">
+				<div class="nav-title hide-for-small-only clearfix">
+					<h6 class="title">Follow us</span>
+				</div>
+				<li class="facebook"><a href=""><i class="fa fa-facebook"></i></li>
+				<li class="twitter"><a href=""><i class="fa fa-twitter"></i></a></li>
+				<li class="instagram"><a href=""><i class="fa fa-instagram"></i></a></li>
+				<li class="pinterst"><a href=""><i class="fa fa-pinterest"></i></a></li>
+				<li class="youtube"><a href=""><i class="fa fa-youtube"></i></a></li>
+			</ul>	
+		</div>
+	</div>
+	<div class="row footer-bottom">
+		<div class="medium-8 large-6 columns extras">
+			<ul class="clearfix">
+				<li><a href="">About Compassion</a></li>
+				<span class="divider">|</span>
+				<li><a href="">Privacy policy</a></li>
+				<span class="divider">|</span>
+				<li><a href="">Contact us</a></li>
+			</ul>
+		</div>
+		<div class=" medium-4 large-6 columns copyright">
+			<p class="">2015 Compassion International. All rights reserved.</p>
+		</div>
+	</div>
+</div>
+</footer> 
+<!-- End Footer -->
+
+<script>
+(function($){
+	if($('.fixed-buttons').length) {
+		$('footer').css('padding-bottom', '5rem');
+	} 
 })(jQuery);
 </script>
 
