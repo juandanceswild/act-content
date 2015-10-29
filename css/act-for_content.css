@@ -7059,6 +7059,10 @@ input[type="checkbox"] + label, input[type="radio"] + label {
             #brazil-landing .three-stories ul li a, #post-actbr .three-stories ul li a {
               height: 3.5rem;
               font-size: .9rem; } }
+          @media only screen and (max-width: 40em) {
+            #brazil-landing .three-stories ul li a, #post-actbr .three-stories ul li a {
+              background: white;
+              color: black !important; } }
         #brazil-landing .three-stories ul li .mask, #post-actbr .three-stories ul li .mask {
           opacity: 0;
           background: rgba(229, 179, 18, 0.75);
@@ -7467,7 +7471,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       background: #5bc7ff;
       color: white;
       float: left;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      padding: 0 0.5rem; }
       @media only screen and (min-width:40.063em) {
         .brazil-stats ul li, .act-stats ul li {
           width: 14rem;
