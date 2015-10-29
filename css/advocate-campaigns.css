@@ -10186,6 +10186,11 @@ span.calendar {
       left: 0;
       position: absolute;
       z-index: 5; }
+    #brazil-landing .info .infographic .text, #post-actbr .info .infographic .text {
+      position: absolute;
+      z-index: 6;
+      top: 0;
+      left: 0; }
     #brazil-landing .info .infographic .cloud, #post-actbr .info .infographic .cloud {
       position: absolute;
       z-index: 2;
@@ -10199,9 +10204,34 @@ span.calendar {
       width: 15%;
       bottom: -2%;
       width: 15%;
-      left: 70%; }
+      left: 71%; }
       #brazil-landing .info .infographic .van.move, #post-actbr .info .infographic .van.move {
-        animation: car 2s 1; }
+        animation: car 6s infinite;
+        animation-delay: 4s; }
+    #brazil-landing .info .infographic .illiterate, #post-actbr .info .infographic .illiterate {
+      position: absolute;
+      z-index: 7;
+      width: 5.7%;
+      left: 1.5%;
+      top: 59%;
+      animation: illiterate 500ms infinite; }
+    #brazil-landing .info .infographic .waterdrop-1, #brazil-landing .info .infographic .waterdrop-2, #brazil-landing .info .infographic .waterdrop-3, #post-actbr .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-2, #post-actbr .info .infographic .waterdrop-3 {
+      position: absolute; }
+    #brazil-landing .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-1 {
+      top: 2%;
+      right: 12%;
+      width: 2.5%;
+      animation: waterdrop-1 3s infinite; }
+    #brazil-landing .info .infographic .waterdrop-2, #post-actbr .info .infographic .waterdrop-2 {
+      top: 0;
+      right: 1%;
+      width: 3.5%;
+      animation: waterdrop-2 3.5s infinite; }
+    #brazil-landing .info .infographic .waterdrop-3, #post-actbr .info .infographic .waterdrop-3 {
+      width: 4.5%;
+      top: 4%;
+      right: 5%;
+      animation: waterdrop-3 4s infinite; }
   #brazil-landing .three-stories, #post-actbr .three-stories {
     background: #037ac9;
     padding-top: 4rem; }
@@ -10653,18 +10683,18 @@ span.calendar {
           color: #0055a6;
           padding-right: 0.5em; }
 
-.brazil-stats {
+.brazil-stats, .act-stats {
   position: absolute;
   top: -7rem;
   left: 0;
   right: 0; }
   @media only screen and (min-width:40.063em) {
-    .brazil-stats {
+    .brazil-stats, .act-stats {
       top: -9.5rem; } }
   @media only screen and (min-width:64.063em) {
-    .brazil-stats {
+    .brazil-stats, .act-stats {
       top: -10.5rem; } }
-  .brazil-stats ul {
+  .brazil-stats ul, .act-stats ul {
     margin: 0;
     width: 19rem;
     display: block;
@@ -10673,12 +10703,12 @@ span.calendar {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%); }
     @media only screen and (min-width:40.063em) {
-      .brazil-stats ul {
+      .brazil-stats ul, .act-stats ul {
         width: 30rem; } }
     @media only screen and (min-width:64.063em) {
-      .brazil-stats ul {
+      .brazil-stats ul, .act-stats ul {
         width: 38rem; } }
-    .brazil-stats ul li {
+    .brazil-stats ul li, .act-stats ul li {
       display: table;
       list-style: none;
       width: 9rem;
@@ -10689,19 +10719,19 @@ span.calendar {
       float: left;
       margin-right: 1rem; }
       @media only screen and (min-width:40.063em) {
-        .brazil-stats ul li {
+        .brazil-stats ul li, .act-stats ul li {
           width: 14rem;
           height: 14rem;
           margin-right: 2rem; } }
       @media only screen and (min-width:64.063em) {
-        .brazil-stats ul li {
+        .brazil-stats ul li, .act-stats ul li {
           width: 17rem;
           height: 17rem;
           margin-right: 4rem; } }
-      .brazil-stats ul li > div {
+      .brazil-stats ul li > div, .act-stats ul li > div {
         display: table-cell;
         vertical-align: middle; }
-      .brazil-stats ul li span {
+      .brazil-stats ul li span, .act-stats ul li span {
         font-family: 'Oswald';
         display: block;
         font-size: .9rem;
@@ -10710,26 +10740,26 @@ span.calendar {
         font-weight: 500;
         line-height: 20px; }
         @media only screen and (min-width:40.063em) {
-          .brazil-stats ul li span {
+          .brazil-stats ul li span, .act-stats ul li span {
             font-size: 1.2rem;
             line-height: 26px; } }
         @media only screen and (min-width:64.063em) {
-          .brazil-stats ul li span {
+          .brazil-stats ul li span, .act-stats ul li span {
             font-size: 1.4rem;
             line-height: 30px; } }
-        .brazil-stats ul li span.big-number {
+        .brazil-stats ul li span.big-number, .act-stats ul li span.big-number {
           font-size: 2rem;
           line-height: 40px; }
           @media only screen and (min-width:40.063em) {
-            .brazil-stats ul li span.big-number {
+            .brazil-stats ul li span.big-number, .act-stats ul li span.big-number {
               font-size: 3rem;
               line-height: 70px; } }
           @media only screen and (min-width:64.063em) {
-            .brazil-stats ul li span.big-number {
+            .brazil-stats ul li span.big-number, .act-stats ul li span.big-number {
               font-size: 3.8rem;
               line-height: 85px;
               letter-spacing: 5px; } }
-      .brazil-stats ul li:last-of-type {
+      .brazil-stats ul li:last-of-type, .act-stats ul li:last-of-type {
         margin-right: 0; }
 
 .how-to-act {
@@ -10782,10 +10812,50 @@ span.calendar {
 
 @keyframes car {
   0% {
-    left: 70%; }
+    left: 71%; }
+
+  33% {
+    left: 150%; }
+
+  66% {
+    left: 110%; }
 
   100% {
-    left: 110%; } }
+    left: 71%; } }
+
+@keyframes illiterate {
+  0% {
+    top: 59%; }
+
+  100% {
+    top: 58%; } }
+
+@keyframes waterdrop-1 {
+  0% {
+    top: 2%;
+    opacity: 1; }
+
+  100% {
+    top: 8%;
+    opacity: 0; } }
+
+@keyframes waterdrop-2 {
+  0% {
+    top: 0%;
+    opacity: 1; }
+
+  100% {
+    top: 6%;
+    opacity: 0; } }
+
+@keyframes waterdrop-3 {
+  0% {
+    top: 4%;
+    opacity: 1; }
+
+  100% {
+    top: 13%;
+    opacity: 0; } }
 
 .sponsor-child-fundraiser > .yui3-g {
   padding: 0 .5rem; }
@@ -13809,8 +13879,7 @@ li.total .right.wi-value {
       top: -1.25rem;
       width: 2.5rem;
       height: 2.5rem;
-      border-radius: 50%;
-      background: white url(../images/campaign/arrow.png) no-repeat center; }
+      border-radius: 50%; }
       @media only screen and (min-width:40.063em) {
         #evergreen-landing .steps .down-arrow, #evergreen-landing-uncookied .steps .down-arrow {
           width: 3rem;
@@ -13889,52 +13958,52 @@ li.total .right.wi-value {
         padding-right: 2rem;
         font-size: 1.4rem;
         font-weight: 300; } }
-  #evergreen-landing .brazil-stats, #evergreen-landing-uncookied .brazil-stats {
+  #evergreen-landing .act-stats, #evergreen-landing-uncookied .act-stats {
     top: -5rem; }
     @media only screen and (min-width:40.063em) {
-      #evergreen-landing .brazil-stats, #evergreen-landing-uncookied .brazil-stats {
+      #evergreen-landing .act-stats, #evergreen-landing-uncookied .act-stats {
         top: -6rem; } }
     @media only screen and (min-width:64.063em) {
-      #evergreen-landing .brazil-stats, #evergreen-landing-uncookied .brazil-stats {
+      #evergreen-landing .act-stats, #evergreen-landing-uncookied .act-stats {
         top: -9rem; } }
-    #evergreen-landing .brazil-stats ul, #evergreen-landing-uncookied .brazil-stats ul {
+    #evergreen-landing .act-stats ul, #evergreen-landing-uncookied .act-stats ul {
       width: 18.5rem; }
       @media only screen and (min-width:40.063em) {
-        #evergreen-landing .brazil-stats ul, #evergreen-landing-uncookied .brazil-stats ul {
+        #evergreen-landing .act-stats ul, #evergreen-landing-uncookied .act-stats ul {
           width: 40rem; } }
       @media only screen and (min-width:64.063em) {
-        #evergreen-landing .brazil-stats ul, #evergreen-landing-uncookied .brazil-stats ul {
+        #evergreen-landing .act-stats ul, #evergreen-landing-uncookied .act-stats ul {
           width: 59rem; } }
-    #evergreen-landing .brazil-stats li, #evergreen-landing-uncookied .brazil-stats li {
+    #evergreen-landing .act-stats li, #evergreen-landing-uncookied .act-stats li {
       width: 8.6rem;
       height: 8.6rem; }
       @media only screen and (min-width:40.063em) {
-        #evergreen-landing .brazil-stats li, #evergreen-landing-uncookied .brazil-stats li {
+        #evergreen-landing .act-stats li, #evergreen-landing-uncookied .act-stats li {
           width: 12rem;
           height: 12rem; } }
       @media only screen and (min-width:64.063em) {
-        #evergreen-landing .brazil-stats li, #evergreen-landing-uncookied .brazil-stats li {
+        #evergreen-landing .act-stats li, #evergreen-landing-uncookied .act-stats li {
           width: 17rem;
           height: 17rem; } }
       @media only screen and (max-width: 40em) {
-        #evergreen-landing .brazil-stats li:first-of-type, #evergreen-landing-uncookied .brazil-stats li:first-of-type {
+        #evergreen-landing .act-stats li:first-of-type, #evergreen-landing-uncookied .act-stats li:first-of-type {
           display: none; } }
       @media only screen and (min-width:40.063em) {
-        #evergreen-landing .brazil-stats li span, #evergreen-landing-uncookied .brazil-stats li span {
+        #evergreen-landing .act-stats li span, #evergreen-landing-uncookied .act-stats li span {
           line-height: 23px;
           font-size: 1.1rem; } }
       @media only screen and (min-width:64.063em) {
-        #evergreen-landing .brazil-stats li span, #evergreen-landing-uncookied .brazil-stats li span {
+        #evergreen-landing .act-stats li span, #evergreen-landing-uncookied .act-stats li span {
           line-height: 33px;
           font-size: 1.5rem; } }
-      #evergreen-landing .brazil-stats li span.big-number, #evergreen-landing-uncookied .brazil-stats li span.big-number {
+      #evergreen-landing .act-stats li span.big-number, #evergreen-landing-uncookied .act-stats li span.big-number {
         font-size: 1.8rem; }
         @media only screen and (min-width:40.063em) {
-          #evergreen-landing .brazil-stats li span.big-number, #evergreen-landing-uncookied .brazil-stats li span.big-number {
+          #evergreen-landing .act-stats li span.big-number, #evergreen-landing-uncookied .act-stats li span.big-number {
             line-height: 60px;
             font-size: 2.5rem; } }
         @media only screen and (min-width:64.063em) {
-          #evergreen-landing .brazil-stats li span.big-number, #evergreen-landing-uncookied .brazil-stats li span.big-number {
+          #evergreen-landing .act-stats li span.big-number, #evergreen-landing-uncookied .act-stats li span.big-number {
             line-height: 75px;
             font-size: 3.2rem; } }
   #evergreen-landing .how-it-works, #evergreen-landing-uncookied .how-it-works {
@@ -14130,22 +14199,8 @@ li.total .right.wi-value {
     .compassion-in-action p {
       font-size: 1.2rem;
       font-weight: 300; } }
-  .compassion-in-action .malaria {
-    background: url(../images/act-for_evergreen_esther.png); }
-  .compassion-in-action .campaign {
-    background: url(../images/act-for_evergreen_boys.png) center; }
-  .compassion-in-action .video {
-    background: url(../images/act-for_evergreen_boy.png) bottom; }
   .compassion-in-action .colorado {
     background: #0698e4; }
-  .compassion-in-action .fundriaser {
-    background: url(../images/act-for_evergreen_marathon.png) center; }
-  .compassion-in-action .event {
-    background: url(../images/act-for_evergreen_volunteer-event.png); }
-  .compassion-in-action .story {
-    background: url(../images/act-for_evergreen_volunteer-story.png); }
-  .compassion-in-action .pray {
-    background: url(../images/act-for_evergreen_girl-boy.png) right; }
   .compassion-in-action .columns {
     position: relative;
     background-size: cover;
