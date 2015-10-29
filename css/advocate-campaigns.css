@@ -8350,6 +8350,98 @@ a.reset_time {
       height: 100%;
       width: 100%; }
 
+#why-sponsorship-matters {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  @media only screen and (min-width:64.063em) {
+    #why-sponsorship-matters p {
+      font-size: 1.1rem; } }
+  #why-sponsorship-matters h2 {
+    font-weight: 500; }
+  #why-sponsorship-matters .pic {
+    width: 100%;
+    height: 10rem; }
+    #why-sponsorship-matters .pic h3 {
+      text-transform: uppercase;
+      color: white;
+      font-family: 'big_johnregular', sans-serif; }
+    #why-sponsorship-matters .pic p {
+      color: white;
+      font-size: 1.1rem;
+      margin-bottom: 0;
+      line-height: normal;
+      line-height: 20px;
+      letter-spacing: 1px; }
+  #why-sponsorship-matters .banner {
+    background: #0055a6;
+    color: white;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem; }
+  #why-sponsorship-matters hr {
+    background: #e1e1e1;
+    margin: 2rem 0; }
+  #why-sponsorship-matters .icons > div:first-of-type {
+    background: #51b3e5;
+    color: white;
+    font-size: .8rem;
+    padding: .3rem 1rem;
+    width: 18rem;
+    margin: 2rem auto; }
+  #why-sponsorship-matters .icons .columns .title {
+    color: #0055a6;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: .5rem 0; }
+  #why-sponsorship-matters .icons .columns .title, #why-sponsorship-matters .icons .columns p {
+    font-size: .8rem; }
+  #why-sponsorship-matters .icons .columns p {
+    line-height: normal; }
+  #why-sponsorship-matters .row-for-small::before, #why-sponsorship-matters .row-for-small::after {
+    display: table;
+    content: ""; }
+    @media only screen and (min-width:64.063em) {
+      #why-sponsorship-matters .row-for-small::before, #why-sponsorship-matters .row-for-small::after {
+        display: block; } }
+  #why-sponsorship-matters .row-for-small::after {
+    clear: both; }
+    @media only screen and (min-width:64.063em) {
+      #why-sponsorship-matters .row-for-small::after {
+        clear: none; } }
+  #why-sponsorship-matters .box {
+    background: #e6e6e1;
+    border-radius: 7px;
+    padding: .5rem;
+    width: 10rem;
+    margin-left: -1rem;
+    margin-right: auto; }
+    @media only screen and (min-width:40.063em) {
+      #why-sponsorship-matters .box {
+        margin-left: auto; } }
+    #why-sponsorship-matters .box p {
+      color: #0055a6; }
+      #why-sponsorship-matters .box p span {
+        display: block;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        font-weight: 500; }
+        #why-sponsorship-matters .box p span:first-of-type {
+          font-size: .9rem; }
+        #why-sponsorship-matters .box p span:nth-of-type(2) {
+          font-size: 1.5rem; }
+        #why-sponsorship-matters .box p span:first-of-type, #why-sponsorship-matters .box p span:nth-of-type(2) {
+          text-transform: uppercase;
+          border-bottom: 3px solid #e6b413;
+          font-weight: 600; }
+    #why-sponsorship-matters .box a {
+      height: 2rem;
+      font-size: .7rem;
+      padding-top: .5rem;
+      font-weight: 400; }
+
 .bbm-modal.bbm-modal--open {
   background: #363636;
   border-radius: 7px; }
