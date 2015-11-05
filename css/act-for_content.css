@@ -6766,7 +6766,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
         height: 4rem; } }
 
 #brazil-landing, #post-actbr {
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden; }
   #brazil-landing h1, #brazil-landing h2, #brazil-landing h4, #brazil-landing p, #brazil-landing a, #post-actbr h1, #post-actbr h2, #post-actbr h4, #post-actbr p, #post-actbr a {
     color: white; }
   @media only screen and (max-width: 40em) {
