@@ -46,12 +46,12 @@
 <div class="brazil-stories">
 <div class="video-pop-up">
 	<img src="multimedia/x.png">
-	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" loop="" controls></video>
+	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
 </div>	
 
 <div id="three-brothers">	
 <section class="hero">
-	<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="" loop=""></video>
+	<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted" loop=""></video>
 	<div class="nav">
 		<div class="prev" style="background: url(multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
 		<div class="next" style="background: url(multimedia/act-for_brazil-stories-next.png) no-repeat;background-size:cover;"></div>
@@ -240,10 +240,12 @@
 
 	$('.hero .play').on('click', function(){
 		$('.video-pop-up').css('display','block');
+		$('.video-pop-up video').get(0).play();
 		$('body, html').css('overflow', 'hidden');
 	})
 	$('.video-pop-up img').on('click', function(){
 		$('.video-pop-up').css('display','none');
+		$('.video-pop-up video').get(0).pause();
 		$('body, html').css('overflow', 'auto');
 	})
 })(jQuery);
