@@ -44,8 +44,15 @@
 	</div>
 </header>
 <div class="brazil-stories">
+
+<div class="video-pop-up">
+	<img src="../../images/x.png">
+	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" loop="" controls></video>
+</div>	
+
 <div id="morgana">
-<section class="hero" style="background: url(multimedia/act-for_brazil-stories-hero-morgana.jpg) no-repeat;background-size:cover;">
+<section class="hero">
+	<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="" loop=""></video>
 	<div class="mask"></div>
 	<div class="nav">
 		<div class="prev" style="background: url(multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
@@ -60,7 +67,7 @@
 			<p>2 years old</p>
 			<p>Vitorino Freire, Maranh&#257;o, Brazil</p>
 		</div>
-		<div class="centered play"><a href=""><img src="multimedia/act-for_play.png"></a></div>
+		<div class="centered play"><img src="multimedia/act-for_play.png"></div>
 
 	</div>
 </section>
@@ -221,6 +228,18 @@
 	if($('.fixed-buttons').length) {
 		$('footer').css('padding-bottom', '5rem');
 	} 
+	///////// VIDEO HERO
+
+	$('.hero .play').on('click', function(){
+		$('.video-pop-up').css('display','block');
+		$('body, html').css('overflow', 'hidden');
+	})
+	$('.video-pop-up img').on('click', function(){
+		$('.video-pop-up').css('display','none');
+		$('body, html').css('overflow', 'auto');
+	})
+
+	
 })(jQuery);
 </script>
 

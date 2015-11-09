@@ -44,7 +44,12 @@
 	</div>
 </header>
 <div class="brazil-stories">
-<div id="three-brothers">
+<div class="video-pop-up">
+	<img src="../../images/x.png">
+	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" loop="" controls></video>
+</div>	
+
+<div id="three-brothers">	
 <section class="hero" style="background: url(multimedia/act-for_brazil-stories-hero-brothers.jpg) no-repeat;background-size:cover;">
 	<div class="nav">
 		<div class="prev" style="background: url(multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
@@ -55,7 +60,7 @@
 			<h1><span>Lucas, Andre</span><span>and Eudemar</span></h1>
 			<p>7, 10 and 11 years old</p>
 			<p>Santa Rita, Pariba, Brazil</p>
-			<div class="centered play"><a href=""><img src="multimedia/act-for_play.png"></a></div>
+			<div class="centered play"><img src="multimedia/act-for_play.png"></div>
 		</div>
 	</div>
 </section>
@@ -230,6 +235,16 @@
 	if($('.fixed-buttons').length) {
 		$('footer').css('padding-bottom', '5rem');
 	} 
+	///////// VIDEO HERO
+
+	$('.hero .play').on('click', function(){
+		$('.video-pop-up').css('display','block');
+		$('body, html').css('overflow', 'hidden');
+	})
+	$('.video-pop-up img').on('click', function(){
+		$('.video-pop-up').css('display','none');
+		$('body, html').css('overflow', 'auto');
+	})
 })(jQuery);
 </script>
 
