@@ -6792,7 +6792,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
         height: 4rem; } }
 
 #brazil-landing, #post-actbr {
-  text-align: center; }
+  text-align: center;
+  overflow-x: hidden; }
   #brazil-landing .video-pop-up, #post-actbr .video-pop-up {
     background: rgba(0, 0, 0, 0.7);
     display: none;
@@ -6974,8 +6975,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
           margin-top: 0; } }
   #brazil-landing .info, #post-actbr .info {
     background: #00366e;
-    padding-bottom: 7rem;
-    overflow-x: hidden; }
+    padding-bottom: 7rem; }
     #brazil-landing .info h2, #post-actbr .info h2 {
       margin-top: 7rem;
       margin-bottom: 3rem; }
@@ -7017,7 +7017,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       left: 71%; }
       #brazil-landing .info .infographic .van.move, #post-actbr .info .infographic .van.move {
         animation: car 6s infinite;
-        animation-delay: 4s; }
+        animation-delay: 1s; }
     #brazil-landing .info .infographic .illiterate, #post-actbr .info .infographic .illiterate {
       position: absolute;
       z-index: 7;
@@ -7147,6 +7147,12 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     #brazil-landing .fundraising-in-action h1, #brazil-landing .fundraising-in-action h2, #brazil-landing .fundraising-in-action p, #post-actbr .fundraising-in-action h1, #post-actbr .fundraising-in-action h2, #post-actbr .fundraising-in-action p {
       color: white;
       text-align: center; }
+    #brazil-landing .fundraising-in-action .hide-for-small-only .row:nth-of-type(1), #brazil-landing .fundraising-in-action .hide-for-small-only .row:nth-of-type(4), #post-actbr .fundraising-in-action .hide-for-small-only .row:nth-of-type(1), #post-actbr .fundraising-in-action .hide-for-small-only .row:nth-of-type(4) {
+      background-color: #E6B413; }
+    #brazil-landing .fundraising-in-action .hide-for-small-only .row:nth-of-type(2), #post-actbr .fundraising-in-action .hide-for-small-only .row:nth-of-type(2) {
+      background-color: #0055a6; }
+    #brazil-landing .fundraising-in-action .hide-for-small-only .row:nth-of-type(3), #post-actbr .fundraising-in-action .hide-for-small-only .row:nth-of-type(3) {
+      background-color: #CECCBC; }
     #brazil-landing .fundraising-in-action .row .columns, #post-actbr .fundraising-in-action .row .columns {
       padding: 0;
       overflow: hidden;
@@ -7165,11 +7171,10 @@ input[type="checkbox"] + label, input[type="radio"] + label {
           display: table-cell;
           vertical-align: middle; }
         #brazil-landing .fundraising-in-action .row .columns.icon img, #post-actbr .fundraising-in-action .row .columns.icon img {
-          width: 4rem;
+          width: 5.5rem;
           padding: 1rem 0; }
           @media only screen and (min-width:40.063em) {
             #brazil-landing .fundraising-in-action .row .columns.icon img, #post-actbr .fundraising-in-action .row .columns.icon img {
-              width: 5.5rem;
               padding: 2.5rem 0; } }
           @media only screen and (min-width:64.063em) {
             #brazil-landing .fundraising-in-action .row .columns.icon img, #post-actbr .fundraising-in-action .row .columns.icon img {
@@ -7606,6 +7611,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   .how-to-act p {
     line-height: normal;
     font-weight: 300; }
+  .how-to-act .img-holder img {
+    max-height: 200px; }
   @media only screen and (min-width:40.063em) {
     .how-to-act .img-holder {
       height: 12.5rem;
