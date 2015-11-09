@@ -10407,11 +10407,10 @@ span.calendar {
           display: table-cell;
           vertical-align: middle; }
         #brazil-landing .fundraising-in-action .row .columns.icon img, #post-actbr .fundraising-in-action .row .columns.icon img {
-          width: 4rem;
+          width: 5.5rem;
           padding: 1rem 0; }
           @media only screen and (min-width:40.063em) {
             #brazil-landing .fundraising-in-action .row .columns.icon img, #post-actbr .fundraising-in-action .row .columns.icon img {
-              width: 5.5rem;
               padding: 2.5rem 0; } }
           @media only screen and (min-width:64.063em) {
             #brazil-landing .fundraising-in-action .row .columns.icon img, #post-actbr .fundraising-in-action .row .columns.icon img {
@@ -10825,8 +10824,10 @@ span.calendar {
       .how-to-act .columns {
         padding: 2rem 2rem; } }
     .how-to-act .columns:last-of-type img {
-      margin-top: 1.9rem;
-      height: 100%; }
+      margin-top: 1.9rem; }
+      @media only screen and (min-width:40.063em) {
+        .how-to-act .columns:last-of-type img {
+          height: 100%; } }
   .how-to-act h1 {
     font-weight: 500;
     margin-bottom: 3rem; }
@@ -10843,6 +10844,8 @@ span.calendar {
   .how-to-act p {
     line-height: normal;
     font-weight: 300; }
+  .how-to-act .img-holder img {
+    max-height: 200px; }
   @media only screen and (min-width:40.063em) {
     .how-to-act .img-holder {
       height: 12.5rem;
