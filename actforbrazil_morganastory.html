@@ -233,11 +233,13 @@
 	$('.hero .play').on('click', function(){
 		$('.video-pop-up').css('display','block');
 		$('.video-pop-up video').get(0).play();
+		$('.hero video').get(0).pause();
 		$('body, html').css('overflow', 'hidden');
 	})
 	$('.video-pop-up img').on('click', function(){
 		$('.video-pop-up').css('display','none');
 		$('.video-pop-up video').get(0).pause();
+		$('.shero video').get(0).play();
 		$('body, html').css('overflow', 'auto');
 	})
 

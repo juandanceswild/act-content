@@ -10290,7 +10290,8 @@ span.calendar {
           margin-top: 0; } }
   #brazil-landing .info, #post-actbr .info {
     background: #00366e;
-    padding-bottom: 7rem; }
+    padding-bottom: 7rem;
+    overflow-x: hidden; }
     #brazil-landing .info h2, #post-actbr .info h2 {
       margin-top: 7rem;
       margin-bottom: 3rem; }
@@ -10434,6 +10435,10 @@ span.calendar {
             #brazil-landing .three-stories ul li a, #post-actbr .three-stories ul li a {
               height: 3.5rem;
               font-size: .9rem; } }
+          @media only screen and (max-width: 40em) {
+            #brazil-landing .three-stories ul li a, #post-actbr .three-stories ul li a {
+              background: white;
+              color: black !important; } }
         #brazil-landing .three-stories ul li .mask, #post-actbr .three-stories ul li .mask {
           opacity: 0;
           background: rgba(229, 179, 18, 0.75);
@@ -10842,7 +10847,8 @@ span.calendar {
       background: #5bc7ff;
       color: white;
       float: left;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      padding: 0 0.5rem; }
       @media only screen and (min-width:40.063em) {
         .brazil-stats ul li, .act-stats ul li {
           width: 14rem;
@@ -10897,6 +10903,9 @@ span.calendar {
         padding: 2rem 2rem; } }
     .how-to-act .columns:last-of-type img {
       margin-top: 1.9rem; }
+      @media only screen and (min-width:40.063em) {
+        .how-to-act .columns:last-of-type img {
+          height: 100%; } }
   .how-to-act h1 {
     font-weight: 500;
     margin-bottom: 3rem; }
@@ -14160,7 +14169,7 @@ li.total .right.wi-value {
         @media only screen and (min-width:64.063em) {
           #evergreen-landing .act-stats li span.big-number, #evergreen-landing-uncookied .act-stats li span.big-number {
             line-height: 75px;
-            font-size: 3.2rem; } }
+            font-size: 3rem; } }
   #evergreen-landing .how-it-works, #evergreen-landing-uncookied .how-it-works {
     position: relative;
     padding: 6rem 0 2rem 0;
