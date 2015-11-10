@@ -7365,23 +7365,21 @@ footer {
       font-size: 1.5rem;
       width: 2.5rem;
       height: 2.5rem;
-      border-radius: 50%; }
+      border-radius: 50%;
+      display: table; }
       @media only screen and (min-width:40.063em) {
         footer ul.social li {
-          display: table;
           margin-top: 1rem;
           width: 2rem;
           height: 2rem;
           margin-right: .9rem; } }
       footer ul.social li a {
         color: #0055a6;
-        line-height: 43px; }
+        display: table-cell;
+        vertical-align: middle; }
         @media only screen and (min-width:40.063em) {
           footer ul.social li a {
-            display: table-cell;
-            vertical-align: middle;
-            font-size: 1.3rem;
-            line-height: normal; } }
+            font-size: 1.3rem; } }
       footer ul.social li:last-of-type {
         margin-right: 0; }
   footer .footer-bottom {
