@@ -7365,23 +7365,21 @@ footer {
       font-size: 1.5rem;
       width: 2.5rem;
       height: 2.5rem;
-      border-radius: 50%; }
+      border-radius: 50%;
+      display: table; }
       @media only screen and (min-width:40.063em) {
         footer ul.social li {
-          display: table;
           margin-top: 1rem;
           width: 2rem;
           height: 2rem;
           margin-right: .9rem; } }
       footer ul.social li a {
         color: #0055a6;
-        line-height: 43px; }
+        display: table-cell;
+        vertical-align: middle; }
         @media only screen and (min-width:40.063em) {
           footer ul.social li a {
-            display: table-cell;
-            vertical-align: middle;
-            font-size: 1.3rem;
-            line-height: normal; } }
+            font-size: 1.3rem; } }
       footer ul.social li:last-of-type {
         margin-right: 0; }
   footer .footer-bottom {
@@ -10169,7 +10167,7 @@ span.calendar {
       top: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
-      min-width: 100%;
+      width: 100%;
       min-height: 100%;
       width: auto;
       height: auto;
@@ -10340,7 +10338,7 @@ span.calendar {
       width: 5.7%;
       left: 1.5%;
       top: 59%;
-      animation: illiterate 500ms infinite; }
+      animation: illiterate 2s infinite; }
     #brazil-landing .info .infographic .waterdrop-1, #brazil-landing .info .infographic .waterdrop-2, #brazil-landing .info .infographic .waterdrop-3, #post-actbr .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-2, #post-actbr .info .infographic .waterdrop-3 {
       position: absolute; }
     #brazil-landing .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-1 {
@@ -10441,7 +10439,7 @@ span.calendar {
               color: black !important; } }
         #brazil-landing .three-stories ul li .mask, #post-actbr .three-stories ul li .mask {
           opacity: 0;
-          background: rgba(229, 179, 18, 0.75);
+          background: rgba(229, 179, 18, 0.35);
           left: 0;
           right: 0;
           top: 0;
@@ -10968,8 +10966,14 @@ span.calendar {
   0% {
     top: 59%; }
 
+  10% {
+    top: 58%; }
+
+  20% {
+    top: 59%; }
+
   100% {
-    top: 58%; } }
+    top: 59%; } }
 
 @keyframes waterdrop-1 {
   0% {
@@ -13702,6 +13706,15 @@ li.total .right.wi-value {
   @media only screen and (min-width:64.063em) {
     .brazil-stories #three-brothers .second div.centered {
       margin: 3rem auto; } }
+.brazil-stories #jesus .intro .row:nth-of-type(3) img:last-of-type {
+  width: 265px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important; }
+  @media only screen and (min-width:40.063em) {
+    .brazil-stories #jesus .intro .row:nth-of-type(3) img:last-of-type {
+      float: right !important; } }
 .brazil-stories #jesus .map {
   position: relative;
   margin-top: -6rem; }
@@ -13726,14 +13739,15 @@ li.total .right.wi-value {
     max-width: 44rem; } }
 .brazil-stories .hero {
   height: 28rem;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .brazil-stories .hero video {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
@@ -13853,7 +13867,7 @@ li.total .right.wi-value {
     left: 0.9375rem;
     right: 0.9375rem;
     bottom: 0;
-    background: rgba(229, 179, 18, 0.75);
+    background: rgba(229, 179, 18, 0.35);
     z-index: 2;
     -webkit-transition: opacity .25s ease-in;
     -moz-transition: opacity .25s ease-in;
@@ -14366,6 +14380,12 @@ li.total .right.wi-value {
     .compassion-in-action p {
       line-height: normal;
       font-size: .8rem; } }
+  @media only screen and (min-width:40.063em) {
+    .compassion-in-action p {
+      -webkit-transition: opacity .25s ease-in;
+      -moz-transition: opacity .25s ease-in;
+      transition: opacity .25s ease-in;
+      opacity: 0; } }
   @media only screen and (min-width:64.063em) {
     .compassion-in-action p {
       font-size: 1.2rem;
@@ -14394,11 +14414,13 @@ li.total .right.wi-value {
       @media only screen and (min-width:40.063em) {
         .compassion-in-action .columns .mask {
           background: rgba(10, 86, 164, 0.6);
-          -webkit-transition: opacity .35s ease-in;
-          -moz-transition: opacity .35s ease-in;
-          transition: opacity .35s ease-in;
+          -webkit-transition: opacity .25s ease-in;
+          -moz-transition: opacity .25s ease-in;
+          transition: opacity .25s ease-in;
           opacity: 0.3; } }
     .compassion-in-action .columns:hover .mask {
+      opacity: 1; }
+    .compassion-in-action .columns:hover p {
       opacity: 1; }
     @media only screen and (max-width: 40em) {
       .compassion-in-action .columns:nth-of-type(2n) .mask {
