@@ -5904,14 +5904,15 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     max-width: 44rem; } }
 .brazil-stories .hero {
   height: 28rem;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .brazil-stories .hero video {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    min-width: 100%;
+    width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
@@ -6853,7 +6854,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       top: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
-      min-width: 100%;
+      width: 100%;
       min-height: 100%;
       width: auto;
       height: auto;
