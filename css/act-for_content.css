@@ -5880,6 +5880,15 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   @media only screen and (min-width:64.063em) {
     .brazil-stories #three-brothers .second div.centered {
       margin: 3rem auto; } }
+.brazil-stories #jesus .intro .row:nth-of-type(3) img:last-of-type {
+  width: 265px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important; }
+  @media only screen and (min-width:40.063em) {
+    .brazil-stories #jesus .intro .row:nth-of-type(3) img:last-of-type {
+      float: right !important; } }
 .brazil-stories #jesus .map {
   position: relative;
   margin-top: -6rem; }
