@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head> <!-- this probably should be changed to the head control that the rest of the project uses -->
+		<title>Act for Compassion - It starts with one ACT</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/advocate-campaigns.css?1445006249" media="all">
+		<link rel="stylesheet" href="css/font-awesome.css?1445006249" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,100italic,300italic,400italic,500italic,900italic,700italic" rel="stylesheet" type="text/css">
+		<script src="js/modernizr.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="lib/fastclick.js"></script>
+		<script src="js/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style>
+		<script src="js/jquery-ui.min.js"></script>
+		<script>
+		  $('body').foundation();
+		</script>
+
+	 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
+</head>
+
+<body>
+
+<div id="toolkit" style="background:url(multimedia/background.jpg); background-size: auto 3200px;">
+	<h2 class="white-title">Toolkit</h2>
+	<hr>
+	<div class="medium-container">
+		<ul class="tabs clearfix">
+			<li id="tab-get-started" class="active button-trans-white">get started</li>
+			<li id="tab-keep-moving" class="button-trans-white">keep moving</li>
+			<li id="tab-finish-strong" class="button-trans-white">finish strong</li>
+			<li id="tab-say-thanks" class="button-trans-white">say thanks</li>
+		</ul>
+
+		<div id="get-started" class="toolkit-section">
+
+			<p class="centered">Three simple ways to get your fundraising rolling!</p>
+			<p class="centered">2 ways to get your fundraiser going!</p>
+			<div class="panel">
+				<h5 class="blue-title">Make a donation yourself</h5>
+				<p class="centered">Donating to your own fundraiser will demonstrate your commitment to the cause and encourage others to follow your lead.</p>
+				<div id="toolkit-donate">
+					<div class="donate-widget-view-container">
+						<div class="donate">
+							<div class="input">
+								<input type="text" placeholder="50" name="donationAmount" class="js-donate-field donate-field required number" data-rule-min="1" data-rule-max="<%=  (new CI.Web.Common.HttpContextWrapperCI()).Application.TridionConstants.DonationTransactionLimit%>" value="{{defaultAmount}}" />
+								<span class="pre currency">$</span>
+							</div>
+							<div class="post"><a href="javascript:void(0)" class="js-donate-button">Donate Now</a></div>
+						</div>
+						{{! <label class="error left" for="donationAmount"></label> }}
+					</div>
+				</div>
+			</div> <!-- panel -->
+
+			<div class="panel">
+				<h5 class="blue-title">Announce your fundraiser</h5>
+				<p class="centered">Reach out to all the contacts in your social network and spread the word about your fundraiser.</p>
+				<ul class="social-share clearfix">
+					<li class="js-campaign-hide-tooltip email">
+						<a href="#" class="js-button-social js-share-email">
+							<i class="fa fa-envelope"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip facebook">
+						<a href="#" class="js-button-social js-share-facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip twitter">
+						<a href="#" class="js-button-social js-share-twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip google">
+						<a href="#" class="js-button-social js-share-google">
+						<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
+				</ul>
+			</div> <!-- panel -->
+
+		</div>
+		<!-- GET STARTED -->
+
+		<div id="keep-moving" class="toolkit-section">
+			<p class="centered">Keep moving</p>
+			<p class="centered">Keep potential donors informed will increase the donations you'll receive. So don't be shy. Keep those updates coming!</p>
+			<div class="panel">
+				<h5 class="blue-title">Provide updates early and often.</h5>
+				<p class="centered">Don't be shy about sending updates. A little nudge goes a long way.</p>
+				<ul class="social-share clearfix">
+					<li class="js-campaign-hide-tooltip email">
+						<a href="#" class="js-button-social js-share-email">
+							<i class="fa fa-envelope"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip facebook">
+						<a href="#" class="js-button-social js-share-facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip twitter">
+						<a href="#" class="js-button-social js-share-twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip google">
+						<a href="#" class="js-button-social js-share-google">
+						<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- KEEP MOVING -->
+
+		<div id="finish-strong" class="toolkit-section">
+			<p class="centered">Give your social network a final push.</p>
+			<div class="panel">
+				<p class="centered">Remember, most donations are typically made at the end of a fundraising campaign. So stay persistent! Give all your contacts one last chance to help out.</p>
+				<ul class="social-share clearfix">
+					<li class="js-campaign-hide-tooltip email">
+						<a href="#" class="js-button-social js-share-email">
+							<i class="fa fa-envelope"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip facebook">
+						<a href="#" class="js-button-social js-share-facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip twitter">
+						<a href="#" class="js-button-social js-share-twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip google">
+						<a href="#" class="js-button-social js-share-google">
+						<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- FINISH STRONG -->
+
+		<div id="say-thanks" class="toolkit-section">
+			<p class="centered">Your supporters deserve recognition.</p>
+			<p class="centered">After all, they're the ones who made your fundraising campaign a success. So make sure to acknowledge their generosity with an email, a tweet, or by sharing their kindness somewhere else. And, of course, inspire them to get involved with Compassion at the same time!</p>
+			<div class="panel">
+				<h5 class="blue-title">Thank your supporters</h5>
+				<p class="centered">Send them a tweet or share their generosity</p>
+				<ul class="social-share clearfix">
+					<li class="js-campaign-hide-tooltip email">
+						<a href="#" class="js-button-social js-share-email">
+							<i class="fa fa-envelope"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip facebook">
+						<a href="#" class="js-button-social js-share-facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip twitter">
+						<a href="#" class="js-button-social js-share-twitter">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li class="js-campaign-hide-tooltip google">
+						<a href="#" class="js-button-social js-share-google">
+						<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- SAY THANKS -->
+
+		<div class='panel'>
+			<h5 class="blue-title">Take advantage of our resoures</h5>
+			<p class="centered">Download or order our digital and printed material to add oomph to your fundraising efforts.</p>
+			<div class="block">
+				<h6>Offline donation form</h6>
+				<hr>
+				<div class="row  offline-form downloadable-pics">
+					<div class="small-6 columns">
+						<img src="multimedia/toolkit-download.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="clearfix"><h6>Posters</h6><span class="download"><a href="">Download all</a></span></div>
+				<hr>
+				<div class="row downloadable-pics">
+					<div class="small-6 columns ">
+						<div class="img-container">
+							<img src="multimedia/toolkit-picture-1.jpg">
+						</div>
+						<p class="download"><a href="">download</a></p>
+						<div class="img-container">
+							<img src="multimedia/toolkit-picture-2.jpg">
+						</div>
+						<p class="download"><a href="">download</a></p>
+					</div>
+					<div class="small-6 columns">
+						<div class="img-container">
+							<img src="multimedia/toolkit-picture-3.jpg">
+						</div>
+						<p class="download"><a href="">download</a></p>
+						<div class="img-container">
+							<img src="multimedia/toolkit-picture-4.jpg">
+						</div>
+						<p class="download"><a href="">download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="clearfix">
+					<h6>facebook photos</h6><span class="download"><a href="">Download all</a></span>
+				</div>
+				<hr>
+				<div class="row downloadable-pics">
+					<div class="small-6 columns">
+						<div class="img-container">
+							<img src="multimedia/toolkit-picture-9.jpg">
+						</div>
+						<p class="download"><a href="">download</a></p>
+						<div class="img-container">
+							<img src="multimedia/toolkit-picture-5.jpg">
+						</div>
+						<p class="download"><a href="">download</a></p>
+					</div>
+					<div class="small-6 columns">
+						<div class="img-container">
+							<img src="multimedia/toolkit-picture-6.jpg">
+						</div>
+						<p class="download"><a href="">download</a></p>
+						<div class="img-container">
+							<img src="multimedia/toolkit-picture-7.jpg">
+						</div>
+						<p class="download"><a href="">download</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+
+				<div class="clearfix">
+					<h6>twitter backdrops</h6><span class="download"><a href="">Download all</a></span>
+				</div>
+				<hr>
+				<div class="row downloadable-pics">
+					<div class="small-6 columns">
+						<div class="img-container">
+							<img src="multimedia/toolkit-picture-8.jpg">
+						</div>
+						<p class="download"><a href="">download</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="button-solid-gray">return to fundraising page</a>
+	</div>
+</div>
+
+<script>
+	(function($){
+		$('#tab-get-started').click(function(){
+			$(this).addClass('active');
+			$(this).siblings().removeClass('active');
+			$('#get-started').css('display','block');
+			$('#get-started').siblings('.toolkit-section').css('display','none');
+		})
+		$('#tab-keep-moving').click(function(){
+			$(this).addClass('active');
+			$(this).siblings().removeClass('active');
+			$('#keep-moving').css('display','block');
+			$('#keep-moving').siblings('.toolkit-section').css('display','none');
+		})
+		$('#tab-finish-strong').click(function(){
+			$(this).addClass('active');
+			$(this).siblings().removeClass('active');
+			$('#finish-strong').css('display','block');
+			$('#finish-strong').siblings('.toolkit-section').css('display','none');
+		})
+		$('#tab-say-thanks').click(function(){
+			$(this).addClass('active');
+			$(this).siblings().removeClass('active');
+			$('#say-thanks').css('display','block');
+			$('#say-thanks').siblings('.toolkit-section').css('display','none');
+		})
+	})(jQuery);
+</script>
+</body>
+
+</html>

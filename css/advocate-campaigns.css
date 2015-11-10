@@ -9398,8 +9398,10 @@ a.reset_time {
 
 #toolkit {
   padding: 2rem 0;
-  background: url(../images/background.jpg) center;
-  background-size: cover; }
+  background: url(../images/background.jpg) no-repeat top center;
+  background-size: auto 3100px; }
+  #toolkit #keep-moving, #toolkit #finish-strong, #toolkit #say-thanks {
+    display: none; }
   #toolkit hr {
     background: white;
     width: 6rem;
@@ -9408,31 +9410,30 @@ a.reset_time {
     width: 90%;
     max-width: 43rem;
     margin: 0 auto; }
-    #toolkit .medium-container > p {
+    #toolkit .medium-container .toolkit-section > p {
       color: white; }
-      #toolkit .medium-container > p:first-of-type {
+      #toolkit .medium-container .toolkit-section > p:first-of-type {
         font-weight: 700;
         font-size: 1.3rem;
         letter-spacing: 1px;
         margin-bottom: .5rem; }
-      #toolkit .medium-container > p:last-of-type {
+      #toolkit .medium-container .toolkit-section > p:last-of-type {
         margin-bottom: 1.5rem; }
   #toolkit .tabs {
     list-style: none;
     margin: 1rem 0; }
     #toolkit .tabs li {
-      margin-bottom: .6rem; }
-      #toolkit .tabs li a {
-        height: 2rem;
-        padding: .3rem 0; }
-        #toolkit .tabs li a.active, #toolkit .tabs li a:hover {
-          background: white;
-          color: #0698e4 !important; }
-        @media only screen and (max-width: 40em) {
-          #toolkit .tabs li a {
-            padding: .35rem;
-            font-size: .7rem;
-            margin-bottom: .4rem; } }
+      margin-bottom: .6rem;
+      height: 2rem;
+      padding: .3rem 0; }
+      #toolkit .tabs li.active, #toolkit .tabs li:hover {
+        background: white;
+        color: #0698e4 !important; }
+      @media only screen and (max-width: 40em) {
+        #toolkit .tabs li {
+          padding: .35rem;
+          font-size: .7rem;
+          margin-bottom: .4rem; } }
       @media only screen and (min-width:40.063em) {
         #toolkit .tabs li {
           margin-top: 1rem;
