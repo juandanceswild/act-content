@@ -10338,7 +10338,7 @@ span.calendar {
       width: 5.7%;
       left: 1.5%;
       top: 59%;
-      animation: illiterate 500ms infinite; }
+      animation: illiterate 2s infinite; }
     #brazil-landing .info .infographic .waterdrop-1, #brazil-landing .info .infographic .waterdrop-2, #brazil-landing .info .infographic .waterdrop-3, #post-actbr .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-2, #post-actbr .info .infographic .waterdrop-3 {
       position: absolute; }
     #brazil-landing .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-1 {
@@ -10439,7 +10439,7 @@ span.calendar {
               color: black !important; } }
         #brazil-landing .three-stories ul li .mask, #post-actbr .three-stories ul li .mask {
           opacity: 0;
-          background: rgba(229, 179, 18, 0.75);
+          background: rgba(229, 179, 18, 0.35);
           left: 0;
           right: 0;
           top: 0;
@@ -10966,8 +10966,14 @@ span.calendar {
   0% {
     top: 59%; }
 
+  10% {
+    top: 58%; }
+
+  20% {
+    top: 59%; }
+
   100% {
-    top: 58%; } }
+    top: 59%; } }
 
 @keyframes waterdrop-1 {
   0% {
@@ -13852,7 +13858,7 @@ li.total .right.wi-value {
     left: 0.9375rem;
     right: 0.9375rem;
     bottom: 0;
-    background: rgba(229, 179, 18, 0.75);
+    background: rgba(229, 179, 18, 0.35);
     z-index: 2;
     -webkit-transition: opacity .25s ease-in;
     -moz-transition: opacity .25s ease-in;

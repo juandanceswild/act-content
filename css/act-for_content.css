@@ -7025,7 +7025,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       width: 5.7%;
       left: 1.5%;
       top: 59%;
-      animation: illiterate 500ms infinite; }
+      animation: illiterate 2s infinite; }
     #brazil-landing .info .infographic .waterdrop-1, #brazil-landing .info .infographic .waterdrop-2, #brazil-landing .info .infographic .waterdrop-3, #post-actbr .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-2, #post-actbr .info .infographic .waterdrop-3 {
       position: absolute; }
     #brazil-landing .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-1 {
@@ -7653,8 +7653,14 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   0% {
     top: 59%; }
 
+  10% {
+    top: 58%; }
+
+  20% {
+    top: 59%; }
+
   100% {
-    top: 58%; } }
+    top: 59%; } }
 
 @keyframes waterdrop-1 {
   0% {
