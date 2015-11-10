@@ -14380,6 +14380,12 @@ li.total .right.wi-value {
     .compassion-in-action p {
       line-height: normal;
       font-size: .8rem; } }
+  @media only screen and (min-width:40.063em) {
+    .compassion-in-action p {
+      -webkit-transition: opacity .25s ease-in;
+      -moz-transition: opacity .25s ease-in;
+      transition: opacity .25s ease-in;
+      opacity: 0; } }
   @media only screen and (min-width:64.063em) {
     .compassion-in-action p {
       font-size: 1.2rem;
@@ -14408,11 +14414,13 @@ li.total .right.wi-value {
       @media only screen and (min-width:40.063em) {
         .compassion-in-action .columns .mask {
           background: rgba(10, 86, 164, 0.6);
-          -webkit-transition: opacity .35s ease-in;
-          -moz-transition: opacity .35s ease-in;
-          transition: opacity .35s ease-in;
+          -webkit-transition: opacity .25s ease-in;
+          -moz-transition: opacity .25s ease-in;
+          transition: opacity .25s ease-in;
           opacity: 0.3; } }
     .compassion-in-action .columns:hover .mask {
+      opacity: 1; }
+    .compassion-in-action .columns:hover p {
       opacity: 1; }
     @media only screen and (max-width: 40em) {
       .compassion-in-action .columns:nth-of-type(2n) .mask {
