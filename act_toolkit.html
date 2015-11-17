@@ -24,7 +24,7 @@
 
 <body>
 
-<div id="toolkit" style="background:url(multimedia/background.jpg); background-size: auto 3200px;">
+<div id="toolkit" class="spacer-top" style="background:url(multimedia/act-for_brazil-wizardbackground.jpg); background-size: auto 3200px;">
 	<h2 class="white-title">Toolkit</h2>
 	<hr>
 	<div class="medium-container">
@@ -38,7 +38,6 @@
 		<div id="get-started" class="toolkit-section">
 
 			<p class="centered">Three simple ways to get your fundraising rolling!</p>
-			<p class="centered">2 ways to get your fundraiser going!</p>
 			<div class="panel">
 				<h5 class="blue-title">Make a donation yourself</h5>
 				<p class="centered">Donating to your own fundraiser will demonstrate your commitment to the cause and encourage others to follow your lead.</p>
@@ -86,7 +85,7 @@
 		</div>
 		<!-- GET STARTED -->
 
-		<div id="keep-moving" class="toolkit-section">
+<div id="keep-moving" class="toolkit-section">
 			<p class="centered">Keep moving</p>
 			<p class="centered">Keep potential donors informed will increase the donations you'll receive. So don't be shy. Keep those updates coming!</p>
 			<div class="panel">
@@ -182,7 +181,7 @@
 
 		<div class='panel'>
 			<h5 class="blue-title">Take advantage of our resoures</h5>
-			<p class="centered">Download or order our digital and printed material to add oomph to your fundraising efforts.</p>
+			<p class="centered">Download our digital and printed material to add oomph to your fundraising efforts.</p>
 			<div class="block">
 				<h6>Offline donation form</h6>
 				<hr>
@@ -272,25 +271,25 @@
 			$(this).addClass('active');
 			$(this).siblings().removeClass('active');
 			$('#get-started').css('display','block');
-			$('#get-started').siblings('.toolkit-section').css('display','none');
+			$('.toolkit-section').not('#get-started').css('display','none');
 		})
 		$('#tab-keep-moving').click(function(){
 			$(this).addClass('active');
 			$(this).siblings().removeClass('active');
 			$('#keep-moving').css('display','block');
-			$('#keep-moving').siblings('.toolkit-section').css('display','none');
+			$('.toolkit-section').not('#keep-moving').css('display','none');
 		})
 		$('#tab-finish-strong').click(function(){
 			$(this).addClass('active');
 			$(this).siblings().removeClass('active');
 			$('#finish-strong').css('display','block');
-			$('#finish-strong').siblings('.toolkit-section').css('display','none');
+			$('.toolkit-section').not('#finish-strong').css('display','none');
 		})
 		$('#tab-say-thanks').click(function(){
 			$(this).addClass('active');
 			$(this).siblings().removeClass('active');
 			$('#say-thanks').css('display','block');
-			$('#say-thanks').siblings('.toolkit-section').css('display','none');
+			$('.toolkit-section').not('#say-thanks').css('display','none');
 		})
 	})(jQuery);
 </script>
