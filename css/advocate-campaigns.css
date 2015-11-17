@@ -9325,7 +9325,8 @@ a.reset_time {
 
 #toolkit {
   background: url(../images/background.jpg) no-repeat top center;
-  background-size: auto 3100px; }
+  background-size: auto 3100px;
+  padding-bottom: 2rem; }
   #toolkit #keep-moving, #toolkit #finish-strong, #toolkit #say-thanks {
     display: none; }
   #toolkit hr {
@@ -10352,8 +10353,18 @@ span.calendar {
       width: 15%;
       left: 71%; }
       #brazil-landing .info .infographic .van.move, #post-actbr .info .infographic .van.move {
-        animation: car 6s infinite;
-        animation-delay: 1s; }
+        animation: car 6s 1;
+        animation-delay: 2s; }
+    #brazil-landing .info .infographic .kids, #post-actbr .info .infographic .kids {
+      width: 8%;
+      left: 63%;
+      position: absolute;
+      z-index: 6;
+      bottom: -1%;
+      opacity: 1; }
+      #brazil-landing .info .infographic .kids.move, #post-actbr .info .infographic .kids.move {
+        animation: kids 6s 1;
+        animation-delay: 2s; }
     #brazil-landing .info .infographic .illiterate, #post-actbr .info .infographic .illiterate {
       position: absolute;
       z-index: 7;
@@ -10926,11 +10937,11 @@ span.calendar {
     @media only screen and (min-width:64.063em) {
       .how-to-act .columns {
         padding: 2rem 2rem; } }
+    @media only screen and (min-width:64.063em) {
+      .how-to-act .columns:nth-of-type(2) img {
+        width: 75%; } }
     .how-to-act .columns:last-of-type img {
       margin-top: 1.9rem; }
-      @media only screen and (min-width:40.063em) {
-        .how-to-act .columns:last-of-type img {
-          height: 100%; } }
   .how-to-act h1 {
     font-weight: 500;
     margin-bottom: 3rem; }
@@ -10975,14 +10986,24 @@ span.calendar {
   0% {
     left: 71%; }
 
-  33% {
-    left: 150%; }
-
-  66% {
-    left: 110%; }
+  25% {
+    left: 61%; }
 
   100% {
-    left: 71%; } }
+    left: 180%; } }
+
+@keyframes kids {
+  0% {
+    opacity: 1; }
+
+  10% {
+    opacity: 1; }
+
+  30% {
+    opacity: 0; }
+
+  100% {
+    opacity: 0; } }
 
 @keyframes illiterate {
   0% {
@@ -13619,7 +13640,6 @@ li.total .right.wi-value {
 @media only screen and (min-width:40.063em) {
   .brazil-stories ul.buttons-2 {
     position: fixed;
-    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
