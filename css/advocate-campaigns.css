@@ -10937,11 +10937,11 @@ span.calendar {
     @media only screen and (min-width:64.063em) {
       .how-to-act .columns {
         padding: 2rem 2rem; } }
+    @media only screen and (min-width:64.063em) {
+      .how-to-act .columns:nth-of-type(2) img {
+        width: 75%; } }
     .how-to-act .columns:last-of-type img {
       margin-top: 1.9rem; }
-      @media only screen and (min-width:40.063em) {
-        .how-to-act .columns:last-of-type img {
-          height: 100%; } }
   .how-to-act h1 {
     font-weight: 500;
     margin-bottom: 3rem; }
