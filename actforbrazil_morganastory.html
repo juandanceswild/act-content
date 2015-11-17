@@ -116,6 +116,10 @@
 			<div class="centered"><img src="multimedia/act-for_brazil-rosilda-5.jpg"></div>
 			<p>All in all, the program has been instrumental in helping Rosilda move past her depression, building up her confidence as both a mother and a person. She now talks regularly with her neighbors, volunteers at the CSP, attends the partner church activities and sees to the needs of both Morgana and Dheric. She’s also learned to look towards the future instead of being stuck in the past. “I don’t know where I would be at this point of my life without the program’s help,” she says. “I’ve got my 2 children, my treasures, and I love them. I needed strength to carry on – and Compassion helped me find that strength.”
 			</p>
+		<ul class="buttons-2 show-for-small">
+			<li><a href="" class='button-solid-sky-blue'>Act for Jesus Gabriel</a></li>
+			<li><a href="" class="button-solid-yellow">Donate</a></li>
+		</ul>
 		</div>
 	</div>
 </section>
@@ -228,6 +232,19 @@
 	if($('.fixed-buttons').length) {
 		$('footer').css('padding-bottom', '5rem');
 	} 
+
+	//////// STICKY BUTTONS
+
+	var windowW = $(window).width();
+	var bodyH = $('body').height();
+
+	$(window).scroll(function(){
+		var currentPostion = $(window).scrollTop();
+		if(windowW > 641 && currentPostion >= bodyH ) {
+			$('.fixed-buttons').addClass('appear');
+		}
+	});
+
 	///////// VIDEO HERO
 
 	$('.hero .play').on('click', function(){

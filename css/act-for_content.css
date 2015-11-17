@@ -5761,38 +5761,40 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   float: none; }
 .brazil-stories .full-width {
   width: 100%; }
-.brazil-stories ul.buttons-2 {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 99;
-  bottom: -2rem; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories ul.buttons-2 {
-      padding-left: 1rem;
-      padding-right: 1rem; } }
+@media only screen and (max-width: 40em) {
+  .brazil-stories ul.buttons-2 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto; } }
+@media only screen and (min-width:40.063em) {
+  .brazil-stories ul.buttons-2 {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: 99;
+    bottom: -2rem;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 50rem; } }
+.brazil-stories ul.buttons-2.appear {
+  opacity: 1; }
+.brazil-stories ul.buttons-2 li a {
+  font-size: .7rem;
+  height: 2.5rem;
+  padding-top: .7rem; }
   @media only screen and (min-width:64.063em) {
-    .brazil-stories ul.buttons-2 {
-      width: 90%;
-      margin-left: 5%; } }
-  @media only screen and (max-width: 40em) {
-    .brazil-stories ul.buttons-2 li:first-of-type {
-      width: 72%;
-      margin-right: 3%;
-      float: left; }
-    .brazil-stories ul.buttons-2 li:last-of-type {
-      width: 25%;
-      float: right; } }
-  .brazil-stories ul.buttons-2 li a {
-    font-size: .7rem;
-    height: 2.5rem;
-    padding-top: .7rem;
-    border-radius: 4px 4px 0 0; }
-    @media only screen and (min-width:64.063em) {
-      .brazil-stories ul.buttons-2 li a {
-        height: 3.5rem;
-        font-size: 1rem;
-        padding-top: .95rem; } }
+    .brazil-stories ul.buttons-2 li a {
+      height: 3.5rem;
+      font-size: 1rem;
+      padding-top: .95rem; } }
 .brazil-stories #morgana .map {
   position: relative; }
   .brazil-stories #morgana .map img {
@@ -6118,20 +6120,20 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     position: fixed;
     bottom: -2rem;
     z-index: 99;
-    left: 0;
-    right: 0;
+    left: 50%;
+    display: none;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     -webkit-transition: all .25s ease-in;
     -moz-transition: all .25s ease-in;
     transition: all .25s ease-in; }
     #evergreen-landing .fixed-buttons.appear, #evergreen-landing-uncookied .fixed-buttons.appear {
       opacity: 1; }
-    @media only screen and (max-width: 40em) {
-      #evergreen-landing .fixed-buttons .columns, #evergreen-landing-uncookied .fixed-buttons .columns {
-        padding: 0; } }
-    @media only screen and (min-width:64.063em) {
+    @media only screen and (min-width:40.063em) {
       #evergreen-landing .fixed-buttons, #evergreen-landing-uncookied .fixed-buttons {
-        width: 90%;
-        margin-left: 5%; } }
+        display: block;
+        max-width: 50rem;
+        width: 100%; } }
     #evergreen-landing .fixed-buttons li a, #evergreen-landing-uncookied .fixed-buttons li a {
       border-radius: 4px 4px 0 0; }
       @media only screen and (max-width: 40em) {
@@ -7377,20 +7379,20 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     position: fixed;
     bottom: -2rem;
     z-index: 99;
-    left: 0;
-    right: 0; }
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    display: none; }
     #brazil-landing .fixed-buttons.appear, #post-actbr .fixed-buttons.appear {
       opacity: 1;
       -webkit-transition: opacity .25s ease-in;
       -moz-transition: opacity .25s ease-in;
       transition: opacity .25s ease-in; }
-    @media only screen and (max-width: 40em) {
-      #brazil-landing .fixed-buttons .columns, #post-actbr .fixed-buttons .columns {
-        padding: 0; } }
-    @media only screen and (min-width:64.063em) {
+    @media only screen and (min-width:40.063em) {
       #brazil-landing .fixed-buttons, #post-actbr .fixed-buttons {
-        width: 90%;
-        margin-left: 5%; } }
+        max-width: 50rem;
+        width: 100%;
+        display: block; } }
     #brazil-landing .fixed-buttons li a, #post-actbr .fixed-buttons li a {
       border-radius: 4px 4px 0 0; }
       @media only screen and (max-width: 40em) {
@@ -7705,5 +7707,124 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   100% {
     top: 13%;
     opacity: 0; } }
+
+#toolkit {
+  padding: 2rem 0;
+  background: url(../images/background.jpg) no-repeat top center;
+  background-size: auto 3100px; }
+  #toolkit #keep-moving, #toolkit #finish-strong, #toolkit #say-thanks {
+    display: none; }
+  #toolkit hr {
+    background: white;
+    width: 6rem;
+    margin: 1rem auto; }
+  #toolkit .medium-container {
+    width: 90%;
+    max-width: 43rem;
+    margin: 0 auto; }
+    #toolkit .medium-container .toolkit-section > p {
+      color: white; }
+      #toolkit .medium-container .toolkit-section > p:first-of-type {
+        font-weight: 700;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        margin-bottom: .5rem; }
+      #toolkit .medium-container .toolkit-section > p:last-of-type {
+        margin-bottom: 1.5rem; }
+  #toolkit .tabs {
+    list-style: none;
+    margin: 1rem 0; }
+    #toolkit .tabs li {
+      margin-bottom: .6rem;
+      height: 2rem;
+      padding: .3rem 0; }
+      #toolkit .tabs li.active, #toolkit .tabs li:hover {
+        background: white;
+        color: #0698e4 !important; }
+      @media only screen and (max-width: 40em) {
+        #toolkit .tabs li {
+          padding: .35rem;
+          font-size: .7rem;
+          margin-bottom: .4rem; } }
+      @media only screen and (min-width:40.063em) {
+        #toolkit .tabs li {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          float: left;
+          width: 22%;
+          margin-right: 4%; }
+          #toolkit .tabs li:last-of-type {
+            margin-right: 0; } }
+  #toolkit .panel {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 7px;
+    padding: 1rem;
+    margin-bottom: 2rem; }
+    @media only screen and (min-width:40.063em) {
+      #toolkit .panel {
+        padding: 2rem; } }
+    @media only screen and (min-width:64.063em) {
+      #toolkit .panel {
+        padding: 2rem 3.5rem; } }
+    #toolkit .panel hr {
+      width: 100%;
+      height: 1px;
+      background: #464646;
+      margin: 0 auto 2rem auto; }
+    #toolkit .panel #toolkit-donate {
+      width: 16rem;
+      margin: 2rem auto 1rem auto; }
+      #toolkit .panel #toolkit-donate .donate-widget-view-container .donate .post a {
+        padding-left: 1rem;
+        padding-right: 1rem; }
+    #toolkit .panel h6 {
+      font-weight: 700;
+      color: #464646;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    @media only screen and (max-width: 40em) {
+      #toolkit .panel .social-share {
+        width: 15.3rem; }
+        #toolkit .panel .social-share li {
+          margin-right: 1rem; }
+          #toolkit .panel .social-share li:last-of-type {
+            margin-right: 0; } }
+    @media only screen and (min-width:40.063em) {
+      #toolkit .panel .social-share {
+        width: 21.3rem;
+        margin-bottom: 2rem; }
+        #toolkit .panel .social-share li {
+          width: 4rem;
+          height: 4rem; }
+          #toolkit .panel .social-share li a {
+            font-size: 2.2rem;
+            line-height: 66px; } }
+    #toolkit .panel .block {
+      margin-top: 2rem; }
+    #toolkit .panel .offline-form {
+      margin-bottom: 2rem;
+      margin-top: 2rem; }
+    @media only screen and (min-width:40.063em) {
+      #toolkit .panel .downloadable-pics {
+        padding: 0 2rem; } }
+    #toolkit .panel .downloadable-pics img {
+      width: 100%; }
+    #toolkit .panel .download a {
+      color: #0698e4;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: .8rem; }
+    #toolkit .panel p.download {
+      text-align: center;
+      margin-bottom: 2rem; }
+    @media only screen and (min-width:40.063em) {
+      #toolkit .panel h6 {
+        float: left; }
+      #toolkit .panel span.download {
+        float: right; } }
+  #toolkit .button-solid-gray {
+    max-width: 24rem;
+    margin: 3rem auto 2rem auto; }
 
 /*# sourceMappingURL=act-for_content.css.map */

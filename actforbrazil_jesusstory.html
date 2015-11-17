@@ -120,6 +120,10 @@
 		<div class="columns max-45">
 			<p>But lest you think that child sponsors are the only ones who provide much needed inspiration to kids, think again. All the people who work at Oficina de Arte Vida Feliz encourage every last child to dream as big as they can. In fact, during Bible studies, they often talk about famous people throughout history who achieved their goals despite facing huge adversity, such as Joseph in Egypt. “We do everything to prepare our children to become people of integrity and honesty,” says Maria Vania Canuto, the center’s director. “We try to make them see beyond.”</p>
 			<p>For a little boy who wants to travel and see the world one day, beyond is the perfect place to be.</p>
+		<ul class="buttons-2 show-for-small">
+			<li><a href="" class='button-solid-sky-blue'>Act for Jesus Gabriel</a></li>
+			<li><a href="" class="button-solid-yellow">Donate</a></li>
+		</ul>
 		</div>
 	</div>
 </section>
@@ -233,6 +237,19 @@
 	if($('.fixed-buttons').length) {
 		$('footer').css('padding-bottom', '5rem');
 	} 
+
+	//////// STICKY BUTTONS
+
+	var windowW = $(window).width();
+	var bodyH = $('body').height();
+
+	$(window).scroll(function(){
+		var currentPostion = $(window).scrollTop();
+		if(windowW > 641 && currentPostion >= bodyH ) {
+			$('.fixed-buttons').addClass('appear');
+		}
+	});
+
 
 	///////// VIDEO HERO
 
