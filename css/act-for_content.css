@@ -7047,6 +7047,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       #brazil-landing .info .infographic .kids.move, #post-actbr .info .infographic .kids.move {
         animation: kids 6s 1;
         animation-delay: 2s; }
+    #brazil-landing .info .infographic .van.disappear, #brazil-landing .info .infographic .kids.disappear, #post-actbr .info .infographic .van.disappear, #post-actbr .info .infographic .kids.disappear {
+      opacity: 0; }
     #brazil-landing .info .infographic .illiterate, #post-actbr .info .infographic .illiterate {
       position: absolute;
       z-index: 7;
