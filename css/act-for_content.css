@@ -56,38 +56,40 @@
   float: none; }
 .brazil-stories .full-width {
   width: 100%; }
-.brazil-stories ul.buttons-2 {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 99;
-  bottom: -2rem; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories ul.buttons-2 {
-      padding-left: 1rem;
-      padding-right: 1rem; } }
+@media only screen and (max-width: 40em) {
+  .brazil-stories ul.buttons-2 {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto; } }
+@media only screen and (min-width:40.063em) {
+  .brazil-stories ul.buttons-2 {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: 99;
+    bottom: -2rem;
+    opacity: 0;
+    -webkit-transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 50rem; } }
+.brazil-stories ul.buttons-2.appear {
+  opacity: 1; }
+.brazil-stories ul.buttons-2 li a {
+  font-size: .7rem;
+  height: 2.5rem;
+  padding-top: .7rem; }
   @media only screen and (min-width:64.063em) {
-    .brazil-stories ul.buttons-2 {
-      width: 90%;
-      margin-left: 5%; } }
-  @media only screen and (max-width: 40em) {
-    .brazil-stories ul.buttons-2 li:first-of-type {
-      width: 72%;
-      margin-right: 3%;
-      float: left; }
-    .brazil-stories ul.buttons-2 li:last-of-type {
-      width: 25%;
-      float: right; } }
-  .brazil-stories ul.buttons-2 li a {
-    font-size: .7rem;
-    height: 2.5rem;
-    padding-top: .7rem;
-    border-radius: 4px 4px 0 0; }
-    @media only screen and (min-width:64.063em) {
-      .brazil-stories ul.buttons-2 li a {
-        height: 3.5rem;
-        font-size: 1rem;
-        padding-top: .95rem; } }
+    .brazil-stories ul.buttons-2 li a {
+      height: 3.5rem;
+      font-size: 1rem;
+      padding-top: .95rem; } }
 .brazil-stories #morgana .map {
   position: relative; }
   .brazil-stories #morgana .map img {
@@ -413,20 +415,20 @@
     position: fixed;
     bottom: -2rem;
     z-index: 99;
-    left: 0;
-    right: 0;
+    left: 50%;
+    display: none;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     -webkit-transition: all .25s ease-in;
     -moz-transition: all .25s ease-in;
     transition: all .25s ease-in; }
     #evergreen-landing .fixed-buttons.appear, #evergreen-landing-uncookied .fixed-buttons.appear {
       opacity: 1; }
-    @media only screen and (max-width: 40em) {
-      #evergreen-landing .fixed-buttons .columns, #evergreen-landing-uncookied .fixed-buttons .columns {
-        padding: 0; } }
-    @media only screen and (min-width:64.063em) {
+    @media only screen and (min-width:40.063em) {
       #evergreen-landing .fixed-buttons, #evergreen-landing-uncookied .fixed-buttons {
-        width: 90%;
-        margin-left: 5%; } }
+        display: block;
+        max-width: 50rem;
+        width: 100%; } }
     #evergreen-landing .fixed-buttons li a, #evergreen-landing-uncookied .fixed-buttons li a {
       border-radius: 4px 4px 0 0; }
       @media only screen and (max-width: 40em) {
@@ -1672,20 +1674,20 @@
     position: fixed;
     bottom: -2rem;
     z-index: 99;
-    left: 0;
-    right: 0; }
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    display: none; }
     #brazil-landing .fixed-buttons.appear, #post-actbr .fixed-buttons.appear {
       opacity: 1;
       -webkit-transition: opacity .25s ease-in;
       -moz-transition: opacity .25s ease-in;
       transition: opacity .25s ease-in; }
-    @media only screen and (max-width: 40em) {
-      #brazil-landing .fixed-buttons .columns, #post-actbr .fixed-buttons .columns {
-        padding: 0; } }
-    @media only screen and (min-width:64.063em) {
+    @media only screen and (min-width:40.063em) {
       #brazil-landing .fixed-buttons, #post-actbr .fixed-buttons {
-        width: 90%;
-        margin-left: 5%; } }
+        max-width: 50rem;
+        width: 100%;
+        display: block; } }
     #brazil-landing .fixed-buttons li a, #post-actbr .fixed-buttons li a {
       border-radius: 4px 4px 0 0; }
       @media only screen and (max-width: 40em) {
@@ -2002,6 +2004,7 @@
     opacity: 0; } }
 
 #toolkit {
+  padding: 2rem 0;
   background: url(../images/background.jpg) no-repeat top center;
   background-size: auto 3100px; }
   #toolkit #keep-moving, #toolkit #finish-strong, #toolkit #say-thanks {

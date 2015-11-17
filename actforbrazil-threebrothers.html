@@ -122,6 +122,10 @@
 			<p>
 				Through sponsorship and the support of Compassion, and by accepting God into their lives, one family’s cycle of addiction, poverty and hopelessness has come to an end – and that’s a miracle to us.
 			</p>
+		<ul class="buttons-2 show-for-small">
+			<li><a href="" class='button-solid-sky-blue'>Act for Jesus Gabriel</a></li>
+			<li><a href="" class="button-solid-yellow">Donate</a></li>
+		</ul>
 		</div>
 	</div>
 </section>
@@ -236,6 +240,19 @@
 	if($('.fixed-buttons').length) {
 		$('footer').css('padding-bottom', '5rem');
 	} 
+
+	//////// STICKY BUTTONS
+
+	var windowW = $(window).width();
+	var bodyH = $('body').height();
+
+	$(window).scroll(function(){
+		var currentPostion = $(window).scrollTop();
+		if(windowW > 641 && currentPostion >= bodyH ) {
+			$('.fixed-buttons').addClass('appear');
+		}
+	});
+
 	///////// VIDEO HERO
 
 	$('.hero .play').on('click', function(){
