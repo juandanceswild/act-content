@@ -111,8 +111,9 @@
                 <img class="waterdrop-1" src="multimedia/act-for_brazil-infographic-waterdrop-3.png">
                 <img class="waterdrop-2" src="multimedia/act-for_brazil-infographic-waterdrop-3.png">
                 <img class="waterdrop-3" src="multimedia/act-for_brazil-infographic-waterdrop-3.png">
-                <img class="van" src="multimedia/act-for_brazil_infographic_van.svg">
-                <img class="background" src="multimedia/act-for_brazil_infographic_main.png">
+                <img class="kids" src="multimedia/act-for_brazil-infographic_kids.svg">
+                <img class="van" src="multimedia/act-for_brazil-infographic_van.svg">
+                <img class="background" src="multimedia/act-for_brazil-infographic_main.png">
                 <img class="text" src="multimedia/act-for_brazil_infographic_text.png">
             </div>
             <img class="show-for-small" src="multimedia/act-for_brazil-infographic_mobile.png"> 
@@ -295,7 +296,7 @@
             <div class="columns small-6 icon angel">
                 <div class="table-cell">
                     <img src="multimedia/act-for_brazil-icon-angel.png">
-                    <p>Fundraise in memory and honor of a loved one.</p>   
+                    <p>Fundraiser in memory and honor of a loved one.</p>   
                 </div>      
             </div>
         </div>
@@ -529,9 +530,17 @@
             }  
         };
   
-        if($('.infographic .van').inView('both')) {
-            $('.infographic .van').addClass('move');
+        if($('.infographic .van, .infographic .kids').inView('both')) {
+            $('.infographic .van, .infographic .kids').addClass('move');
+            if($('.infographic .van.move').length) {
+                setTimeout(function()
+                    {$('.infographic .van, .infographic .kids').css('display', 'none')}, 
+                    8000 
+                )
+            } 
         } 
+
+        $('.infographic .van, .infographic .kids').css('display', 'block');
     });
 
 
