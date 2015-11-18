@@ -5919,6 +5919,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   .brazil-stories .hero video {
     position: absolute;
     top: 50%;
+    left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     height: 100%;
