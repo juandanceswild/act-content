@@ -94,11 +94,11 @@
             </li>
         </ul>
     </div>
-    <div class="row">
+    <div class="row infographic">
         <div class="columns">
-            <h2>Brazil is a country with a rich culture and strong faith, yet millions of Brazillian children live in extreme poverty and lack the resource to escape the cycle.</h2>
+            <h2>Our journey starts with Brazil. Brazil is a country with a rich culture and strong faith, yet millions of Brazilian children live in extreme poverty and lack the resources to escape the cycle.</h2>
         </div>
-        <div class="columns infographic">
+        <div class="columns">
             <div class="hide-for-small">
                 <img src="multimedia/act-for_brazil_infographic_main_placeholder.png">
                 <img class="cloud" src="multimedia/act-for_brazil_infographic_cloud.svg">  
@@ -106,14 +106,16 @@
                 <img class="waterdrop-1" src="multimedia/act-for_brazil-infographic-waterdrop-3.png">
                 <img class="waterdrop-2" src="multimedia/act-for_brazil-infographic-waterdrop-3.png">
                 <img class="waterdrop-3" src="multimedia/act-for_brazil-infographic-waterdrop-3.png">
-                <img class="van" src="multimedia/act-for_brazil_infographic_van.svg">
-                <img class="background" src="multimedia/act-for_brazil_infographic_main.png">
-                <img class="text" src="multimedia/act-for_brazil_infographic_text.png">
+                <img class="kids" src="multimedia/act-for_brazil-infographic_kids.svg">
+                <img class="van" src="multimedia/act-for_brazil-infographic_van.svg">
+                <img class="background" src="multimedia/act-for_brazil-infographic_main.png">
+                <img class="text" src="multimedia/act-for_brazil_infographic_text.png">  
             </div>
             <img class="show-for-small" src="multimedia/act-for_brazil-infographic_mobile.png"> 
         </div>
+        <p>sources: UNICEF, Haver, Timetric</p>
     </div>
-</section>
+</section>  
 
 <section class="three-stories">
     <div class="row">
@@ -524,9 +526,12 @@
             }  
         };
   
-        if($('.infographic .van').inView('both')) {
-            $('.infographic .van').addClass('move');
-        } 
+        if($('.infographic .van, .infographic .kids').inView('both')) {
+            $('.infographic .van, .infographic .kids').addClass('move');
+
+        } else {
+            $('.infographic .van, .infographic .kids').removeClass('move');
+        }
     });
 
 

@@ -46,6 +46,12 @@
 
 
 <div id="evergreen-volunteer">
+
+	<div class="video-pop-up">
+	    <img src="multimedia/x.png">
+	    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
+	</div>  
+
 	<section class="hero" style="background: url(multimedia/act-for_evergreen-volunteer.jpg); background-size: cover;">
 		<div class="row">
 			<h1>Volunteers are vital to compassion</h1>
@@ -83,7 +89,11 @@
 					<a class="button-solid-blue">Start a campaign</a>
 				</div>
 			</div>
-			<div class="small-12 medium-8 columns video" style="background: url(multimedia/act-for_evergreen_boy.jpg) no-repeat bottom;background-size: cover;">
+			<div class="small-12 medium-8 columns video">
+				<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
+				<div class="row">
+				    <div class="centered play"><img src="multimedia/act-for_play.png"></div>
+				</div>
 			</div>
 			<div class="small-12 medium-4 columns colorado ">
 				<div class="middle">
@@ -223,5 +233,23 @@
 	</div>
 </div>
 </footer> 
-	
+
+<script>
+(function($){
+	 ///////// VIDEO HERO
+
+    $('.video .play').on('click', function(){
+        $('.video-pop-up').css('display','block');
+        $('.video-pop-up video').get(0).play();
+        $('.video video').get(0).pause();
+        $('body, html').css('overflow', 'hidden');
+    })
+    $('.video-pop-up img').on('click', function(){
+        $('.video-pop-up').css('display','none');
+        $('.video-pop-up video').get(0).pause();
+        $('.video video').get(0).play();
+        $('body, html').css('overflow', 'auto');
+    })
+})(jQuery);
+</script>	
 </body>

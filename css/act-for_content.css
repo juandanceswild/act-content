@@ -6591,6 +6591,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     .compassion-in-action .video video {
       position: absolute;
       top: 50%;
+      left: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
       width: 100%;
@@ -6791,73 +6792,97 @@ input[type="checkbox"] + label, input[type="radio"] + label {
         padding-left: 3rem;
         padding-right: 2rem; } }
 
-#evergreen-volunteer .hero {
-  position: relative;
-  height: 28rem; }
-  @media only screen and (min-width:40.063em) {
-    #evergreen-volunteer .hero {
-      height: 40rem; } }
-  #evergreen-volunteer .hero h1 {
+#evergreen-volunteer {
+  overflow-x: hidden; }
+  #evergreen-volunteer .video-pop-up {
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 100;
     position: absolute;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%); }
-#evergreen-volunteer h1, #evergreen-volunteer h2, #evergreen-volunteer h3, #evergreen-volunteer p {
-  color: white;
-  text-align: center; }
-#evergreen-volunteer .join {
-  position: relative;
-  padding: 2rem 0;
-  background: #0055a6; }
-  @media only screen and (min-width:40.063em) {
-    #evergreen-volunteer .join {
-      padding: 4rem 0; }
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+    #evergreen-volunteer .video-pop-up video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      width: 90%;
+      height: auto; }
+    #evergreen-volunteer .video-pop-up img {
+      top: 30px;
+      right: 30px;
+      position: absolute;
+      cursor: pointer; }
+  #evergreen-volunteer .hero {
+    position: relative;
+    height: 28rem; }
+    @media only screen and (min-width:40.063em) {
+      #evergreen-volunteer .hero {
+        height: 40rem; } }
+    #evergreen-volunteer .hero h1 {
+      position: absolute;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%); }
+  #evergreen-volunteer h1, #evergreen-volunteer h2, #evergreen-volunteer h3, #evergreen-volunteer p {
+    color: white;
+    text-align: center; }
+  #evergreen-volunteer .join {
+    position: relative;
+    padding: 2rem 0;
+    background: #0055a6; }
+    @media only screen and (min-width:40.063em) {
+      #evergreen-volunteer .join {
+        padding: 4rem 0; }
+        #evergreen-volunteer .join p {
+          max-width: 50rem;
+          margin: 2rem auto 3rem auto;
+          font-size: 1.2rem;
+          font-weight: 100; } }
+    @media only screen and (min-width:64.063em) {
       #evergreen-volunteer .join p {
-        max-width: 50rem;
-        margin: 2rem auto 3rem auto;
-        font-size: 1.2rem;
-        font-weight: 100; } }
-  @media only screen and (min-width:64.063em) {
-    #evergreen-volunteer .join p {
-      font-size: 1.4rem;
-      line-height: normal; } }
-  #evergreen-volunteer .join .arrow {
-    position: absolute;
-    text-align: center;
-    width: 3rem;
-    height: 3rem;
-    top: -1.25rem;
-    background: #0055a6;
-    border-radius: 50%;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%); }
-    @media only screen and (min-width:64.063em) {
-      #evergreen-volunteer .join .arrow {
-        width: 4.5rem;
-        height: 4.5rem;
-        top: -2.25rem; } }
-    #evergreen-volunteer .join .arrow img {
-      width: 22px;
-      margin-top: 17px; }
+        font-size: 1.4rem;
+        line-height: normal; } }
+    #evergreen-volunteer .join .arrow {
+      position: absolute;
+      text-align: center;
+      width: 3rem;
+      height: 3rem;
+      top: -1.25rem;
+      background: #0055a6;
+      border-radius: 50%;
+      z-index: 2;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%); }
       @media only screen and (min-width:64.063em) {
-        #evergreen-volunteer .join .arrow img {
-          margin-top: 26px;
-          width: 33px; } }
-  #evergreen-volunteer .join a {
-    max-width: 20rem;
-    margin: 1rem auto; }
-    @media only screen and (min-width:64.063em) {
-      #evergreen-volunteer .join a {
-        max-width: 25rem;
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        height: 4rem; } }
+        #evergreen-volunteer .join .arrow {
+          width: 4.5rem;
+          height: 4.5rem;
+          top: -2.25rem; } }
+      #evergreen-volunteer .join .arrow img {
+        width: 22px;
+        margin-top: 17px; }
+        @media only screen and (min-width:64.063em) {
+          #evergreen-volunteer .join .arrow img {
+            margin-top: 26px;
+            width: 33px; } }
+    #evergreen-volunteer .join a {
+      max-width: 20rem;
+      margin: 1rem auto; }
+      @media only screen and (min-width:64.063em) {
+        #evergreen-volunteer .join a {
+          max-width: 25rem;
+          margin-top: 2rem;
+          font-size: 1.2rem;
+          height: 4rem; } }
 
 #brazil-landing, #post-actbr {
   text-align: center;
@@ -6874,6 +6899,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     #brazil-landing .video-pop-up video, #post-actbr .video-pop-up video {
       position: absolute;
       top: 50%;
+      left: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
       width: 90%;
@@ -7082,8 +7108,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       width: 15%;
       left: 71%; }
       #brazil-landing .info .infographic .van.move, #post-actbr .info .infographic .van.move {
-        animation: car 6s 1;
-        animation-delay: 2s; }
+        animation: car 6s infinite;
+        animation-delay: 200ms; }
     #brazil-landing .info .infographic .kids, #post-actbr .info .infographic .kids {
       width: 8%;
       left: 63%;
@@ -7092,8 +7118,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       bottom: -1%;
       opacity: 1; }
       #brazil-landing .info .infographic .kids.move, #post-actbr .info .infographic .kids.move {
-        animation: kids 6s 1;
-        animation-delay: 2s; }
+        animation: kids 6s infinite;
+        animation-delay: 200ms; }
     #brazil-landing .info .infographic .van.disappear, #brazil-landing .info .infographic .kids.disappear, #post-actbr .info .infographic .van.disappear, #post-actbr .info .infographic .kids.disappear {
       opacity: 0; }
     #brazil-landing .info .infographic .illiterate, #post-actbr .info .infographic .illiterate {
@@ -7102,7 +7128,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       width: 5.7%;
       left: 1.5%;
       top: 59%;
-      animation: illiterate 2s infinite; }
+      animation: illiterate 1s infinite; }
     #brazil-landing .info .infographic .waterdrop-1, #brazil-landing .info .infographic .waterdrop-2, #brazil-landing .info .infographic .waterdrop-3, #post-actbr .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-2, #post-actbr .info .infographic .waterdrop-3 {
       position: absolute; }
     #brazil-landing .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-1 {
@@ -7120,6 +7146,12 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       top: 4%;
       right: 5%;
       animation: waterdrop-3 4s infinite; }
+    #brazil-landing .info .infographic p, #post-actbr .info .infographic p {
+      font-size: .8rem;
+      color: white;
+      text-align: right;
+      position: relative;
+      top: 1rem; }
   #brazil-landing .three-stories, #post-actbr .three-stories {
     background: #037ac9;
     padding-top: 4rem; }
@@ -7717,37 +7749,43 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   0% {
     left: 71%; }
 
-  25% {
+  15% {
     left: 61%; }
 
+  45% {
+    left: 150%; }
+
+  90% {
+    left: 71%; }
+
   100% {
-    left: 180%; } }
+    left: 71%; } }
 
 @keyframes kids {
   0% {
     opacity: 1; }
 
-  10% {
+  12% {
     opacity: 1; }
 
-  30% {
+  16% {
     opacity: 0; }
 
+  40% {
+    opacity: 0; }
+
+  45% {
+    opacity: 1; }
+
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 @keyframes illiterate {
   0% {
     top: 59%; }
 
-  10% {
-    top: 58%; }
-
-  20% {
-    top: 59%; }
-
   100% {
-    top: 59%; } }
+    top: 58%; } }
 
 @keyframes waterdrop-1 {
   0% {
