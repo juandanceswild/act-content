@@ -10192,8 +10192,6 @@ span.calendar {
       transform: translateX(-50%) translateY(-50%);
       width: 100%;
       min-height: 100%;
-      width: auto;
-      height: auto;
       z-index: -1; }
     @media only screen and (min-width:64.063em) {
       #brazil-landing .hero, #post-actbr .hero {
@@ -10353,8 +10351,8 @@ span.calendar {
       width: 15%;
       left: 71%; }
       #brazil-landing .info .infographic .van.move, #post-actbr .info .infographic .van.move {
-        animation: car 6s infinite;
-        animation-delay: 200ms; }
+        animation: car 6s 1;
+        animation-delay: 2s; }
     #brazil-landing .info .infographic .kids, #post-actbr .info .infographic .kids {
       width: 8%;
       left: 63%;
@@ -10363,8 +10361,8 @@ span.calendar {
       bottom: -1%;
       opacity: 1; }
       #brazil-landing .info .infographic .kids.move, #post-actbr .info .infographic .kids.move {
-        animation: kids 6s infinite;
-        animation-delay: 200ms; }
+        animation: kids 6s 1;
+        animation-delay: 2s; }
     #brazil-landing .info .infographic .van.disappear, #brazil-landing .info .infographic .kids.disappear, #post-actbr .info .infographic .van.disappear, #post-actbr .info .infographic .kids.disappear {
       opacity: 0; }
     #brazil-landing .info .infographic .illiterate, #post-actbr .info .infographic .illiterate {
@@ -10373,7 +10371,7 @@ span.calendar {
       width: 5.7%;
       left: 1.5%;
       top: 59%;
-      animation: illiterate 1s infinite; }
+      animation: illiterate 2s infinite; }
     #brazil-landing .info .infographic .waterdrop-1, #brazil-landing .info .infographic .waterdrop-2, #brazil-landing .info .infographic .waterdrop-3, #post-actbr .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-2, #post-actbr .info .infographic .waterdrop-3 {
       position: absolute; }
     #brazil-landing .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-1 {
@@ -10391,12 +10389,6 @@ span.calendar {
       top: 4%;
       right: 5%;
       animation: waterdrop-3 4s infinite; }
-    #brazil-landing .info .infographic p, #post-actbr .info .infographic p {
-      font-size: .8rem;
-      color: white;
-      text-align: right;
-      position: relative;
-      top: 1rem; }
   #brazil-landing .three-stories, #post-actbr .three-stories {
     background: #037ac9;
     padding-top: 4rem; }
@@ -10994,40 +10986,34 @@ span.calendar {
   0% {
     left: 71%; }
 
-  15% {
+  25% {
     left: 61%; }
 
-  45% {
-    left: 150%; }
-
-  90% {
-    left: 71%; }
-
   100% {
-    left: 71%; } }
+    left: 180%; } }
 
 @keyframes kids {
   0% {
     opacity: 1; }
 
-  12% {
+  10% {
     opacity: 1; }
 
-  16% {
+  30% {
     opacity: 0; }
-
-  40% {
-    opacity: 0; }
-
-  45% {
-    opacity: 1; }
 
   100% {
-    opacity: 1; } }
+    opacity: 0; } }
 
 @keyframes illiterate {
   0% {
+    top: 59%; }
+
+  10% {
     top: 58%; }
+
+  20% {
+    top: 59%; }
 
   100% {
     top: 59%; } }
@@ -13981,6 +13967,27 @@ li.total .right.wi-value {
 
 #evergreen-landing, #evergreen-landing-uncookied {
   text-align: center; }
+  #evergreen-landing .video-pop-up, #evergreen-landing-uncookied .video-pop-up {
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+    #evergreen-landing .video-pop-up video, #evergreen-landing-uncookied .video-pop-up video {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      width: 90%;
+      height: auto; }
+    #evergreen-landing .video-pop-up img, #evergreen-landing-uncookied .video-pop-up img {
+      top: 30px;
+      right: 30px;
+      position: absolute;
+      cursor: pointer; }
   #evergreen-landing h1, #evergreen-landing h2, #evergreen-landing h4, #evergreen-landing p, #evergreen-landing-uncookied h1, #evergreen-landing-uncookied h2, #evergreen-landing-uncookied h4, #evergreen-landing-uncookied p {
     color: white; }
   #evergreen-landing h1, #evergreen-landing-uncookied h1 {
@@ -14448,6 +14455,34 @@ li.total .right.wi-value {
     .compassion-in-action p {
       font-size: 1.2rem;
       font-weight: 300; } }
+  .compassion-in-action .video {
+    position: relative; }
+    .compassion-in-action .video video {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      width: 100%;
+      min-height: 100%;
+      z-index: 0; }
+    .compassion-in-action .video .play {
+      position: absolute;
+      cursor: pointer;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 3; }
+      .compassion-in-action .video .play img {
+        position: absolute;
+        width: 4rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%); }
+        @media only screen and (min-width:64.063em) {
+          .compassion-in-action .video .play img {
+            width: 98px; } }
   .compassion-in-action .colorado {
     background: #0698e4; }
   .compassion-in-action .columns {
