@@ -7035,8 +7035,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       width: 15%;
       left: 71%; }
       #brazil-landing .info .infographic .van.move, #post-actbr .info .infographic .van.move {
-        animation: car 6s 1;
-        animation-delay: 2s; }
+        animation: car 6s infinite;
+        animation-delay: 200ms; }
     #brazil-landing .info .infographic .kids, #post-actbr .info .infographic .kids {
       width: 8%;
       left: 63%;
@@ -7045,8 +7045,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       bottom: -1%;
       opacity: 1; }
       #brazil-landing .info .infographic .kids.move, #post-actbr .info .infographic .kids.move {
-        animation: kids 6s 1;
-        animation-delay: 2s; }
+        animation: kids 6s infinite;
+        animation-delay: 200ms; }
     #brazil-landing .info .infographic .van.disappear, #brazil-landing .info .infographic .kids.disappear, #post-actbr .info .infographic .van.disappear, #post-actbr .info .infographic .kids.disappear {
       opacity: 0; }
     #brazil-landing .info .infographic .illiterate, #post-actbr .info .infographic .illiterate {
@@ -7055,7 +7055,7 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       width: 5.7%;
       left: 1.5%;
       top: 59%;
-      animation: illiterate 2s infinite; }
+      animation: illiterate 1s infinite; }
     #brazil-landing .info .infographic .waterdrop-1, #brazil-landing .info .infographic .waterdrop-2, #brazil-landing .info .infographic .waterdrop-3, #post-actbr .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-2, #post-actbr .info .infographic .waterdrop-3 {
       position: absolute; }
     #brazil-landing .info .infographic .waterdrop-1, #post-actbr .info .infographic .waterdrop-1 {
@@ -7073,6 +7073,12 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       top: 4%;
       right: 5%;
       animation: waterdrop-3 4s infinite; }
+    #brazil-landing .info .infographic p, #post-actbr .info .infographic p {
+      font-size: .8rem;
+      color: white;
+      text-align: right;
+      position: relative;
+      top: 1rem; }
   #brazil-landing .three-stories, #post-actbr .three-stories {
     background: #037ac9;
     padding-top: 4rem; }
@@ -7670,34 +7676,40 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   0% {
     left: 71%; }
 
-  25% {
+  15% {
     left: 61%; }
 
+  45% {
+    left: 150%; }
+
+  90% {
+    left: 71%; }
+
   100% {
-    left: 180%; } }
+    left: 71%; } }
 
 @keyframes kids {
   0% {
     opacity: 1; }
 
-  10% {
+  12% {
     opacity: 1; }
 
-  30% {
+  16% {
     opacity: 0; }
 
+  40% {
+    opacity: 0; }
+
+  45% {
+    opacity: 1; }
+
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 @keyframes illiterate {
   0% {
-    top: 59%; }
-
-  10% {
     top: 58%; }
-
-  20% {
-    top: 59%; }
 
   100% {
     top: 59%; } }

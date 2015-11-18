@@ -555,14 +555,8 @@
   
         if($('.infographic .van, .infographic .kids').inView('both')) {
             $('.infographic .van, .infographic .kids').addClass('move');
-            if($('.infographic .van.move').length) {
-                setTimeout(function()
-                    {$('.infographic .van, .infographic .kids').addClass('disappear')}, 
-                    8000 
-                )
-            } 
+
         } else {
-            $('.infographic .van, .infographic .kids').removeClass('disappear');
             $('.infographic .van, .infographic .kids').removeClass('move');
         }
     });
