@@ -374,6 +374,26 @@
     </div>
 </section>
 
+<style scoped>
+@media 
+(-webkit-min-device-pixel-ratio: 2) and 
+(min-resolution: 192dpi) and
+(max-width:500px) { 
+    .fundraising-in-action .jesus {
+        background: url(multimedia/act-for_brazil-action-2_x2.jpg) no-repeat center;
+    }
+    .fundraising-in-action .bike {
+        background: url(multimedia/act-for_brazil-action-3_x2.jpg) no-repeat center;
+    }
+    .fundraising-in-action .morgana {
+        background: url(multimedia/act-for_brazil-action-4_x2.jpg) no-repeat center;
+    }
+    .fundraising-in-action .jesus, .fundraising-in-action .bike, .fundraising-in-action .morgana {
+        background-size: cover;
+    }
+}
+</style>
+
 <section class="post-end">
 
     <div class="row">
@@ -392,7 +412,10 @@
 
 
 <section class="ending">
-    <img src="multimedia/act-for_brazil-landing-end.jpg">
+    <img 
+    src="multimedia/act-for_brazil-landing-end.jpg"
+    srcset="multimedia/act-for_brazil_landing-end@2x.jpg 1600w"
+    >
     <div class="layer"></div>
 </section>
 </div>
