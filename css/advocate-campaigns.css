@@ -10191,9 +10191,13 @@ span.calendar {
       top: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
-      width: 100%;
-      min-height: 100%;
+      height: 100%;
+      width: auto;
       z-index: -1; }
+      @media only screen and (min-width:40.063em) {
+        #brazil-landing .hero video, #post-actbr .hero video {
+          width: 100%;
+          height: auto; } }
     @media only screen and (min-width:64.063em) {
       #brazil-landing .hero, #post-actbr .hero {
         height: 40rem; } }
@@ -13804,11 +13808,13 @@ li.total .right.wi-value {
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    width: 100%;
-    min-height: 100%;
+    height: 100%;
     width: auto;
-    height: auto;
     z-index: -1; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories .hero video {
+        width: 100%;
+        height: auto; } }
   @media only screen and (min-width:64.063em) {
     .brazil-stories .hero {
       height: 40rem; } }
