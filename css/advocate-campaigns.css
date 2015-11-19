@@ -10185,7 +10185,8 @@ span.calendar {
   #brazil-landing .hero, #post-actbr .hero {
     overflow: hidden;
     height: 28rem;
-    width: 100%; }
+    width: 100%;
+    background-color:#0E6CC5; }
     #brazil-landing .hero video, #post-actbr .hero video {
       position: absolute;
       top: 50%;
@@ -10193,7 +10194,24 @@ span.calendar {
       transform: translateX(-50%) translateY(-50%);
       height: 100%;
       width: auto;
-      z-index: -1; }
+      z-index: 1; 
+       -webkit-background-size:cover; 
+       moz-background-size:cover; 
+       -o-background-size:cover; 
+       background-size:cover; }
+    @media only screen and (max-width:40.063em) {
+       #brazil-landing .hero video::-webkit-media-controls-start-playback-button, #post-actbr .hero video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        webkit-appearance: none;
+      }
+      #brazil-landing .hero video, #post-actbr .hero video {
+        background-position-x: -10rem;
+/*        top: 3.5rem;
+        left: 0;
+        -webkit-transform: inherit;
+        transform: inherit;*/
+      }
+    }
       @media only screen and (min-width:40.063em) {
         #brazil-landing .hero video, #post-actbr .hero video {
           width: 100%;
@@ -10207,7 +10225,9 @@ span.calendar {
       top: 0;
       left: 0;
       bottom: 0;
-      right: 0; }
+      right: 0; 
+      z-index: 2;
+    }
     #brazil-landing .hero h1, #post-actbr .hero h1 {
       position: absolute;
       z-index: 3;
@@ -10267,7 +10287,7 @@ span.calendar {
       width: 3rem;
       height: 3rem;
       top: -1.25rem;
-      background: #0055a6;
+      background: #E6B413;
       border-radius: 50%;
       z-index: 2;
       left: 50%;
@@ -10280,10 +10300,10 @@ span.calendar {
           top: -2.25rem; } }
       #brazil-landing .intro .arrow img, #post-actbr .intro .arrow img {
         width: 22px;
-        margin-top: 17px; }
+        margin-top: 20px; }
         @media only screen and (min-width:64.063em) {
           #brazil-landing .intro .arrow img, #post-actbr .intro .arrow img {
-            margin-top: 26px;
+            margin-top: 28px;
             width: 33px; } }
     #brazil-landing .intro h2, #brazil-landing .intro p, #post-actbr .intro h2, #post-actbr .intro p {
       line-height: normal; }
@@ -10396,7 +10416,7 @@ span.calendar {
       animation: waterdrop-3 4s infinite; }
     #brazil-landing .info .infographic p, #post-actbr .info .infographic p {
       font-size: .8rem;
-      color: white;
+      color: #0055a6;
       text-align: right;
       position: relative;
       top: 1rem; }
@@ -10514,7 +10534,8 @@ span.calendar {
     #brazil-landing .fundraising-in-action .row .columns, #post-actbr .fundraising-in-action .row .columns {
       padding: 0;
       overflow: hidden;
-      height: 15rem; }
+      height: 15rem; 
+      background-size:cover!important;}
       @media only screen and (min-width:40.063em) {
         #brazil-landing .fundraising-in-action .row .columns, #post-actbr .fundraising-in-action .row .columns {
           height: 18rem; } }
@@ -13591,6 +13612,10 @@ li.total .right.wi-value {
   margin-top: 10px;
   text-align: center; }
 
+.brazil-stories {
+  background:#0055A6;
+}
+
 .brazil-stories .video-pop-up {
   background: rgba(0, 0, 0, 0.7);
   display: none;
@@ -13631,7 +13656,12 @@ li.total .right.wi-value {
       font-size: 1rem; } }
 .brazil-stories .table {
   display: table;
-  height: 100%; }
+  height: 100%; 
+  position: absolute;
+  left:0;
+  right: 0;
+  z-index: 2;
+  }
 .brazil-stories .table-cell {
   display: table-cell;
   vertical-align: middle; }
@@ -13801,7 +13831,8 @@ li.total .right.wi-value {
 .brazil-stories .hero {
   height: 28rem;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #0055A6; }
   .brazil-stories .hero video {
     position: absolute;
     top: 50%;
@@ -13810,8 +13841,14 @@ li.total .right.wi-value {
     transform: translateX(-50%) translateY(-50%);
     height: 100%;
     width: auto;
-    z-index: -1; }
-    @media only screen and (min-width:40.063em) {
+    z-index: 1; }
+    @media only screen and (max-width:40.063em) {
+      .brazil-stories .hero video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        webkit-appearance: none;
+      }
+    }
+    @media only screen and (min-width:810px) {
       .brazil-stories .hero video {
         width: 100%;
         height: auto; } }
@@ -13946,7 +13983,8 @@ li.total .right.wi-value {
     .brazil-stories .other-stories .table-cell a {
       height: 2.5rem;
       padding-top: .5rem;
-      width: 10rem; }
+      width: 10rem;
+      margin:auto; }
       @media only screen and (min-width:40.063em) {
         .brazil-stories .other-stories .table-cell a {
           width: 13rem;
@@ -14484,7 +14522,8 @@ li.total .right.wi-value {
       transform: translateX(-50%) translateY(-50%);
       width: 100%;
       min-height: 100%;
-      z-index: 0; }
+      z-index: 0;
+      background-color: black; }
     .compassion-in-action .video .play {
       position: absolute;
       cursor: pointer;
@@ -14706,7 +14745,11 @@ li.total .right.wi-value {
       cursor: pointer; }
   #evergreen-volunteer .hero {
     position: relative;
-    height: 28rem; }
+    height: 28rem; 
+  }
+  @media only screen and (max-width:40.063em){
+    #evergreen-volunteer .hero {background-position-x:-45px!important;}
+  }
     @media only screen and (min-width:40.063em) {
       #evergreen-volunteer .hero {
         height: 40rem; } }

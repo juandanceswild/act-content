@@ -5705,6 +5705,10 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   padding-left: 0px;
   padding-right: 0px; }
 
+.brazil-stories {
+  background:#0055A6;
+}
+
 .brazil-stories .video-pop-up {
   background: rgba(0, 0, 0, 0.7);
   display: none;
@@ -5745,7 +5749,12 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       font-size: 1rem; } }
 .brazil-stories .table {
   display: table;
-  height: 100%; }
+  height: 100%; 
+  position: absolute;
+  left:0;
+  right: 0;
+  z-index: 2;
+  }
 .brazil-stories .table-cell {
   display: table-cell;
   vertical-align: middle; }
@@ -5915,20 +5924,29 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 .brazil-stories .hero {
   height: 28rem;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden; 
+  background-color: #0055A6;}
   .brazil-stories .hero video {
     position: absolute;
-    top: 50%;
+/*    top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);*/
     height: 100%;
     width: auto;
-    z-index: -1; }
+    background-color: #0055A6;
+    z-index: 1; }
+    @media only screen and (max-width:40.063em) {
+      .brazil-stories .hero video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        webkit-appearance: none;
+      }
+    }
     @media only screen and (min-width:40.063em) {
       .brazil-stories .hero video {
         width: 100%;
-        height: auto; } }
+        height: auto;
+        } }
   @media only screen and (min-width:64.063em) {
     .brazil-stories .hero {
       height: 40rem; } }
@@ -6060,7 +6078,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     .brazil-stories .other-stories .table-cell a {
       height: 2.5rem;
       padding-top: .5rem;
-      width: 10rem; }
+      width: 10rem; 
+      margin:auto;}
       @media only screen and (min-width:40.063em) {
         .brazil-stories .other-stories .table-cell a {
           width: 13rem;
@@ -6598,7 +6617,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       transform: translateX(-50%) translateY(-50%);
       width: 100%;
       min-height: 100%;
-      z-index: 0; }
+      z-index: 0;
+      background-color:black; }
     .compassion-in-action .video .play {
       position: absolute;
       cursor: pointer;
@@ -6820,10 +6840,15 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       cursor: pointer; }
   #evergreen-volunteer .hero {
     position: relative;
-    height: 28rem; }
+    height: 28rem;
+   }
+  @media only screen and (max-width:40.063em){
+    #evergreen-volunteer .hero {background-position-x:-45px!important;}
+  }
     @media only screen and (min-width:40.063em) {
       #evergreen-volunteer .hero {
-        height: 40rem; } }
+        height: 40rem;
+     } }
     #evergreen-volunteer .hero h1 {
       position: absolute;
       font-weight: 700;
@@ -6943,7 +6968,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
   #brazil-landing .hero, #post-actbr .hero {
     overflow: hidden;
     height: 28rem;
-    width: 100%; }
+    width: 100%;
+    background-color:#0E6CC5; }
     #brazil-landing .hero video, #post-actbr .hero video {
       position: absolute;
       top: 50%;
@@ -6951,7 +6977,26 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       transform: translateX(-50%) translateY(-50%);
       height: 100%;
       width: auto;
-      z-index: -1; }
+      z-index: -1; 
+/*   background:transparent url('poster.jpg') no-repeat 0 0;*/ 
+   -webkit-background-size:cover; 
+   -moz-background-size:cover; 
+   -o-background-size:cover; 
+   background-size:cover; 
+    }
+    @media only screen and (max-width:40.063em) {
+       #brazil-landing .hero video::-webkit-media-controls-start-playback-button, #post-actbr .hero video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        webkit-appearance: none;
+      }
+      #brazil-landing .hero video, #post-actbr .hero video {
+        background-position-x: -10rem;
+/*        top: 3.5rem;
+        left: 0;
+        -webkit-transform: inherit;
+        transform: inherit;*/
+      }
+    }
       @media only screen and (min-width:40.063em) {
         #brazil-landing .hero video, #post-actbr .hero video {
           width: 100%;
@@ -6965,7 +7010,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
       top: 0;
       left: 0;
       bottom: 0;
-      right: 0; }
+      right: 0; 
+      z-index:2;}
     #brazil-landing .hero h1, #post-actbr .hero h1 {
       position: absolute;
       z-index: 3;
@@ -7272,7 +7318,8 @@ input[type="checkbox"] + label, input[type="radio"] + label {
     #brazil-landing .fundraising-in-action .row .columns, #post-actbr .fundraising-in-action .row .columns {
       padding: 0;
       overflow: hidden;
-      height: 15rem; }
+      height: 15rem; 
+      background-size:cover!important;}
       @media only screen and (min-width:40.063em) {
         #brazil-landing .fundraising-in-action .row .columns, #post-actbr .fundraising-in-action .row .columns {
           height: 18rem; } }

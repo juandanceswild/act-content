@@ -52,7 +52,7 @@
 
 <div id="morgana">
 <section class="hero">
-	<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
+	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
 	<div class="mask"></div>
 	<div class="nav">
 		<div class="prev" style="background: url(multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
@@ -109,7 +109,11 @@
 </section> 
 
 <section class="second">
-	<img class="full-width" src="multimedia/act-for_brazil-rosilda-4.jpg">
+	<img 
+		class="full-width"
+	    src="multimedia/act-for_brazil-rosilda-4.jpg"
+	    srcset="multimedia/act-for_brazil-rosilda-4_x2.jpg 1600w"
+	>
 	<div class="row">
 		<div class="columns max-45">
 			<h2 class="quote">“I’ve got my 2 children, my treasures, and I love them. I needed strength to carry on – and Compassion helped me find that strength.”</h2>
@@ -117,8 +121,8 @@
 			<p>All in all, the program has been instrumental in helping Rosilda move past her depression, building up her confidence as both a mother and a person. She now talks regularly with her neighbors, volunteers at the CSP, attends the partner church activities and sees to the needs of both Morgana and Dheric. She’s also learned to look towards the future instead of being stuck in the past. “I don’t know where I would be at this point of my life without the program’s help,” she says. “I’ve got my 2 children, my treasures, and I love them. I needed strength to carry on – and Compassion helped me find that strength.”
 			</p>
 		<ul class="buttons-2 show-for-small">
-			<li><a href="" class='button-solid-sky-blue'>Act for Jesus Gabriel</a></li>
-			<li><a href="" class="button-solid-yellow">Donate</a></li>
+			<li><a href="" class='button-solid-sky-blue'>Act for Morgana</a></li>
+			<li><a href="" class="button-solid-yellow">make a donation</a></li>
 		</ul>
 		</div>
 	</div>
@@ -242,6 +246,9 @@
 		var currentPostion = $(window).scrollTop();
 		if(windowW > 641 && currentPostion >= bodyH ) {
 			$('.fixed-buttons').addClass('appear');
+		}
+		if(windowW > 641 && currentPostion <= bodyH ) {
+			$('.fixed-buttons').removeClass('appear');
 		}
 	});
 

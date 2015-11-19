@@ -59,7 +59,7 @@
     </div>
 
 <section class="hero" >
-    <video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>  
+    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>  
     <div class="mask"></div>
     <div class="row">
         <h1><span>It starts</span><span> with one</span><span> act</span></h1>
@@ -70,10 +70,16 @@
 <section class="intro">
     <div class="arrow"><img src="multimedia/act-for_arrow_down_white.png"></div>
     <div class="row">
-        <div class="columns">
+        <div class="columns hide-for-small-only">
             <h2>There are 400 million children living in poverty.</br>
                 Put your love into action to impact real change.</h2>
-            <p>From now until Easter, March 27, the Compassion community is making a collective effort to raise money and help release millions of children in Brazil from poverty.</div>
+            <p>From now until Easter, March 27, the Compassion community is making a collective effort to raise money and help release millions of children in Brazil from poverty.
+        </div>
+        <div class="columns show-for-small-only">
+            <h2>There are 400 million children living in poverty.
+                Put your love into action to impact real change.</h2>
+            <p>From now until Easter, March 27, the Compassion community is making a collective effort to raise money and help release millions of children in Brazil from poverty.
+        </div>
     </div>
     <div class="row main-buttons">
         <div class="columns">
@@ -520,7 +526,7 @@
     
     $(window).on('scroll', function() {
         var nowScrollTop = $(this).scrollTop();
-        var buttonPosition = $('.intro .buttons-2').offset().top;
+        var buttonPosition = $('.mind-body').offset().top;
         
         if(Math.abs(lastScrollTop - nowScrollTop) >= delta){ //scroll down
             if(nowScrollTop > lastScrollTop && buttonPosition < nowScrollTop) {

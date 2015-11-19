@@ -46,12 +46,14 @@
 <div class="brazil-stories">
 <div class="video-pop-up">
 	<img src="multimedia/x.png">
-	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
+	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls>
+		<img src="multimedia/act-for_brazil-link-jesus.jpg" title="Your browser does not support the <video> tag">
+	</video>
 </div>	
 
 <div id="jesus">
 <section class="hero" >
-	<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
+	<video  src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>
 	<div class="mask"></div>
 	<div class="nav">
 		<div class="prev" style="background: url(multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
@@ -75,7 +77,7 @@
 <section class="intro">
 	<div class="row">
 		<div class="columns max-45">
-			<h2>Nine-year-old Jesus Gabriel lives with his signle mother and seven siblings in a small brick house that has two bedrooms, one bathroom, and a living room. The walls are cracked, the floors are unfinished, and there's little ventilation.</h2>
+			<h2>Nine-year-old Jesus Gabriel lives with his single mother and seven siblings in a small brick house that has two bedrooms, one bathroom, and a living room. The walls are cracked, the floors are unfinished, and there's little ventilation.</h2>
 			<p>The house itself is located in Casserengue, one of the most impoverished cities in Northeast Brazil, where 45% of the population lives on less than $35 a month. There are no job opportunities to speak of, and food and water and scarce. In fact, the only thing the city seems to have in abundance are drugs and alcohol.</p>
 			<p>And finally there's Jesus' health: because of a congenital defect in both his legs, he walks with a limp.</p>
 		</div>    
@@ -103,7 +105,11 @@
 </section>
 
 <section class="second">
-	<img class="full-width" src="multimedia/act-for_brazil-jesus-4.jpg">
+	<img 
+	    clas="full-width"
+	    src="multimedia/act-for_brazil-jesus-4.jpg"
+	    srcset="multimedia/act-for_brazil-jesus-4_x2.jpg 1600w"
+	>
 	<div class="row">
 		<div class="columns max-45">
 			<p>Today, the Oficina de Arte Vide Feliz - Compassion's local church partner since 2011 - is the place where Jesus' long-standing dream of becoming a pilot is alive and well. Which is pretty remarkable considering the city doesn't have an airport or offer any pilot training courses.</p>
@@ -122,7 +128,7 @@
 			<p>For a little boy who wants to travel and see the world one day, beyond is the perfect place to be.</p>
 		<ul class="buttons-2 show-for-small">
 			<li><a href="" class='button-solid-sky-blue'>Act for Jesus Gabriel</a></li>
-			<li><a href="" class="button-solid-yellow">Donate</a></li>
+			<li><a href="" class="button-solid-yellow">Make a donation</a></li>
 		</ul>
 		</div>
 	</div>
@@ -247,6 +253,9 @@
 		var currentPostion = $(window).scrollTop();
 		if(windowW > 641 && currentPostion >= bodyH ) {
 			$('.fixed-buttons').addClass('appear');
+		}
+		if(windowW > 641 && currentPostion <= bodyH ) {
+			$('.fixed-buttons').removeClass('appear');
 		}
 	});
 

@@ -51,7 +51,7 @@
 
 <div id="three-brothers">	
 <section class="hero">
-	<video poster="poster" src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted" loop=""></video>
+	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted" loop=""></video>
 	<div class="nav">
 		<div class="prev" style="background: url(multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
 		<div class="next" style="background: url(multimedia/act-for_brazil-stories-next.png) no-repeat;background-size:cover;"></div>
@@ -68,7 +68,7 @@
 
 <ul class="buttons-2 fixed-buttons">
 	<li><a href="" class='button-solid-sky-blue'>Act for the Assis brothers</a></li>
-	<li><a href="" class="button-solid-yellow">Donate</a></li>
+	<li><a href="" class="button-solid-yellow">Make a donation</a></li>
 </ul>
 
 <section class="intro">
@@ -99,12 +99,16 @@
 </section>
 
 <section class="second">
-	<img class="full-width" src="multimedia/act-for_brazil-brothers-2.jpg">
+	<img 
+		class="full-width"
+	    src="multimedia/act-for_brazil-brothers-2.jpg"
+	    srcset="multimedia/act-for_brazil-brothers-2_x2.jpg 1600w"
+	>
 	<div class="row max-45">
 		<div class="columns medium-6">
 			<p>Where the brothers were once reserved, they’ve each found their respective voice through prayer and the supportive church community, which serves as a second family. Surrounded by loving “aunties” (female volunteers) who tend to them and caring “godfathers” (sponsors) who send them letters, the boys have blossomed into confident young men. Plus, they’re fed regularly, receive quality medical care and are getting an education. In economically destitute Northeast Brazil, where half the kids between the ages of 15 and 17 aren’t able to attend school and 20% of the adult population is illiterate, the brothers have a wonderful opportunity to rise above their situation. Lucas, the eldest child, wants to be a firefighter one day, and Compassion is giving him the tools and faith to make his dream a reality.</p>
 		</div>  
-		<div class="columns medium-6">
+		<div class="columns medium-6 text-center">
 			<img class="lower" src="multimedia/act-for_brazil-brothers-3.jpg">	
 		</div>
 	</div>
@@ -123,7 +127,7 @@
 				Through sponsorship and the support of Compassion, and by accepting God into their lives, one family’s cycle of addiction, poverty and hopelessness has come to an end – and that’s a miracle to us.
 			</p>
 		<ul class="buttons-2 show-for-small">
-			<li><a href="" class='button-solid-sky-blue'>Act for Jesus Gabriel</a></li>
+			<li><a href="" class='button-solid-sky-blue'>Act for the Assis brothers</a></li>
 			<li><a href="" class="button-solid-yellow">Make a Donation</a></li>
 		</ul>
 		</div>
@@ -250,6 +254,9 @@
 		var currentPostion = $(window).scrollTop();
 		if(windowW > 641 && currentPostion >= bodyH ) {
 			$('.fixed-buttons').addClass('appear');
+		}
+		if(windowW > 641 && currentPostion <= bodyH ) {
+			$('.fixed-buttons').removeClass('appear');
 		}
 	});
 
