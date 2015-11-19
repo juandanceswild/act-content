@@ -393,21 +393,22 @@
 		return false;
 	})
 
+	//////// STICKY BUTTONS
+
+	var windowW = $(window).width();
+	var pageH = $('#evergreen-landing').height();
+
 	var lastScrollTop = 0, delta = 5;
     
     $(window).on('scroll', function() {
         var nowScrollTop = $(this).scrollTop();
-        var buttonPosition = $('.steps').offset().top;
-        
+
         if(Math.abs(lastScrollTop - nowScrollTop) >= delta){ //scroll down
-        	if(nowScrollTop > lastScrollTop && buttonPosition < nowScrollTop) {
+        	if(nowScrollTop >= pageH /2 ) {
         		$('.fixed-buttons').addClass('appear');
-             }  else if (buttonPosition > nowScrollTop) {
+             }  else {
              	$('.fixed-buttons').removeClass('appear');
              }
-             //else { //scroll up
-            //  	$('.fixed-buttons').css('display','none');
-            // }
         	lastScrollTop = nowScrollTop;
         }
     });
