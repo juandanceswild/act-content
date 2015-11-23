@@ -10186,7 +10186,7 @@ span.calendar {
     overflow: hidden;
     height: 28rem;
     width: 100%;
-    background-color:#0E6CC5; }
+    background-color: #0E6CC5; }
     #brazil-landing .hero video, #post-actbr .hero video {
       position: absolute;
       top: 50%;
@@ -10194,24 +10194,13 @@ span.calendar {
       transform: translateX(-50%) translateY(-50%);
       height: 100%;
       width: auto;
-      z-index: 1; 
-       -webkit-background-size:cover; 
-       moz-background-size:cover; 
-       -o-background-size:cover; 
-       background-size:cover; }
-    @media only screen and (max-width:40.063em) {
-       #brazil-landing .hero video::-webkit-media-controls-start-playback-button, #post-actbr .hero video::-webkit-media-controls-start-playback-button {
-        display: none !important;
-        webkit-appearance: none;
-      }
-      #brazil-landing .hero video, #post-actbr .hero video {
-        background-position-x: -10rem;
-/*        top: 3.5rem;
-        left: 0;
-        -webkit-transform: inherit;
-        transform: inherit;*/
-      }
-    }
+      z-index: 1; }
+      @media only screen and (max-width: 40.063em) {
+        #brazil-landing .hero video, #post-actbr .hero video {
+          background-position-x: -10rem; }
+          #brazil-landing .hero video::-webkit-media-controls-start-playback-button, #post-actbr .hero video::-webkit-media-controls-start-playback-button {
+            display: none !important;
+            webkit-appearance: none; } }
       @media only screen and (min-width:40.063em) {
         #brazil-landing .hero video, #post-actbr .hero video {
           width: 100%;
@@ -10225,9 +10214,8 @@ span.calendar {
       top: 0;
       left: 0;
       bottom: 0;
-      right: 0; 
-      z-index: 2;
-    }
+      right: 0;
+      z-index: 2; }
     #brazil-landing .hero h1, #post-actbr .hero h1 {
       position: absolute;
       z-index: 3;
@@ -10287,7 +10275,7 @@ span.calendar {
       width: 3rem;
       height: 3rem;
       top: -1.25rem;
-      background: #E6B413;
+      background: #0055a6;
       border-radius: 50%;
       z-index: 2;
       left: 50%;
@@ -10300,10 +10288,10 @@ span.calendar {
           top: -2.25rem; } }
       #brazil-landing .intro .arrow img, #post-actbr .intro .arrow img {
         width: 22px;
-        margin-top: 20px; }
+        margin-top: 17px; }
         @media only screen and (min-width:64.063em) {
           #brazil-landing .intro .arrow img, #post-actbr .intro .arrow img {
-            margin-top: 28px;
+            margin-top: 26px;
             width: 33px; } }
     #brazil-landing .intro h2, #brazil-landing .intro p, #post-actbr .intro h2, #post-actbr .intro p {
       line-height: normal; }
@@ -10416,7 +10404,7 @@ span.calendar {
       animation: waterdrop-3 4s infinite; }
     #brazil-landing .info .infographic p, #post-actbr .info .infographic p {
       font-size: .8rem;
-      color: #0055a6;
+      color: white;
       text-align: right;
       position: relative;
       top: 1rem; }
@@ -10534,8 +10522,8 @@ span.calendar {
     #brazil-landing .fundraising-in-action .row .columns, #post-actbr .fundraising-in-action .row .columns {
       padding: 0;
       overflow: hidden;
-      height: 15rem; 
-      background-size:cover!important;}
+      height: 15rem;
+      background-size: cover !important; }
       @media only screen and (min-width:40.063em) {
         #brazil-landing .fundraising-in-action .row .columns, #post-actbr .fundraising-in-action .row .columns {
           height: 18rem; } }
@@ -13612,419 +13600,12 @@ li.total .right.wi-value {
   margin-top: 10px;
   text-align: center; }
 
+bode {
+  height: auto; }
+
 .brazil-stories {
-  background:#0055A6;
-}
-
-.brazil-stories .video-pop-up {
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0; }
-  .brazil-stories .video-pop-up video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    width: 90%;
-    height: auto; }
-  .brazil-stories .video-pop-up img {
-    top: 30px;
-    right: 30px;
-    position: absolute;
-    cursor: pointer; }
-.brazil-stories h2 {
-  font-size: 1.1rem; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories h2 {
-      font-size: 1.5rem; } }
-  @media only screen and (min-width:64.063em) {
-    .brazil-stories h2 {
-      font-size: 1.8rem; } }
-.brazil-stories section {
-  position: relative; }
-.brazil-stories p {
-  font-size: .9rem; }
-  @media only screen and (min-width:64.063em) {
-    .brazil-stories p {
-      font-size: 1rem; } }
-.brazil-stories .table {
-  display: table;
-  height: 100%; 
-  position: absolute;
-  left:0;
-  right: 0;
-  z-index: 2;
-  }
-.brazil-stories .table-cell {
-  display: table-cell;
-  vertical-align: middle; }
-.brazil-stories .max-45 {
-  max-width: 45rem;
-  margin-left: auto;
-  margin-right: auto;
-  float: none; }
-.brazil-stories .max-51 {
-  max-width: 51rem;
-  margin-left: auto;
-  margin-right: auto;
-  float: none; }
-.brazil-stories .full-width {
-  width: 100%; }
-@media only screen and (max-width: 40em) {
-  .brazil-stories ul.buttons-2 {
-    margin-top: 3rem;
-    margin-bottom: 0;
-    width: 20rem;
-    margin-left: auto;
-    margin-right: auto; } }
-@media only screen and (min-width:40.063em) {
-  .brazil-stories ul.buttons-2 {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    z-index: 99;
-    bottom: -2rem;
-    opacity: 0;
-    -webkit-transition: opacity .25s ease-in;
-    -moz-transition: opacity .25s ease-in;
-    transition: opacity .25s ease-in;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    max-width: 50rem; } }
-.brazil-stories ul.buttons-2.appear {
-  opacity: 1; }
-.brazil-stories ul.buttons-2 li a {
-  font-size: .7rem;
-  height: 2.5rem;
-  padding-top: .7rem; }
-  @media only screen and (min-width:64.063em) {
-    .brazil-stories ul.buttons-2 li a {
-      height: 3.5rem;
-      font-size: 1rem;
-      padding-top: .95rem; } }
-.brazil-stories #morgana .map {
-  position: relative; }
-  .brazil-stories #morgana .map img {
-    padding-right: 2rem;
-    margin-top: -3rem; }
-    @media only screen and (min-width:64.063em) {
-      .brazil-stories #morgana .map img {
-        padding-right: 0; } }
-  .brazil-stories #morgana .map img:last-of-type {
-    position: absolute;
-    z-index: 2;
-    bottom: -2rem;
-    left: 0; }
-    @media only screen and (min-width:40.063em) {
-      .brazil-stories #morgana .map img:last-of-type {
-        left: -5rem;
-        bottom: -4rem; } }
-@media only screen and (min-width:40.063em) {
-  .brazil-stories #morgana .lower {
-    margin-top: 4rem; } }
-@media only screen and (min-width:64.063em) {
-  .brazil-stories #morgana .lower {
-    left: -2.5rem;
-    position: relative;
-    margin-top: 4.5rem; } }
-.brazil-stories #morgana .second .columns img {
-  margin-bottom: 1rem; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories #morgana .second .columns img {
-      margin-bottom: 2.5rem; }
-      @media only screen and (min-width:64.063em) {
-        .brazil-stories #morgana .second .columns img {
-          margin-bottom: 4rem; } } }
-.brazil-stories #three-brothers .hero h1 {
-  margin-bottom: 1rem; }
-  .brazil-stories #three-brothers .hero h1 span {
-    display: block;
-    line-height: normal; }
-.brazil-stories #three-brothers .map {
-  margin-bottom: -1rem; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories #three-brothers .map {
-      margin-bottom: -2rem; } }
-  @media only screen and (min-width:64.063em) {
-    .brazil-stories #three-brothers .map {
-      margin-bottom: -3rem; } }
-  .brazil-stories #three-brothers .map img {
-    margin-bottom: 0; }
-.brazil-stories #three-brothers .intro .quote {
-  font-weight: 300;
-  font-style: italic;
-  line-height: inherit; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories #three-brothers .intro .quote {
-      margin-top: -.5rem;
-      line-height: 38px; } }
-@media only screen and (min-width:64.063em) {
-  .brazil-stories #three-brothers .intro .left {
-    margin-left: -2.5rem;
-    margin-bottom: 5rem; } }
-.brazil-stories #three-brothers .second .full-width {
-  margin-bottom: 1rem; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories #three-brothers .second .full-width {
-      margin-bottom: 2.5rem; } }
-  @media only screen and (min-width:64.063em) {
-    .brazil-stories #three-brothers .second .full-width {
-      margin-bottom: 4rem; } }
-@media only screen and (min-width:40.063em) {
-  .brazil-stories #three-brothers .second .lower {
-    margin-top: 3.5rem; } }
-.brazil-stories #three-brothers .second h2 {
-  max-width: 18rem; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories #three-brothers .second h2 {
-      max-width: 24rem; } }
-  @media only screen and (min-width:64.063em) {
-    .brazil-stories #three-brothers .second h2 {
-      max-width: 29rem; } }
-.brazil-stories #three-brothers .second div.centered {
-  margin: 1rem auto; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories #three-brothers .second div.centered {
-      margin: 2rem auto; } }
-  @media only screen and (min-width:64.063em) {
-    .brazil-stories #three-brothers .second div.centered {
-      margin: 3rem auto; } }
-.brazil-stories #jesus .intro .row:nth-of-type(3) img:last-of-type {
-  width: 265px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: none !important; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories #jesus .intro .row:nth-of-type(3) img:last-of-type {
-      float: right !important; } }
-.brazil-stories #jesus .map {
-  position: relative;
-  margin-top: -6rem; }
-  .brazil-stories #jesus .map img:last-of-type {
-    position: absolute;
-    z-index: 2;
-    bottom: -2rem;
-    left: 0; }
-    @media only screen and (min-width:40.063em) {
-      .brazil-stories #jesus .map img:last-of-type {
-        bottom: -4rem; } }
-.brazil-stories #jesus .second .row:first-of-type .columns {
-  margin: 1rem auto; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories #jesus .second .row:first-of-type .columns {
-      margin: 2.5rem auto; } }
-  @media only screen and (min-width:64.063em) {
-    .brazil-stories #jesus .second .row:first-of-type .columns {
-      margin: 4rem auto; } }
-@media only screen and (min-width:64.063em) {
-  .brazil-stories #jesus .second h2 {
-    max-width: 44rem; } }
-.brazil-stories .hero {
-  height: 28rem;
-  width: 100%;
-  overflow: hidden;
-  background-color: #0055A6; }
-  .brazil-stories .hero video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    height: 100%;
-    width: auto;
-    z-index: 1; }
-    @media only screen and (max-width:40.063em) {
-      .brazil-stories .hero video::-webkit-media-controls-start-playback-button {
-        display: none !important;
-        webkit-appearance: none;
-      }
-    }
-    @media only screen and (min-width:810px) {
-      .brazil-stories .hero video {
-        width: 100%;
-        height: auto; } }
-  @media only screen and (min-width:64.063em) {
-    .brazil-stories .hero {
-      height: 40rem; } }
-  .brazil-stories .hero h1, .brazil-stories .hero h5, .brazil-stories .hero p {
-    color: white; }
-  .brazil-stories .hero h1 {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    font-family: 'big_johnregular', sans-serif;
-    margin-bottom: 0; }
-    @media only screen and (min-width:40.063em) {
-      .brazil-stories .hero h1 {
-        font-size: 3rem; } }
-    @media only screen and (min-width:64.063em) {
-      .brazil-stories .hero h1 {
-        font-size: 4.1rem;
-        letter-spacing: 3px; } }
-  .brazil-stories .hero h5 {
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 2px; }
-  .brazil-stories .hero p {
-    font-weight: 300;
-    font-size: 1rem;
-    font-style: italic;
-    margin-bottom: 0;
-    line-height: normal; }
-  @media only screen and (min-width:40.063em) {
-    .brazil-stories .hero h5, .brazil-stories .hero p {
-      font-size: 1.2rem; } }
-  .brazil-stories .hero .play {
-    cursor: pointer;
-    position: absolute;
-    bottom: 3rem;
-    left: 0;
-    right: 0;
-    z-index: 3; }
-    .brazil-stories .hero .play img {
-      width: 4rem; }
-      @media only screen and (min-width:64.063em) {
-        .brazil-stories .hero .play img {
-          width: 98px; } }
-  .brazil-stories .hero .nav .prev {
-    left: 0;
-    background: url(../images/act-for_brazil-stories-prev.png) no-repeat; }
-  .brazil-stories .hero .nav .next {
-    right: 0;
-    background: url(../images/act-for_brazil-stories-next.png) no-repeat; }
-  .brazil-stories .hero .nav .prev, .brazil-stories .hero .nav .next {
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    z-index: 4;
-    position: absolute;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    width: 1.5rem;
-    height: 3rem;
-    background-size: 100%; }
-    @media only screen and (min-width:40.063em) {
-      .brazil-stories .hero .nav .prev, .brazil-stories .hero .nav .next {
-        width: 2rem;
-        height: 4rem; } }
-    @media only screen and (min-width:64.063em) {
-      .brazil-stories .hero .nav .prev, .brazil-stories .hero .nav .next {
-        width: 3rem;
-        height: 6rem; } }
-    .brazil-stories .hero .nav .prev:hover, .brazil-stories .hero .nav .next:hover {
-      top: 49.5%; }
-.brazil-stories .intro {
-  padding: 3rem 0;
-  background: #0055a6; }
-  .brazil-stories .intro h2, .brazil-stories .intro p {
-    color: white; }
-  .brazil-stories .intro h2 {
-    line-height: normal;
-    font-weight: 500;
-    margin-bottom: 2rem; }
-  .brazil-stories .intro p {
-    font-weight: 300; }
-  .brazil-stories .intro img {
-    margin-bottom: 1rem; }
-    @media only screen and (min-width:40.063em) {
-      .brazil-stories .intro img {
-        margin-bottom: 2rem; } }
-.brazil-stories .second {
-  padding-bottom: 3rem;
-  background: rgba(255, 255, 255, 0.88); }
-  .brazil-stories .second h2 {
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-    margin: 2rem auto; }
-    @media only screen and (min-width:40.063em) {
-      .brazil-stories .second h2 {
-        margin: 3rem auto; } }
-    @media only screen and (min-width:64.063em) {
-      .brazil-stories .second h2 {
-        margin: 4rem auto; } }
-  .brazil-stories .second p {
-    color: #363636; }
-.brazil-stories .other-stories {
-  padding: 2rem 0;
-  background: rgba(255, 255, 255, 0.88); }
-  .brazil-stories .other-stories .row {
-    margin-bottom: 2rem; }
-  .brazil-stories .other-stories .mask {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0.9375rem;
-    right: 0.9375rem;
-    bottom: 0;
-    background: rgba(229, 179, 18, 0.35);
-    z-index: 2;
-    -webkit-transition: opacity .25s ease-in;
-    -moz-transition: opacity .25s ease-in;
-    transition: opacity .25s ease-in; }
-    .brazil-stories .other-stories .mask.hover {
-      opacity: 1; }
-  .brazil-stories .other-stories .table-cell {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; }
-    .brazil-stories .other-stories .table-cell a {
-      height: 2.5rem;
-      padding-top: .5rem;
-      width: 10rem;
-      margin:auto; }
-      @media only screen and (min-width:40.063em) {
-        .brazil-stories .other-stories .table-cell a {
-          width: 13rem;
-          height: 3rem;
-          padding-top: .7rem;
-          margin: 0 auto; } }
-      @media only screen and (min-width:64.063em) {
-        .brazil-stories .other-stories .table-cell a {
-          width: 15rem;
-          font-size: 1rem;
-          padding-top: .9rem;
-          height: 3.3rem; } }
-  .brazil-stories .other-stories h1 {
-    font-family: 'big_johnregular', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    text-align: center; }
-    @media only screen and (min-width:40.063em) {
-      .brazil-stories .other-stories h1 {
-        margin-top: 3rem; } }
-    .brazil-stories .other-stories h1 span {
-      display: block;
-      font-size: 1rem;
-      font-weight: 500; }
-      @media only screen and (min-width:40.063em) {
-        .brazil-stories .other-stories h1 span {
-          font-size: 2rem;
-          letter-spacing: 2px;
-          line-height: 45px; } }
-      .brazil-stories .other-stories h1 span:last-of-type {
-        font-weight: 700;
-        font-size: 1.3rem; }
-        @media only screen and (min-width:40.063em) {
-          .brazil-stories .other-stories h1 span:last-of-type {
-            font-size: 2.5rem;
-            letter-spacing: 3px; } }
-
-#evergreen-landing, #evergreen-landing-uncookied {
-  text-align: center; }
-  #evergreen-landing .video-pop-up, #evergreen-landing-uncookied .video-pop-up {
+  background: #0055A6; }
+  .brazil-stories .video-pop-up {
     background: rgba(0, 0, 0, 0.7);
     display: none;
     z-index: 100;
@@ -14033,11 +13614,411 @@ li.total .right.wi-value {
     right: 0;
     left: 0;
     bottom: 0; }
+    .brazil-stories .video-pop-up video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      width: 90%;
+      height: auto; }
+    .brazil-stories .video-pop-up img {
+      top: 30px;
+      right: 30px;
+      position: absolute;
+      cursor: pointer; }
+  .brazil-stories h2 {
+    font-size: 1.1rem; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories h2 {
+        font-size: 1.5rem; } }
+    @media only screen and (min-width:64.063em) {
+      .brazil-stories h2 {
+        font-size: 1.8rem; } }
+  .brazil-stories section {
+    position: relative; }
+  .brazil-stories p {
+    font-size: .9rem; }
+    @media only screen and (min-width:64.063em) {
+      .brazil-stories p {
+        font-size: 1rem; } }
+  .brazil-stories .table {
+    display: table;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2; }
+  .brazil-stories .table-cell {
+    display: table-cell;
+    vertical-align: middle; }
+  .brazil-stories .max-45 {
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
+  .brazil-stories .max-51 {
+    max-width: 51rem;
+    margin-left: auto;
+    margin-right: auto;
+    float: none; }
+  .brazil-stories .full-width {
+    width: 100%; }
+  @media only screen and (max-width: 40em) {
+    .brazil-stories ul.buttons-2 {
+      margin-top: 3rem;
+      margin-bottom: 0;
+      width: 20rem;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media only screen and (min-width:40.063em) {
+    .brazil-stories ul.buttons-2 {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      z-index: 99;
+      bottom: -2rem;
+      opacity: 0;
+      -webkit-transition: opacity .25s ease-in;
+      -moz-transition: opacity .25s ease-in;
+      transition: opacity .25s ease-in;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      max-width: 50rem; } }
+  .brazil-stories ul.buttons-2.appear {
+    opacity: 1; }
+  .brazil-stories ul.buttons-2 li a {
+    font-size: .7rem;
+    height: 2.5rem;
+    padding-top: .7rem; }
+    @media only screen and (min-width:64.063em) {
+      .brazil-stories ul.buttons-2 li a {
+        height: 3.5rem;
+        font-size: 1rem;
+        padding-top: .95rem; } }
+  .brazil-stories #morgana .map {
+    position: relative; }
+    .brazil-stories #morgana .map img {
+      padding-right: 2rem;
+      margin-top: -3rem; }
+      @media only screen and (min-width:64.063em) {
+        .brazil-stories #morgana .map img {
+          padding-right: 0; } }
+    .brazil-stories #morgana .map img:last-of-type {
+      position: absolute;
+      z-index: 2;
+      bottom: -2rem;
+      left: 0; }
+      @media only screen and (min-width:40.063em) {
+        .brazil-stories #morgana .map img:last-of-type {
+          left: -5rem;
+          bottom: -4rem; } }
+  @media only screen and (min-width:40.063em) {
+    .brazil-stories #morgana .lower {
+      margin-top: 4rem; } }
+  @media only screen and (min-width:64.063em) {
+    .brazil-stories #morgana .lower {
+      left: -2.5rem;
+      position: relative;
+      margin-top: 4.5rem; } }
+  .brazil-stories #morgana .second .columns img {
+    margin-bottom: 1rem; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories #morgana .second .columns img {
+        margin-bottom: 2.5rem; }
+        @media only screen and (min-width:64.063em) {
+          .brazil-stories #morgana .second .columns img {
+            margin-bottom: 4rem; } } }
+  .brazil-stories #three-brothers .hero h1 {
+    margin-bottom: 1rem; }
+    .brazil-stories #three-brothers .hero h1 span {
+      display: block;
+      line-height: normal; }
+  .brazil-stories #three-brothers .map {
+    margin-bottom: -1rem; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories #three-brothers .map {
+        margin-bottom: -2rem; } }
+    @media only screen and (min-width:64.063em) {
+      .brazil-stories #three-brothers .map {
+        margin-bottom: -3rem; } }
+    .brazil-stories #three-brothers .map img {
+      margin-bottom: 0; }
+  .brazil-stories #three-brothers .intro .quote {
+    font-weight: 300;
+    font-style: italic;
+    line-height: inherit; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories #three-brothers .intro .quote {
+        margin-top: -.5rem;
+        line-height: 38px; } }
+  @media only screen and (min-width:64.063em) {
+    .brazil-stories #three-brothers .intro .left {
+      margin-left: -2.5rem;
+      margin-bottom: 5rem; } }
+  .brazil-stories #three-brothers .second .full-width {
+    margin-bottom: 1rem; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories #three-brothers .second .full-width {
+        margin-bottom: 2.5rem; } }
+    @media only screen and (min-width:64.063em) {
+      .brazil-stories #three-brothers .second .full-width {
+        margin-bottom: 4rem; } }
+  @media only screen and (min-width:40.063em) {
+    .brazil-stories #three-brothers .second .lower {
+      margin-top: 3.5rem; } }
+  .brazil-stories #three-brothers .second h2 {
+    max-width: 18rem; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories #three-brothers .second h2 {
+        max-width: 24rem; } }
+    @media only screen and (min-width:64.063em) {
+      .brazil-stories #three-brothers .second h2 {
+        max-width: 29rem; } }
+  .brazil-stories #three-brothers .second div.centered {
+    margin: 1rem auto; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories #three-brothers .second div.centered {
+        margin: 2rem auto; } }
+    @media only screen and (min-width:64.063em) {
+      .brazil-stories #three-brothers .second div.centered {
+        margin: 3rem auto; } }
+  .brazil-stories #jesus .intro .row:nth-of-type(3) img:last-of-type {
+    width: 265px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories #jesus .intro .row:nth-of-type(3) img:last-of-type {
+        float: right !important; } }
+  .brazil-stories #jesus .map {
+    position: relative;
+    margin-top: -6rem; }
+    .brazil-stories #jesus .map img:last-of-type {
+      position: absolute;
+      z-index: 2;
+      bottom: -2rem;
+      left: 0; }
+      @media only screen and (min-width:40.063em) {
+        .brazil-stories #jesus .map img:last-of-type {
+          bottom: -4rem; } }
+  .brazil-stories #jesus .second .row:first-of-type .columns {
+    margin: 1rem auto; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories #jesus .second .row:first-of-type .columns {
+        margin: 2.5rem auto; } }
+    @media only screen and (min-width:64.063em) {
+      .brazil-stories #jesus .second .row:first-of-type .columns {
+        margin: 4rem auto; } }
+  @media only screen and (min-width:64.063em) {
+    .brazil-stories #jesus .second h2 {
+      max-width: 44rem; } }
+  .brazil-stories .hero {
+    height: 28rem;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0055A6; }
+    .brazil-stories .hero video {
+      position: absolute;
+      height: 100%;
+      width: auto;
+      background-color: #0055A6;
+      z-index: 1; }
+      @media only screen and (min-width:40.063em) {
+        .brazil-stories .hero video {
+          width: 100%;
+          height: auto; }
+          .brazil-stories .hero video::-webkit-media-controls-start-playback-button {
+            display: none !important;
+            webkit-appearance: none; } }
+    @media only screen and (min-width:64.063em) {
+      .brazil-stories .hero {
+        height: 40rem; } }
+    .brazil-stories .hero h1, .brazil-stories .hero h5, .brazil-stories .hero p {
+      color: white; }
+    .brazil-stories .hero h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-family: 'big_johnregular', sans-serif;
+      margin-bottom: 0; }
+      @media only screen and (min-width:40.063em) {
+        .brazil-stories .hero h1 {
+          font-size: 3rem; } }
+      @media only screen and (min-width:64.063em) {
+        .brazil-stories .hero h1 {
+          font-size: 4.1rem;
+          letter-spacing: 3px; } }
+    .brazil-stories .hero h5 {
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 2px; }
+    .brazil-stories .hero p {
+      font-weight: 300;
+      font-size: 1rem;
+      font-style: italic;
+      margin-bottom: 0;
+      line-height: normal; }
+    @media only screen and (min-width:40.063em) {
+      .brazil-stories .hero h5, .brazil-stories .hero p {
+        font-size: 1.2rem; } }
+    .brazil-stories .hero .play {
+      cursor: pointer;
+      position: absolute;
+      bottom: 3rem;
+      left: 0;
+      right: 0;
+      z-index: 3; }
+      .brazil-stories .hero .play img {
+        width: 4rem; }
+        @media only screen and (min-width:64.063em) {
+          .brazil-stories .hero .play img {
+            width: 98px; } }
+    .brazil-stories .hero .nav .prev {
+      left: 0;
+      background: url(../images/act-for_brazil-stories-prev.png) no-repeat; }
+    .brazil-stories .hero .nav .next {
+      right: 0;
+      background: url(../images/act-for_brazil-stories-next.png) no-repeat; }
+    .brazil-stories .hero .nav .prev, .brazil-stories .hero .nav .next {
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      z-index: 4;
+      position: absolute;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      width: 1.5rem;
+      height: 3rem;
+      background-size: 100%; }
+      @media only screen and (min-width:40.063em) {
+        .brazil-stories .hero .nav .prev, .brazil-stories .hero .nav .next {
+          width: 2rem;
+          height: 4rem; } }
+      @media only screen and (min-width:64.063em) {
+        .brazil-stories .hero .nav .prev, .brazil-stories .hero .nav .next {
+          width: 3rem;
+          height: 6rem; } }
+      .brazil-stories .hero .nav .prev:hover, .brazil-stories .hero .nav .next:hover {
+        top: 49.5%; }
+  .brazil-stories .intro {
+    padding: 3rem 0;
+    background: #0055a6; }
+    .brazil-stories .intro h2, .brazil-stories .intro p {
+      color: white; }
+    .brazil-stories .intro h2 {
+      line-height: normal;
+      font-weight: 500;
+      margin-bottom: 2rem; }
+    .brazil-stories .intro p {
+      font-weight: 300; }
+    .brazil-stories .intro img {
+      margin-bottom: 1rem; }
+      @media only screen and (min-width:40.063em) {
+        .brazil-stories .intro img {
+          margin-bottom: 2rem; } }
+  .brazil-stories .second {
+    padding-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.88); }
+    .brazil-stories .second h2 {
+      font-weight: 300;
+      font-style: italic;
+      text-align: center;
+      margin: 2rem auto; }
+      @media only screen and (min-width:40.063em) {
+        .brazil-stories .second h2 {
+          margin: 3rem auto; } }
+      @media only screen and (min-width:64.063em) {
+        .brazil-stories .second h2 {
+          margin: 4rem auto; } }
+    .brazil-stories .second p {
+      color: #363636; }
+  .brazil-stories .other-stories {
+    padding: 2rem 0;
+    background: rgba(255, 255, 255, 0.88); }
+    .brazil-stories .other-stories .row {
+      margin-bottom: 2rem; }
+    .brazil-stories .other-stories .mask {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0.9375rem;
+      right: 0.9375rem;
+      bottom: 0;
+      background: rgba(229, 179, 18, 0.35);
+      z-index: 2;
+      -webkit-transition: opacity .25s ease-in;
+      -moz-transition: opacity .25s ease-in;
+      transition: opacity .25s ease-in; }
+      .brazil-stories .other-stories .mask.hover {
+        opacity: 1; }
+    .brazil-stories .other-stories .table-cell {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2; }
+      .brazil-stories .other-stories .table-cell a {
+        height: 2.5rem;
+        padding-top: .5rem;
+        width: 10rem;
+        margin: auto; }
+        @media only screen and (min-width:40.063em) {
+          .brazil-stories .other-stories .table-cell a {
+            width: 13rem;
+            height: 3rem;
+            padding-top: .7rem;
+            margin: 0 auto; } }
+        @media only screen and (min-width:64.063em) {
+          .brazil-stories .other-stories .table-cell a {
+            width: 15rem;
+            font-size: 1rem;
+            padding-top: .9rem;
+            height: 3.3rem; } }
+    .brazil-stories .other-stories h1 {
+      font-family: 'big_johnregular', sans-serif;
+      color: white;
+      text-transform: uppercase;
+      text-align: center; }
+      @media only screen and (min-width:40.063em) {
+        .brazil-stories .other-stories h1 {
+          margin-top: 3rem; } }
+      .brazil-stories .other-stories h1 span {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500; }
+        @media only screen and (min-width:40.063em) {
+          .brazil-stories .other-stories h1 span {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            line-height: 45px; } }
+        .brazil-stories .other-stories h1 span:last-of-type {
+          font-weight: 700;
+          font-size: 1.3rem; }
+          @media only screen and (min-width:40.063em) {
+            .brazil-stories .other-stories h1 span:last-of-type {
+              font-size: 2.5rem;
+              letter-spacing: 3px; } }
+
+#evergreen-landing, #evergreen-landing-uncookied {
+  text-align: center; }
+  #evergreen-landing .video-pop-up, #evergreen-landing-uncookied .video-pop-up {
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 100%; }
     #evergreen-landing .video-pop-up video, #evergreen-landing-uncookied .video-pop-up video {
       position: absolute;
       top: 50%;
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       width: 90%;
       height: auto; }
     #evergreen-landing .video-pop-up img, #evergreen-landing-uncookied .video-pop-up img {
@@ -14726,10 +14707,9 @@ li.total .right.wi-value {
     display: none;
     z-index: 100;
     position: absolute;
-    top: 0;
     right: 0;
     left: 0;
-    bottom: 0; }
+    height: 100%; }
     #evergreen-volunteer .video-pop-up video {
       position: absolute;
       top: 50%;
@@ -14745,11 +14725,10 @@ li.total .right.wi-value {
       cursor: pointer; }
   #evergreen-volunteer .hero {
     position: relative;
-    height: 28rem; 
-  }
-  @media only screen and (max-width:40.063em){
-    #evergreen-volunteer .hero {background-position-x:-45px!important;}
-  }
+    height: 28rem; }
+    @media (max-width: 40.063em) {
+      #evergreen-volunteer .hero {
+        background-position-x: -45px !important; } }
     @media only screen and (min-width:40.063em) {
       #evergreen-volunteer .hero {
         height: 40rem; } }

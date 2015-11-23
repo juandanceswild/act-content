@@ -52,7 +52,7 @@
 		<div class="columns">
 			<ul class="buttons-2">
 				<li><a href="" class="button-solid-yellow">Start a fundraiser</a></li>
-				<li><a href="" class="button-solid-blue">find sponsors</a></li>
+				<li><a href="" class="button-solid-sky-blue">find sponsors</a></li>
 			</ul>
 		</div>
 	</div>
@@ -546,7 +546,20 @@
 	if($('div .fixed-buttons').length) {
 		$('footer').css('padding-bottom', '5rem');
 	} 
-    ///////// VIDEO HERO
+///////// VIDEO 
+
+    $('body').css('height', 'auto');
+  
+    var windowH = $(window).height();
+    var windowTop = $(window).scrollTop();
+    var windowBottom = windowTop + windowH;
+    var videoH = $('.video-pop-up video').height();
+    var videoTop = (windowH - videoH) /2 ;
+
+    $('.video-pop-up').css('top', windowTop);
+    $('.video-pop-up').css('bottom', windowBottom);
+
+    $('.video-pop-up video').css('top', videoTop);
 
     $('.video .play').on('click', function(){
         $('.video-pop-up').css('display','block');

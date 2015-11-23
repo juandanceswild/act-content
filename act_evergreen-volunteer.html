@@ -49,7 +49,7 @@
 
 	<div class="video-pop-up">
 	    <img src="multimedia/x.png">
-	    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
+	    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay controls></video>
 	</div>  
 
 	<section class="hero" style="background: url(multimedia/act-for_evergreen-volunteer.jpg); background-size: cover;">
@@ -236,7 +236,20 @@
 
 <script>
 (function($){
-	 ///////// VIDEO HERO
+///////// VIDEO 
+
+    $('body').css('height', 'auto');
+  
+    var windowH = $(window).height();
+    var windowTop = $(window).scrollTop();
+    var windowBottom = windowTop + windowH;
+    var videoH = $('.video-pop-up video').height();
+    var videoTop = (windowH - videoH) /2 ;
+
+    $('.video-pop-up').css('top', windowTop);
+    $('.video-pop-up').css('bottom', windowBottom);
+
+    $('.video-pop-up video').css('top', videoTop);
 
     $('.video .play').on('click', function(){
         $('.video-pop-up').css('display','block');
