@@ -392,35 +392,8 @@
 		$('html, body').animate({scrollTop:sectionTop}, 500);
 		return false;
 	})
-///////// VIDEO 
 
-    $('body').css('height', 'auto');
-  
-    var windowH = $(window).height();
-    var windowTop = $(window).scrollTop();
-    var windowBottom = windowTop + windowH;
-    var videoH = $('.video-pop-up video').height();
-    var videoTop = (windowH - videoH) /2 ;
 
-    $('.video-pop-up').css('top', windowTop);
-    $('.video-pop-up').css('bottom', windowBottom);
-
-    $('.video-pop-up video').css('top', videoTop);
-
-    $('.video .play').on('click', function(){
-        $('.video-pop-up').css('display','block');
-        $('.video-pop-up video').get(0).play();
-        $('.video video').get(0).pause();
-        $('body, html').css('overflow', 'hidden');
-    })
-    $('.video-pop-up img').on('click', function(){
-        $('.video-pop-up').css('display','none');
-        $('.video-pop-up video').get(0).pause();
-        $('.video video').get(0).play();
-        $('body, html').css('overflow', 'auto');
-    })
-
-	//////// STICKY BUTTONS
 
 	var windowW = $(window).width();
 	var pageH = $('#evergreen-landing').height();
@@ -428,6 +401,38 @@
 	var lastScrollTop = 0, delta = 5;
     
     $(window).on('scroll', function() {
+
+		///////// VIDEO 
+
+	    $('body').css('height', 'auto');
+	  
+	    var windowH = $(window).height();
+	    var windowTop = $(window).scrollTop();
+	    var windowBottom = windowTop + windowH;
+	    var videoH = $('.video-pop-up video').height();
+	    var videoTop = (windowH - videoH) /2 ;
+
+	    $('.video-pop-up').css('top', windowTop);
+	    $('.video-pop-up').css('bottom', windowBottom);
+
+	    $('.video-pop-up video').css('top', videoTop);
+
+	    $('.video .play').on('click', function(){
+	        $('.video-pop-up').css('display','block');
+	        $('.video-pop-up video').get(0).play();
+	        $('.video video').get(0).pause();
+	        $('body, html').css('overflow', 'hidden');
+	    })
+	    $('.video-pop-up img').on('click', function(){
+	        $('.video-pop-up').css('display','none');
+	        $('.video-pop-up video').get(0).pause();
+	        $('.video video').get(0).play();
+	        $('body, html').css('overflow', 'auto');
+	    })
+
+
+ 	//////// STICKY BUTTONS
+
         var nowScrollTop = $(this).scrollTop();
 
         if(Math.abs(lastScrollTop - nowScrollTop) >= delta){ //scroll down
