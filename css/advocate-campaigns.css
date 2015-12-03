@@ -10190,6 +10190,7 @@ span.calendar {
     #brazil-landing .hero video, #post-actbr .hero video {
       position: absolute;
       top: 50%;
+      left: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
       height: 100%;

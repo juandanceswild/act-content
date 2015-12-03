@@ -14,7 +14,7 @@
 		<script>
 		  $('.interactive-reflow').foundation();
 		</script>
-
+		<script src="js/detectmobilebrowsers.js"></script>
 	 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
 	
 	</head>
@@ -51,7 +51,8 @@
 
 <div id="three-brothers">	
 <section class="hero">
-	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted" loop=""></video>
+    <video poster="multimedia/act-for_brazil-landing-hero.jpg" class="show-for-small-only"></video>  
+    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="show-for-medium-up video js-video_source" autoplay="" muted="muted"  loop=""></video>  
 	<div class="nav">
 		<div class="prev" style="background: url(multimedia/act-for_brazil-stories-prev.png) no-repeat;background-size:cover;"></div>
 		<div class="next" style="background: url(multimedia/act-for_brazil-stories-next.png) no-repeat;background-size:cover;"></div>
@@ -260,20 +261,25 @@
 		}
 	});
 
-	///////// VIDEO HERO
+    ///////// VIDEO HERO
 
-	$('.hero .play').on('click', function(){
-		$('.video-pop-up').css('display','block');
-		$('.video-pop-up video').get(0).play();
-		$('.hero video').get(0).pause();
-		$('body, html').css('overflow', 'hidden');
-	})
-	$('.video-pop-up img').on('click', function(){
-		$('.video-pop-up').css('display','none');
-		$('.video-pop-up video').get(0).pause();
-		$('.hero video').get(0).play();
-		$('body, html').css('overflow', 'auto');
-	})
+    $('.hero .play').on('click', function(){
+        if ($.browser.mobile == false) {
+            $('.video-pop-up').css('display','block');           
+            $('body, html').css('overflow', 'hidden');  
+        }
+        $('.video-pop-up video').get(0).play(); 
+        $('.hero video').get(0).pause();  
+    })
+    $('.video-pop-up img').on('click', function(){
+        if ($.browser.mobile == false) {
+           $('.video-pop-up').css('display','none'); 
+           $('body, html').css('overflow', 'auto');
+        } 
+        $('.video-pop-up video').get(0).pause();
+        $('.hero video').get(0).play();     
+    })
+    
 })(jQuery);
 </script>
 

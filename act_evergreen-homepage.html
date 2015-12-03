@@ -11,7 +11,7 @@
 		<script src="lib/fastclick.js"></script>
 		<script src="js/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style>
 		<script src="js/jquery-ui.min.js"></script>
-
+		<script src="js/detectmobilebrowsers.js"></script>
 	 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
 	
 	</head>
@@ -418,16 +418,20 @@
 	    $('.video-pop-up video').css('top', videoTop);
 
 	    $('.video .play').on('click', function(){
-	        $('.video-pop-up').css('display','block');
+		    if ($.browser.mobile == false) {
+	       	 	$('.video-pop-up').css('display','block');
+	      	  $('.video video').get(0).pause();
+	      	  $('body, html').css('overflow', 'hidden');
+		    }
 	        $('.video-pop-up video').get(0).play();
-	        $('.video video').get(0).pause();
-	        $('body, html').css('overflow', 'hidden');
 	    })
 	    $('.video-pop-up img').on('click', function(){
-	        $('.video-pop-up').css('display','none');
-	        $('.video-pop-up video').get(0).pause();
-	        $('.video video').get(0).play();
-	        $('body, html').css('overflow', 'auto');
+	 		if ($.browser.mobile == false) {
+		        $('.video-pop-up').css('display','none');
+		        $('.video-pop-up video').get(0).pause();
+		        $('.video video').get(0).play();
+		        $('body, html').css('overflow', 'auto');
+	 		}
 	    })
 
 
