@@ -283,7 +283,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="columns small-12 picture bike" style="background: url(multimedia/act-for_brazil-action-3.jpg) no-repeat center;">
+            <div class="columns small-12 picture bike" style="background: url(multimedia/act-for_brazil-action-3.jpg) no-repeat bottom;">
                 <div class="mask">
                     <div class="mask-content">
                         <p class="quote-mark">"</p>
@@ -398,16 +398,22 @@
 (min-resolution: 192dpi) and
 (max-width:500px) { 
     .fundraising-in-action .jesus {
-        background: url(multimedia/act-for_brazil-action-2_x2.jpg) no-repeat center;
+        background: url(multimedia/act-for_brazil-action-2_x2.jpg) no-repeat center !important;
     }
     .fundraising-in-action .bike {
-        background: url(multimedia/act-for_brazil-action-3_x2.jpg) no-repeat center;
+        background: url(multimedia/act-for_brazil-action-3_x2.jpg) no-repeat bottom !important;
     }
     .fundraising-in-action .morgana {
-        background: url(multimedia/act-for_brazil-action-4_x2.jpg) no-repeat center;
+        background: url(multimedia/act-for_brazil-action-4_x2.jpg) no-repeat bottom !important;
     }
-    .fundraising-in-action .jesus, .fundraising-in-action .bike, .fundraising-in-action .morgana {
+    .fundraising-in-action .jesus {
         background-size: cover;
+    }
+    .fundraising-in-action .bike {
+        background-size: 120% !important;
+    }
+    .fundraising-in-action .morgana{
+        background-size: auto 120% !important;
     }
 }
 </style>
