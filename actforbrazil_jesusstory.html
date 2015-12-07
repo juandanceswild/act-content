@@ -269,7 +269,7 @@
             $('body, html').css('overflow', 'hidden');  
         }
         $('.video-pop-up video').get(0).play(); 
-        $('.hero video').get(0).pause();  
+        $('.hero video.show-for-medium-up').get(0).pause();  
     })
     $('.video-pop-up img').on('click', function(){
         if ($.browser.mobile == false) {
@@ -277,7 +277,7 @@
            $('body, html').css('overflow', 'auto');
         } 
         $('.video-pop-up video').get(0).pause();
-        $('.hero video').get(0).play();     
+        $('.hero video.show-for-medium-up').get(0).play();     
     })
     
 
