@@ -664,7 +664,7 @@
         $('#loading').css('display','block');
         $('.video-pop-up video').get(0).play(); 
         $('.hero video.show-for-medium-up').get(0).pause();  
-        if($('.video-pop-up video').readyState = 4) {
+        if(!$('.video-pop-up video').paused) {
             $('#loading').css('display','none');
         }
     })
