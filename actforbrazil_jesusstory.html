@@ -45,7 +45,7 @@
 </header>
 <div class="brazil-stories">
 
-<div id="loading"><div class="table"><div class="table-cell"><img src="multimedia/act-for_loading.gif"  alt="loading"></div></div></div> 
+<div id="loading"><img src="multimedia/act-for_loading.gif"  alt="loading"></div> 
 
 <div class="video-pop-up">
 	<img src="multimedia/x.png">
@@ -263,20 +263,24 @@
 		}
 	});
 
-
     ///////// VIDEO HERO
 
     $('.hero .play').on('click', function(){
         if ($.browser.mobile == false) {
             $('.video-pop-up').css('display','block');           
             $('body, html').css('overflow', 'hidden');  
+        } else {
+            $('.video-pop-up video').on('play',function() {
+               $('#loading').css('display','block');
+            })
         }
-        $('#loading').css('display','block');
         $('.video-pop-up video').get(0).play(); 
         $('.hero video.show-for-medium-up').get(0).pause();  
-        if($('.video-pop-up video').readyState = 4) {
-            $('#loading').css('display','none');
-        }
+
+    })
+
+    $('.video-pop-up video').on('pause',function() {
+        $('#loading').css('display','none');
     })
     $('.video-pop-up img').on('click', function(){
         if ($.browser.mobile == false) {
@@ -286,7 +290,6 @@
         $('.video-pop-up video').get(0).pause();
         $('.hero video.show-for-medium-up').get(0).play();     
     })
-    
 
 })(jQuery);
 </script>

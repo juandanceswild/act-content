@@ -5756,10 +5756,19 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 
 #loading {
   display: none;
-  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: -4rem;
+  position: absolute;
+  z-index: 999;
   background: white; }
 
 #loading img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 20px; }
 
 .color-background-primary {
