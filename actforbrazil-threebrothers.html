@@ -44,6 +44,9 @@
 	</div>
 </header>
 <div class="brazil-stories">
+
+<div id="loading"><div class="table"><div class="table-cell"><img src="multimedia/act-for_loading.gif"  alt="loading"></div></div></div> 
+
 <div class="video-pop-up">
 	<img src="multimedia/x.png">
 	<video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
@@ -268,8 +271,12 @@
             $('.video-pop-up').css('display','block');           
             $('body, html').css('overflow', 'hidden');  
         }
+        $('#loading').css('display','block');
         $('.video-pop-up video').get(0).play(); 
         $('.hero video.show-for-medium-up').get(0).pause();  
+        if($('.video-pop-up video').readyState = 4) {
+            $('#loading').css('display','none');
+        }
     })
     $('.video-pop-up img').on('click', function(){
         if ($.browser.mobile == false) {
