@@ -47,6 +47,8 @@
 
 <div id="evergreen-volunteer">
 
+	<div id="loading"><div class="table"><div class="table-cell"><img src="multimedia/act-for_loading.gif"  alt="loading"></div></div></div> 
+
 	<div class="video-pop-up">
 	    <img src="multimedia/x.png">
 	    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay controls></video>
@@ -240,6 +242,7 @@
 
 	$(window).scroll(function(){
 
+		///////// VIDEO 
 
 	    $('body').css('height', 'auto');
 	  
@@ -249,8 +252,9 @@
 	    var videoH = $('.video-pop-up video').height();
 	    var videoTop = (windowH - videoH) /2 ;
 
-	    $('.video-pop-up').css('top', windowTop);
-	    $('.video-pop-up').css('bottom', windowBottom);
+	    $('.video-pop-up, #loading').css('top', windowTop);
+	    $('#loading').css('bottom', '0');
+	    $('#loading img').css('top',windowH/2);
 
 	    $('.video-pop-up video').css('top', videoTop);
 
@@ -259,8 +263,17 @@
 	       	 $('.video-pop-up').css('display','block');
 	      	  $('.video video').get(0).pause();
 	      	  $('body, html').css('overflow', 'hidden');
+		    }else {
+		    	$('.video-pop-up video').on('play',function() {
+			       $('#loading').css('display','block');
+			    })
 		    }
 	        $('.video-pop-up video').get(0).play();
+	        // $('#loading').css('display','block');
+	    })
+
+	    $('.video-pop-up video').on('pause',function() {
+	        $('#loading').css('display','none');
 	    })
 	    $('.video-pop-up img').on('click', function(){
 	 		if ($.browser.mobile == false) {
