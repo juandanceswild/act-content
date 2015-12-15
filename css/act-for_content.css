@@ -5952,11 +5952,17 @@ bode {
       z-index: 1; }
       @media only screen and (min-width:40.063em) {
         .brazil-stories .hero video {
-          width: 100%;
-          height: auto; }
+          width: auto;
+          height: 100%; }
           .brazil-stories .hero video::-webkit-media-controls-start-playback-button {
             display: none !important;
             webkit-appearance: none; } }
+      @media only screen and (min-width:1500px) {
+        .brazil-stories .hero video {
+          width:102%;
+          height:auto;
+        }
+      }
     @media only screen and (min-width:64.063em) {
       .brazil-stories .hero {
         height: 40rem; } }
@@ -6982,6 +6988,12 @@ bode {
       height: 100%;
       width: auto;
       z-index: 1; }
+      @media only screen and (min-width:1500px) {
+        #brazil-landing .hero video, #post-actbr .hero video {
+          width:101%;
+          height:auto;
+        }
+      }
       @media only screen and (max-width: 40.063em) {
         #brazil-landing .hero video, #post-actbr .hero video {
           background-position-x: -10rem; }
@@ -6990,8 +7002,8 @@ bode {
             webkit-appearance: none; } }
       @media only screen and (min-width:40.063em) {
         #brazil-landing .hero video, #post-actbr .hero video {
-          width: 100%;
-          height: auto; } }
+  /*        width: auto;
+          height: 100%;*/ } }
     @media only screen and (min-width:64.063em) {
       #brazil-landing .hero, #post-actbr .hero {
         height: 40rem; } }
