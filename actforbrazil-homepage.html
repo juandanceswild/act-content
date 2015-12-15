@@ -11,6 +11,7 @@
 		<script src="lib/fastclick.js"></script>
 		<script src="js/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style>
 		<script src="js/jquery-ui.min.js"></script>
+        <script src="js/detectmobilebrowsers.js"></script>
 		<script>
 		  $('.interactive-reflow').foundation();
 		</script>
@@ -46,6 +47,9 @@
 </header>
 
 <div id="brazil-landing">
+
+<div id="loading"><div class="table"><div class="table-cell"><img src="multimedia/act-for_loading.gif"  alt="loading"></div></div></div> 
+
 <div class="video-pop-up">
     <img src="multimedia/x.png">
     <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" controls></video>
@@ -60,7 +64,8 @@
     </div>
 
 <section class="hero" >
-    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="video js-video_source" autoplay="" muted="muted"  loop=""></video>  
+    <video poster="multimedia/act-for_brazil-landing-hero.jpg" class="show-for-small-only"></video>  
+    <video src="https://player.vimeo.com/external/122588139.hd.mp4?s=f0adfdc263ea0aa0b91b92f9ef737ea7193eac3d&profile_id=119" class="show-for-medium-up video js-video_source" autoplay="" muted="muted"  loop=""></video>  
     <div class="mask"></div>
     <div class="row">
         <h1><span>It starts</span><span> with one</span><span> act</span></h1>
@@ -108,7 +113,7 @@
     </div>
     <div class="row infographic">
         <div class="columns">
-            <h2>Our journey starts with Brazil. Brazil is a country with a rich culture and strong faith, yet millions of Brazilian children live in extreme poverty and lack the resources to escape the cycle.</h2>
+            <h2>Our journey starts in northeastern Brazil. Brazil is a country with a rich culture and strong faith, yet millions of Brazilian children live in extreme poverty and lack the resources to escape the cycle.</h2>
         </div>
         <div class="columns">
             <div class="hide-for-small">
@@ -282,7 +287,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="columns small-12 picture bike" style="background: url(multimedia/act-for_brazil-action-3.jpg) no-repeat center;">
+            <div class="columns small-12 picture bike" style="background: url(multimedia/act-for_brazil-action-3.jpg) no-repeat bottom;">
                 <div class="mask">
                     <div class="mask-content">
                         <p class="quote-mark">"</p>
@@ -397,16 +402,22 @@
 (min-resolution: 192dpi) and
 (max-width:500px) { 
     .fundraising-in-action .jesus {
-        background: url(multimedia/act-for_brazil-action-2_x2.jpg) no-repeat center;
+        background: url(multimedia/act-for_brazil-action-2_x2.jpg) no-repeat center !important;
     }
     .fundraising-in-action .bike {
-        background: url(multimedia/act-for_brazil-action-3_x2.jpg) no-repeat center;
+        background: url(multimedia/act-for_brazil-action-3_x2.jpg) no-repeat bottom !important;
     }
     .fundraising-in-action .morgana {
-        background: url(multimedia/act-for_brazil-action-4_x2.jpg) no-repeat center;
+        background: url(multimedia/act-for_brazil-action-4_x2.jpg) no-repeat bottom !important;
     }
-    .fundraising-in-action .jesus, .fundraising-in-action .bike, .fundraising-in-action .morgana {
+    .fundraising-in-action .jesus {
         background-size: cover;
+    }
+    .fundraising-in-action .bike {
+        background-size: 120% !important;
+    }
+    .fundraising-in-action .morgana{
+        background-size: auto 120% !important;
     }
 }
 </style>
@@ -647,16 +658,29 @@
     ///////// VIDEO HERO
 
     $('.hero .play').on('click', function(){
-        $('.video-pop-up').css('display','block');
-        $('.video-pop-up video').get(0).play();
-        $('.hero video').get(0).pause();
-        $('body, html').css('overflow', 'hidden');
+        if ($.browser.mobile == false) {
+            $('.video-pop-up').css('display','block');           
+            $('body, html').css('overflow', 'hidden');  
+        } else {
+            $('.video-pop-up video').on('play',function() {
+               $('#loading').css('display','block');
+            })
+        }
+        $('.video-pop-up video').get(0).play(); 
+        $('.hero video.show-for-medium-up').get(0).pause();  
+
+    })
+
+    $('.video-pop-up video').on('pause',function() {
+        $('#loading').css('display','none');
     })
     $('.video-pop-up img').on('click', function(){
-        $('.video-pop-up').css('display','none');
+        if ($.browser.mobile == false) {
+           $('.video-pop-up').css('display','none'); 
+           $('body, html').css('overflow', 'auto');
+        } 
         $('.video-pop-up video').get(0).pause();
-        $('.hero video').get(0).play();
-        $('body, html').css('overflow', 'auto');
+        $('.hero video.show-for-medium-up').get(0).play();     
     })
     
 })(jQuery);

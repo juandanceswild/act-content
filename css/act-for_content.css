@@ -5543,11 +5543,29 @@ input[type="checkbox"] + label, input[type="radio"] + label {
 
 .table {
   display: table;
-  height: 100%; }
+  height: 100%;
+  margin: 0 auto; }
 
 .table-cell {
   display: table-cell;
   vertical-align: middle; }
+
+#loading {
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: -4rem;
+  position: absolute;
+  z-index: 999;
+  background: white; }
+
+#loading img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px; }
 
 .color-background-primary {
   background-color: rgba(255, 255, 255, 0.88); }
@@ -6592,8 +6610,7 @@ bode {
     .compassion-in-action p {
       -webkit-transition: opacity .25s ease-in;
       -moz-transition: opacity .25s ease-in;
-      transition: opacity .25s ease-in;
-      opacity: 0; } }
+      transition: opacity .25s ease-in; } }
   @media only screen and (min-width:64.063em) {
     .compassion-in-action p {
       font-size: 1.2rem;
@@ -6657,8 +6674,6 @@ bode {
           transition: opacity .25s ease-in;
           opacity: 0.3; } }
     .compassion-in-action .columns:hover .mask {
-      opacity: 1; }
-    .compassion-in-action .columns:hover p {
       opacity: 1; }
     @media only screen and (max-width: 40em) {
       .compassion-in-action .columns:nth-of-type(2n) .mask {
@@ -6961,6 +6976,7 @@ bode {
     #brazil-landing .hero video, #post-actbr .hero video {
       position: absolute;
       top: 50%;
+      left: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
       height: 100%;
