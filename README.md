@@ -12,4 +12,5 @@ Credits
 ----
 
 Design: Christian Catalano, Eliane Cadieux
+
 Front End Development: Jaeeun Lee
